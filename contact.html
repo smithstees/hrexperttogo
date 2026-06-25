@@ -6,6 +6,14 @@
 <title>Contact | HR Expert to go</title>
 <meta name="description" content="Get in touch with HR Expert to go. Book a free discovery call or send a message directly to Ty Smith, SHRM-CP." />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LBCS8D922M');
+</script>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
@@ -25,108 +33,95 @@
   img { display: block; max-width: 100%; }
   a { color: inherit; text-decoration: none; }
 
+  /* NAV */
   nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
-  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
-  .nav-logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--navy); }
-  .nav-logo-text span { color: var(--gold); }
-  .nav-links { display: flex; align-items: center; gap: 2.25rem; list-style: none; }
-  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; }
+  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav-logo a { display: block; }
+  .nav-logo img { height: 44px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; text-decoration: none; }
   .nav-links a:hover { color: var(--navy); }
-  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; transition: background 0.2s !important; white-space: nowrap; }
+  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; transition: background 0.2s !important; }
   .nav-cta:hover { background: var(--slate) !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+  .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .mobile-menu a { font-size: 1rem; color: var(--slate); font-weight: 500; padding: 0.85rem 0; border-bottom: 1px solid var(--light-gray); text-decoration: none; display: block; }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu .mob-cta { background: var(--navy); color: #fff !important; padding: 0.75rem 1.25rem; border-radius: 5px; text-align: center; font-weight: 600; font-family: 'Sora', sans-serif; border-bottom: none; margin-top: 0.75rem; }
+  .mobile-menu.open { display: flex; }
 
-    .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 4.5rem 2rem; }
-  .page-header-inner { max-width: 1060px; margin: 0 auto; }
+  /* PAGE HEADER */
+  .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 4.5rem 2rem; }
+  .page-header-inner { max-width: 760px; margin: 0 auto; }
   .page-kicker { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
-  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -0.02em; margin-bottom: 1rem; color: var(--navy); }
-  .page-header h1 em { font-style: normal; color: var(--gold); }
-  .page-header p { font-size: 1.05rem; color: var(--slate); line-height: 1.8; max-width: 580px; }
+  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -0.02em; color: var(--navy); margin-bottom: 1rem; }
+  .page-header p { font-size: 1.05rem; color: var(--slate); line-height: 1.8; }
+  .page-header a { color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
 
+  /* CONTACT SECTION */
   .contact-section { padding: 5rem 2rem; }
   .contact-inner { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
 
-  .contact-details h2 { font-size: 1.25rem; margin-bottom: 1.75rem; }
+  /* LEFT COLUMN */
+  .contact-details h2 { font-size: 1.2rem; margin-bottom: 1.75rem; }
   .contact-item { margin-bottom: 1.75rem; }
   .contact-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.35rem; }
   .contact-value { font-size: 0.98rem; color: var(--slate); line-height: 1.6; }
   .contact-value a { color: var(--navy); font-weight: 500; border-bottom: 1px solid var(--gold); padding-bottom: 1px; transition: color 0.2s; }
   .contact-value a:hover { color: var(--gold); }
-
-  .contact-note { margin-top: 2.5rem; padding: 1.5rem; background: var(--ivory); border-radius: 6px; border-left: 3px solid var(--gold); }
+  .contact-note { margin-top: 2rem; padding: 1.25rem 1.5rem; background: var(--ivory); border-radius: 6px; border-left: 3px solid var(--gold); }
   .contact-note p { font-size: 0.9rem; color: var(--slate); line-height: 1.7; }
 
-  .contact-cta { background: var(--navy); border-radius: 8px; padding: 2.5rem; }
-  .contact-cta h2 { font-size: 1.3rem; color: #fff; margin-bottom: 0.75rem; }
-  .contact-cta p { font-size: 0.93rem; color: rgba(255,255,255,0.68); line-height: 1.75; margin-bottom: 1.75rem; }
-  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2rem; border-radius: 5px; display: inline-block; transition: background 0.2s, transform 0.15s; }
-  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
-  .contact-cta-note { font-size: 0.78rem; color: rgba(255,255,255,0.35); margin-top: 0.75rem; display: block; }
+  /* FORM */
+  .form-label { display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+  .form-field { margin-bottom: 1.25rem; }
+  .form-input { width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--light-gray); border-radius: 5px; font-family: 'Inter', sans-serif; font-size: 0.95rem; color: var(--charcoal); outline: none; transition: border-color 0.2s; background: #fff; }
+  .form-input:focus { border-color: var(--navy); }
+  textarea.form-input { resize: vertical; min-height: 140px; }
+  .form-submit { background: var(--navy); color: #fff; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 0.95rem; padding: 0.9rem 2rem; border: none; border-radius: 5px; cursor: pointer; transition: background 0.2s; width: 100%; }
+  .form-submit:hover { background: var(--slate); }
 
-  footer { background: var(--navy); padding: 3.5rem 2rem 2rem; }
+  /* CTA CARD */
+  .contact-cta { background: var(--navy); border-radius: 8px; padding: 2.5rem; margin-top: 2rem; }
+  .contact-cta h2 { font-size: 1.2rem; color: #fff; margin-bottom: 0.75rem; }
+  .contact-cta p { font-size: 0.93rem; color: rgba(255,255,255,0.68); line-height: 1.75; margin-bottom: 1.75rem; }
+  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2rem; border-radius: 5px; display: inline-block; transition: background 0.2s; }
+  .btn-gold:hover { background: var(--gold-light); }
+
+  /* FOOTER */
+  footer { background: var(--ivory); border-top: 1px solid var(--ivory-dark); padding: 3.5rem 2rem 2rem; }
   .footer-inner { max-width: 1060px; margin: 0 auto; }
-  .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-  .footer-brand img { height: 40px; width: auto; margin-bottom: 1rem; }
-  .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 220px; }
-  .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
-  .footer-col a { display: block; font-size: 0.88rem; color: rgba(255,255,255,0.6); margin-bottom: 0.6rem; transition: color 0.2s; }
+  .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--ivory-dark); }
+  .footer-brand p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; max-width: 220px; margin-top: 0.75rem; }
+  .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .footer-col a { display: block; font-size: 0.88rem; color: var(--slate); margin-bottom: 0.6rem; transition: color 0.2s; text-decoration: none; }
   .footer-col a:hover { color: var(--gold); }
   .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 1rem; }
-  .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+  .footer-copy { font-size: 0.8rem; color: var(--gray); }
   .footer-legal { display: flex; gap: 1.5rem; }
-  .footer-legal a { font-size: 0.8rem; color: rgba(255,255,255,0.35); transition: color 0.2s; }
+  .footer-legal a { font-size: 0.8rem; color: var(--gray); transition: color 0.2s; text-decoration: none; }
   .footer-legal a:hover { color: var(--gold); }
 
-  
-   .page-header { padding: 3rem 1.25rem; } .contact-section { padding: 3.5rem 1.25rem; } footer { padding: 2rem 1.25rem; } }
+  /* RESPONSIVE */
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-    .hero-photo-col { max-width: 260px; margin: 0 auto; }
-    .hero { padding: 3.5rem 1.25rem; }
-    .section { padding: 3.5rem 1.25rem; }
-    .cta-section { padding: 4rem 1.25rem; }
-    .cta-band { padding: 3.5rem 1.25rem; }
-    .about-layout { grid-template-columns: 1fr; }
-    .about-photo { position: static; max-width: 240px; margin: 0 auto; display: block; }
-    .header-photo { display: none; }
-    .page-header-inner { grid-template-columns: 1fr; }
-    .story-layout { grid-template-columns: 1fr; }
-    .story-sidebar { position: static; }
-    .honest-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-    .expect-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-    .outcomes-grid { grid-template-columns: 1fr 1fr; }
-    .services-layout { grid-template-columns: 1fr; }
-    .service-row:nth-child(even) { padding: 2rem 0; border-left: none; }
-    .service-row:last-child:nth-child(odd) { max-width: 100%; }
     .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .contact-section { padding: 3.5rem 1.25rem; }
+    .page-header { padding: 3rem 1.25rem; }
     .footer-top { grid-template-columns: 1fr; gap: 2rem; }
     .footer-bottom { flex-direction: column; align-items: flex-start; }
     footer { padding: 2.5rem 1.25rem 2rem; }
-    .page-header { padding: 3rem 1.25rem; }
-    .legal-body { padding: 3rem 1.25rem 4rem; }
-    .faq-section { padding: 3.5rem 1.25rem 4rem; }
-    .cta-details { gap: 1.5rem; }
-  }
-  @media (max-width: 480px) {
-    .outcomes-grid { grid-template-columns: 1fr; }
   }
 </style>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LBCS8D922M');
-</script>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">
-      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" style="height:44px; width:auto;" /></a>
+      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
     </div>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
@@ -149,68 +144,64 @@
 </div>
 <script>
   function toggleMenu() {
-    var menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
   }
-</script><div class="page-header">
+</script>
+
+<div class="page-header">
   <div class="page-header-inner">
     <span class="page-kicker">Get in touch</span>
     <h1>We would love to hear from you.</h1>
-    <p>Whether you have a question before booking or just want to make sure this is the right fit, reach out. There are no wrong questions here.</p>
+    <p>Whether you have a question before booking or just want to make sure this is the right fit, reach out at <a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a> or use the form below.</p>
   </div>
 </div>
 
 <section class="contact-section">
   <div class="contact-inner">
-    <div class="contact-details">
-      <h2>Contact information</h2>
 
+    <div class="contact-details">
+      <h2>Send a message</h2>
+      <form action="https://formspree.io/f/mdaraqrk" method="POST">
+        <div class="form-field">
+          <label class="form-label">Your name</label>
+          <input type="text" name="name" required class="form-input" placeholder="First and last name" />
+        </div>
+        <div class="form-field">
+          <label class="form-label">Email address</label>
+          <input type="email" name="email" required class="form-input" placeholder="your@email.com" />
+        </div>
+        <div class="form-field">
+          <label class="form-label">Message</label>
+          <textarea name="message" required class="form-input" placeholder="What would you like to know?"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send message</button>
+      </form>
+
+      <div class="contact-note" style="margin-top:1.5rem;">
+        <p>All coaching is delivered virtually. You do not need to be local to North Carolina to work with HR Expert to go.</p>
+      </div>
+    </div>
+
+    <div>
       <div class="contact-item">
         <p class="contact-label">Email</p>
         <p class="contact-value"><a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a></p>
       </div>
-
-      <form action="https://formspree.io/f/mdaraqrk" method="POST" style="margin-top:2rem;">
-        <div style="margin-bottom:1.25rem;">
-          <label style="display:block; font-size:0.75rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem;">Your name</label>
-          <input type="text" name="name" required style="width:100%; padding:0.75rem 1rem; border:1px solid var(--light-gray); border-radius:5px; font-family:'Inter',sans-serif; font-size:0.95rem; color:var(--charcoal); outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--light-gray)'" />
-        </div>
-        <div style="margin-bottom:1.25rem;">
-          <label style="display:block; font-size:0.75rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem;">Email address</label>
-          <input type="email" name="email" required style="width:100%; padding:0.75rem 1rem; border:1px solid var(--light-gray); border-radius:5px; font-family:'Inter',sans-serif; font-size:0.95rem; color:var(--charcoal); outline:none; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--light-gray)'" />
-        </div>
-        <div style="margin-bottom:1.25rem;">
-          <label style="display:block; font-size:0.75rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:0.4rem;">Message</label>
-          <textarea name="message" required rows="5" style="width:100%; padding:0.75rem 1rem; border:1px solid var(--light-gray); border-radius:5px; font-family:'Inter',sans-serif; font-size:0.95rem; color:var(--charcoal); outline:none; resize:vertical; transition:border-color 0.2s;" onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--light-gray)'"></textarea>
-        </div>
-        <button type="submit" style="background:var(--navy); color:#fff; font-family:'Sora',sans-serif; font-weight:600; font-size:0.95rem; padding:0.9rem 2rem; border:none; border-radius:5px; cursor:pointer; transition:background 0.2s; width:100%;" onmouseover="this.style.background='var(--slate)'" onmouseout="this.style.background='var(--navy)'">Send message</button>
-      </form>
-
-<div class="contact-item">
-        <p class="contact-label">Mailing address</p>
-        <p class="contact-value">
-          HR Expert to go<br>
-          40 Hanor Lane, #472<br>
-          Wendell, NC 27591
-        </p>
-      </div>
-
       <div class="contact-item">
         <p class="contact-label">Hours</p>
         <p class="contact-value">Sessions are scheduled virtually and flexibly. Discovery calls are typically available within a few days of request.</p>
       </div>
-
-      <div class="contact-note">
-        <p>All coaching is delivered virtually. You do not need to be local to Raleigh or North Carolina to work with HR Expert to go.</p>
+      <div class="contact-item">
+        <p class="contact-label">Mailing address</p>
+        <p class="contact-value">HR Expert to go<br>40 Hanor Lane, #472<br>Wendell, NC 27591</p>
+      </div>
+      <div class="contact-cta">
+        <h2>The best first step is a discovery call.</h2>
+        <p>Rather than going back and forth by email, a short discovery call is the fastest way to figure out whether and how I can help.</p>
+        <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="btn-gold">Book a free discovery call</a>
       </div>
     </div>
 
-    <div class="contact-cta">
-      <h2>The best first step is a discovery call.</h2>
-      <p>Rather than going back and forth by email, a short discovery call is the fastest way to figure out whether and how I can help. It is free, it is focused, and there is no commitment on either side.</p>
-      <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="btn-gold">Book a free discovery call</a>
-      <span class="contact-cta-note">Usually available within a few days</span>
-    </div>
   </div>
 </section>
 
