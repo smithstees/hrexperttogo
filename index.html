@@ -41,16 +41,17 @@
   img { display: block; max-width: 100%; }
   a { color: inherit; text-decoration: none; }
 
-    /* NAV */
+      /* NAV */
   nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
   .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
-  .nav-logo img { height: 52px; width: auto; display: block; }
+  .nav-logo a { display: block; }
+  .nav-logo img { height: 44px; width: auto; display: block; }
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
   .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; text-decoration: none; }
   .nav-links a:hover { color: var(--navy); }
   .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; transition: background 0.2s !important; }
   .nav-cta:hover { background: var(--slate) !important; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; margin-left: auto; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
   .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
   .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
   .mobile-menu a { font-size: 1rem; color: var(--slate); font-weight: 500; padding: 0.85rem 0; border-bottom: 1px solid var(--light-gray); text-decoration: none; display: block; }
@@ -429,11 +430,10 @@
     font-weight: 600;
   }
 
-  /* FOOTER */
+    /* FOOTER */
   footer { background: var(--navy); padding: 3.5rem 2rem 2rem; }
   .footer-inner { max-width: 1060px; margin: 0 auto; }
   .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-  .footer-brand img { height: 40px; width: auto; margin-bottom: 1rem; }
   .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 220px; }
   .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
   .footer-col a { display: block; font-size: 0.88rem; color: rgba(255,255,255,0.6); margin-bottom: 0.6rem; transition: color 0.2s; text-decoration: none; }
@@ -444,7 +444,6 @@
   .footer-legal a { font-size: 0.8rem; color: rgba(255,255,255,0.35); transition: color 0.2s; text-decoration: none; }
   .footer-legal a:hover { color: var(--gold); }
 
-  
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
@@ -453,8 +452,11 @@
     .hero { padding: 3.5rem 1.25rem; }
     .section { padding: 3.5rem 1.25rem; }
     .cta-section { padding: 4rem 1.25rem; }
+    .cta-band { padding: 3.5rem 1.25rem; }
     .about-layout { grid-template-columns: 1fr; }
     .about-photo { position: static; max-width: 240px; margin: 0 auto; display: block; }
+    .header-photo { display: none; }
+    .page-header-inner { grid-template-columns: 1fr; }
     .story-layout { grid-template-columns: 1fr; }
     .story-sidebar { position: static; }
     .honest-layout { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -463,19 +465,17 @@
     .services-layout { grid-template-columns: 1fr; }
     .service-row:nth-child(even) { padding: 2rem 0; border-left: none; }
     .service-row:last-child:nth-child(odd) { max-width: 100%; }
-    .consult-box { grid-template-columns: 1fr; padding: 2.5rem 1.75rem; }
     .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
-    .page-header-inner { grid-template-columns: 1fr; }
-    .header-photo { max-width: 240px; margin: 0 auto; display: block; }
     .footer-top { grid-template-columns: 1fr; gap: 2rem; }
     .footer-bottom { flex-direction: column; align-items: flex-start; }
     footer { padding: 2.5rem 1.25rem 2rem; }
-    .steps { grid-template-columns: 1fr 1fr; }
+    .page-header { padding: 3rem 1.25rem; }
+    .legal-body { padding: 3rem 1.25rem 4rem; }
+    .faq-section { padding: 3.5rem 1.25rem 4rem; }
     .cta-details { gap: 1.5rem; }
   }
   @media (max-width: 480px) {
     .outcomes-grid { grid-template-columns: 1fr; }
-    .steps { grid-template-columns: 1fr; }
   }
 </style>
 <!-- Google Analytics -->
@@ -493,7 +493,7 @@
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">
-      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
+      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" style="height:44px; width:auto;" /></a>
     </div>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
@@ -697,7 +697,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" />
+        <img src="HR_Expert_to_Go_Favicon.png" alt="HR Expert to go" style="height:56px; width:auto; margin-bottom:1rem;" />
         <p>Practical 1:1 career coaching for college students, recent graduates, and early-career professionals.</p>
       </div>
       <div class="footer-col">
@@ -711,8 +711,6 @@
       <div class="footer-col">
         <h4>Get started</h4>
         <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener">Book a discovery call</a>
-        <a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a>
-        <a href="tel:9193229019">919-322-9019</a>
       </div>
     </div>
     <div class="footer-bottom">
