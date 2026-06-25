@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Ty Smith | HR Expert to Go</title>
+<meta name="description" content="Ty Smith is a SHRM-CP certified HR professional with 20+ years of experience in HR leadership and consulting. Learn why HR Expert to Go exists and what makes this coaching different." />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #0D1B3D; --slate: #2F4A6D; --gold: #D4AF37; --gold-light: #e8c84a; --ivory: #FBF7F0; --ivory-dark: #EDE8DF; --charcoal: #23272E; --gray: #6B7280; --light-gray: #E5E7EB; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: #fff; }
+  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
+  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .nav-logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--navy); }
+  .nav-logo-text span { color: var(--gold); }
+  .nav-links { display: flex; align-items: center; gap: 2.25rem; list-style: none; }
+  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; }
+  .nav-cta:hover { background: var(--slate) !important; }
+
+  .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 5rem 2rem; }
+  .page-header-inner { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 340px; gap: 5rem; align-items: center; }
+  .page-kicker { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.6rem); letter-spacing: -0.02em; margin-bottom: 1.25rem; }
+  .page-header h1 em { font-style: normal; color: var(--gold); }
+  .page-header p { font-size: 1.05rem; color: var(--slate); line-height: 1.8; margin-bottom: 1rem; }
+  .header-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: center top; border-radius: 4px; box-shadow: 0 12px 48px rgba(13,27,61,0.12); }
+
+  .section { padding: 5rem 2rem; }
+  .section-inner { max-width: 1060px; margin: 0 auto; }
+  .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .section-heading { font-size: clamp(1.5rem, 2.5vw, 2rem); letter-spacing: -0.015em; margin-bottom: 1.25rem; }
+
+  .story { background: #fff; }
+  .story-layout { display: grid; grid-template-columns: 1fr 340px; gap: 5rem; align-items: start; }
+  .story-text p { font-size: 1rem; color: var(--slate); line-height: 1.85; margin-bottom: 1.25rem; }
+  .story-text h2 { font-size: 1.3rem; margin: 2.5rem 0 1rem; }
+  .story-text h2 em { font-style: normal; color: var(--gold); }
+  .story-quote { border-left: 3px solid var(--gold); padding: 0.5rem 0 0.5rem 1.5rem; margin: 2rem 0; font-size: 1.08rem; font-style: italic; color: var(--navy); line-height: 1.65; }
+
+  .story-sidebar { position: sticky; top: 90px; display: flex; flex-direction: column; gap: 1.5rem; }
+  .sidebar-card { background: var(--ivory); border-radius: 6px; padding: 1.5rem; }
+  .sidebar-card h3 { font-size: 0.88rem; font-family: 'Sora', sans-serif; font-weight: 600; color: var(--navy); margin-bottom: 0.85rem; }
+  .sidebar-card p { font-size: 0.88rem; color: var(--slate); line-height: 1.7; }
+  .cred-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .cred-list li { font-size: 0.88rem; color: var(--slate); padding-left: 1rem; position: relative; line-height: 1.5; }
+  .cred-list li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+
+  .cta-band { background: var(--navy); padding: 5rem 2rem; }
+  .cta-band-inner { max-width: 660px; margin: 0 auto; text-align: center; }
+  .cta-band-inner h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); color: #fff; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .cta-band-inner h2 em { font-style: normal; color: var(--gold); }
+  .cta-band-inner p { font-size: 1rem; color: rgba(255,255,255,0.68); line-height: 1.8; margin-bottom: 2rem; }
+  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2.25rem; border-radius: 5px; display: inline-block; transition: background 0.2s, transform 0.15s; }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .cta-fine { margin-top: 1rem; font-size: 0.8rem; color: rgba(255,255,255,0.35); display: block; }
+
+  footer { background: var(--charcoal); padding: 2.5rem 2rem; }
+  .footer-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; color: #fff; }
+  .footer-logo span { color: var(--gold); }
+  .footer-links { display: flex; gap: 1.75rem; flex-wrap: wrap; }
+  .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+
+  @media (max-width: 860px) {
+    .page-header-inner { grid-template-columns: 1fr; }
+    .header-photo { max-width: 260px; }
+    .story-layout { grid-template-columns: 1fr; }
+    .story-sidebar { position: static; }
+  }
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .page-header { padding: 3.5rem 1.25rem; }
+    .section { padding: 3.5rem 1.25rem; }
+    .cta-band { padding: 3.5rem 1.25rem; }
+    footer { padding: 2rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo-text">HR Expert <span>to go</span></span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html#discovery" class="nav-cta">Book a discovery call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <div>
+      <span class="page-kicker">About</span>
+      <h1>Hi, I am Ty.<br><em>I am glad you found me.</em></h1>
+      <p>Some of the most meaningful moments in my career have not happened in a boardroom or during a performance review. They have happened months or even years later, when someone reaches back out to tell me they landed the job, earned the promotion, or found a career they truly enjoy.</p>
+      <p>Those are the moments that remind me why I do this work.</p>
+    </div>
+    <img src="TySmithAbout.jpg" alt="Ty Smith, founder of HR Expert to Go" class="header-photo" />
+  </div>
+</div>
+
+<section class="section story">
+  <div class="section-inner">
+    <div class="story-layout">
+      <div class="story-text">
+        <span class="section-label">The story behind HR Expert to Go</span>
+        <p>Long before HR Expert to Go existed, people found their way to my office looking for career advice. Sometimes it was a college student trying to figure out what came next. Sometimes it was an employee navigating a career change or preparing for a promotion. Other times it was someone who simply needed an honest conversation, a little direction, and someone who believed in them.</p>
+        <p>I realized something over the years: helping people grow and develop has always been my favorite part of working in Human Resources.</p>
+
+        <h2>What I bring to <em>every session</em></h2>
+        <p>I have spent most of my career on the other side of the hiring table. Reviewing resumes, interviewing candidates, making hiring decisions, coaching leaders, and helping employees grow. That experience spans over 20 years of HR leadership and consulting across corporate, non-profit, and growing organizations of all sizes.</p>
+        <p>I have seen what helps people stand out. And I have seen talented candidates miss opportunities simply because no one ever showed them how the hiring process really works from the inside. That gap is what HR Expert to Go is designed to close.</p>
+
+        <div class="story-quote">
+          "My goal is not to promise you a job. No one can honestly do that. My goal is to help you become the strongest candidate you can be."
+        </div>
+
+        <p>If your resume is not telling your story, I will tell you. If your interview answers need work, I will tell you. And if you are ready? I will tell you that too.</p>
+        <p>I believe the kindest thing I can do is be honest with you. Real confidence does not come from hearing what you want to hear. It comes from knowing you are prepared.</p>
+
+        <h2>Who I work with</h2>
+        <p>Whether you are a college student preparing for your first professional opportunity, a recent graduate trying to stand out in a competitive market, or an early-career professional ready for your next move, you will find someone here who is genuinely invested in your story.</p>
+        <p>Because this is not just about getting a job. It is about building confidence, making informed career decisions, and creating opportunities that can shape the rest of your life.</p>
+        <p>If years from now you are looking back on your career and you are glad our paths crossed, I will consider that a success.</p>
+      </div>
+
+      <div class="story-sidebar">
+        <div class="sidebar-card">
+          <h3>Credentials and background</h3>
+          <ul class="cred-list">
+            <li>SHRM-CP certified HR professional</li>
+            <li>20+ years in HR leadership and consulting</li>
+            <li>Experience across corporate, non-profit, and growing organizations</li>
+            <li>Extensive background in recruiting, talent development, and employee coaching</li>
+            <li>Founder, HR Expert to Go, operating under Smith Consolidated</li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>What this is not</h3>
+          <p>HR Expert to Go is not a recruiting firm. Ty does not place candidates, represent employers, or guarantee employment outcomes. This is private coaching designed to help you show up as your strongest self.</p>
+        </div>
+        <div class="sidebar-card">
+          <h3>How to get started</h3>
+          <p>The best first step is a free discovery call. It is 20 minutes, there is no commitment, and it is the fastest way to figure out whether and how working together makes sense.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="cta-band-inner">
+    <h2>Ready to find out<br><em>exactly where you stand?</em></h2>
+    <p>Book a free discovery call. We will talk through where you are, what is getting in the way, and what the right next step looks like.</p>
+    <a href="index.html#discovery" class="btn-gold">Book a free discovery call</a>
+    <span class="cta-fine">Usually available within a few days</span>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">HR Expert <span>to go</span></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="#">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 HR Expert to Go. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
