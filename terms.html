@@ -44,14 +44,20 @@
   .footer-links a:hover { color: var(--gold); }
   .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
 
-  @media (max-width: 600px) { .nav-links { display: none; } .page-header { padding: 3rem 1.25rem; } .legal-body { padding: 3rem 1.25rem 4rem; } }
+   .page-header { padding: 3rem 1.25rem; } .legal-body { padding: 3rem 1.25rem 4rem; } }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+  }
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" style="height:36px; width:auto;">
+    <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" style="height:40px; width:auto;" /></a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#services">Services</a></li>
@@ -60,8 +66,27 @@
       <li><a href="contact.html">Contact</a></li>
       <li><a href="index.html#discovery" class="nav-cta">Book a discovery call</a></li>
     </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#services">Services</a>
+  <a href="about.html">About</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html#discovery" class="mob-cta">Book a discovery call</a>
+</div>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+    document.querySelector('.mobile-menu').style.display === 'flex'
+      ? document.querySelector('.mobile-menu').style.display = 'none'
+      : document.querySelector('.mobile-menu').style.display = 'flex';
+  }
+</script>
 
 <div class="page-header">
   <div class="page-header-inner">
@@ -119,15 +144,33 @@
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">HR Expert <span>to go</span></div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="index.html#services">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" />
+        <p>Practical 1:1 career coaching for college students, recent graduates, and early-career professionals.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <a href="index.html#discovery">Book a discovery call</a>
+        <a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a>
+        <a href="tel:9193229019">919-322-9019</a>
+      </div>
     </div>
-    <p class="footer-copy">&copy; 2025 HR Expert to Go. All rights reserved.</p>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 HR Expert to Go. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
   </div>
 </footer>
 
