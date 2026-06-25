@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About Ty Smith | HR Expert to Go</title>
-<meta name="description" content="Ty Smith is a SHRM-CP certified HR professional with 20+ years of experience in HR leadership and consulting. Learn why HR Expert to Go exists and what makes this coaching different." />
+<title>About Ty Smith | HR Expert to go</title>
+<meta name="description" content="Ty Smith is a SHRM-CP certified HR professional with 20+ years of experience in HR leadership and consulting. Learn why HR Expert to go exists and what makes this coaching different." />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -95,11 +95,38 @@
     .cta-band { padding: 3.5rem 1.25rem; }
     footer { padding: 2rem 1.25rem; }
   }
+  
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-photo-col { max-width: 260px; margin: 0 auto; }
+    .hero { padding: 3.5rem 1.25rem; }
+    .section { padding: 3.5rem 1.25rem; }
+    .cta-section { padding: 4rem 1.25rem; }
+    .about-layout { grid-template-columns: 1fr; }
+    .about-photo { position: static; max-width: 240px; margin: 0 auto; display: block; }
+    .story-layout { grid-template-columns: 1fr; }
+    .story-sidebar { position: static; }
+    .honest-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .expect-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .outcomes-grid { grid-template-columns: 1fr 1fr; }
+    .services-layout { grid-template-columns: 1fr; }
+    .service-row:nth-child(even) { padding: 2rem 0; border-left: none; }
+    .service-row:last-child:nth-child(odd) { max-width: 100%; }
+    .consult-box { grid-template-columns: 1fr; padding: 2.5rem 1.75rem; }
+    .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .page-header-inner { grid-template-columns: 1fr; }
+    .header-photo { max-width: 240px; margin: 0 auto; display: block; }
     .footer-top { grid-template-columns: 1fr; gap: 2rem; }
     .footer-bottom { flex-direction: column; align-items: flex-start; }
+    footer { padding: 2.5rem 1.25rem 2rem; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .cta-details { gap: 1.5rem; }
+  }
+  @media (max-width: 480px) {
+    .outcomes-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -107,16 +134,16 @@
 
 <nav>
   <div class="nav-inner">
-    <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" style="height:40px; width:auto;" /></a>
+    <div class="nav-logo">
+      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
+    </div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#services">Services</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="index.html#discovery" class="nav-cta">Book a discovery call</a></li>
     </ul>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -131,10 +158,8 @@
 </div>
 <script>
   function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
-    document.querySelector('.mobile-menu').style.display === 'flex'
-      ? document.querySelector('.mobile-menu').style.display = 'none'
-      : document.querySelector('.mobile-menu').style.display = 'flex';
+    var menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
   }
 </script>
 
@@ -146,7 +171,7 @@
       <p>Some of the most meaningful moments in my career have not happened in a boardroom or during a performance review. They have happened months or even years later, when someone reaches back out to tell me they landed the job, earned the promotion, or found a career they truly enjoy.</p>
       <p>Those are the moments that remind me why I do this work.</p>
     </div>
-    <img src="TySmithAbout.jpg" alt="Ty Smith, founder of HR Expert to Go" class="header-photo" />
+    <img src="TySmithAbout.jpg" alt="Ty Smith, founder of HR Expert to go" class="header-photo" />
   </div>
 </div>
 
@@ -154,13 +179,13 @@
   <div class="section-inner">
     <div class="story-layout">
       <div class="story-text">
-        <span class="section-label">The story behind HR Expert to Go</span>
-        <p>Long before HR Expert to Go existed, people found their way to my office looking for career advice. Sometimes it was a college student trying to figure out what came next. Sometimes it was an employee navigating a career change or preparing for a promotion. Other times it was someone who simply needed an honest conversation, a little direction, and someone who believed in them.</p>
+        <span class="section-label">The story behind HR Expert to go</span>
+        <p>Long before HR Expert to go existed, people found their way to my office looking for career advice. Sometimes it was a college student trying to figure out what came next. Sometimes it was an employee navigating a career change or preparing for a promotion. Other times it was someone who simply needed an honest conversation, a little direction, and someone who believed in them.</p>
         <p>I realized something over the years: helping people grow and develop has always been my favorite part of working in Human Resources.</p>
 
         <h2>What I bring to <em>every session</em></h2>
         <p>I have spent most of my career on the other side of the hiring table. Reviewing resumes, interviewing candidates, making hiring decisions, coaching leaders, and helping employees grow. That experience spans over 20 years of HR leadership and consulting across corporate, non-profit, and growing organizations of all sizes.</p>
-        <p>I have seen what helps people stand out. And I have seen talented candidates miss opportunities simply because no one ever showed them how the hiring process really works from the inside. That gap is what HR Expert to Go is designed to close.</p>
+        <p>I have seen what helps people stand out. And I have seen talented candidates miss opportunities simply because no one ever showed them how the hiring process really works from the inside. That gap is what HR Expert to go is designed to close.</p>
 
         <div class="story-quote">
           "My goal is not to promise you a job. No one can honestly do that. My goal is to help you become the strongest candidate you can be."
@@ -183,12 +208,12 @@
             <li>20+ years in HR leadership and consulting</li>
             <li>Experience across corporate, non-profit, and growing organizations</li>
             <li>Extensive background in recruiting, talent development, and employee coaching</li>
-            <li>Founder, HR Expert to Go, operating under Smith Consolidated</li>
+            <li>Founder, HR Expert to go, operating under Smith Consolidated</li>
           </ul>
         </div>
         <div class="sidebar-card">
           <h3>What this is not</h3>
-          <p>HR Expert to Go is not a recruiting firm. Ty does not place candidates, represent employers, or guarantee employment outcomes. This is private coaching designed to help you show up as your strongest self.</p>
+          <p>HR Expert to go is not a recruiting firm. Ty does not place candidates, represent employers, or guarantee employment outcomes. This is private coaching designed to help you show up as your strongest self.</p>
         </div>
         <div class="sidebar-card">
           <h3>How to get started</h3>
@@ -212,7 +237,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" />
+        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" />
         <p>Practical 1:1 career coaching for college students, recent graduates, and early-career professionals.</p>
       </div>
       <div class="footer-col">
@@ -231,7 +256,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2025 HR Expert to Go. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2025 HR Expert to go. All rights reserved.</p>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
