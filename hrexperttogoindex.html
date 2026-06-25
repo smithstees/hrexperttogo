@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HR Expert to Go | Virtual Career Coaching for College Students & Recent Graduates</title>
+<meta name="description" content="Practical 1:1 career coaching for college students, recent graduates, and early-career professionals. Resume help, interview prep, salary negotiation, and job search strategy from a real HR expert with 20+ years of experience." />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D1B3D;
+    --slate: #2F4A6D;
+    --gold: #D4AF37;
+    --gold-light: #e8c84a;
+    --ivory: #FBF7F0;
+    --ivory-dark: #EDE8DF;
+    --charcoal: #23272E;
+    --gray: #6B7280;
+    --light-gray: #E5E7EB;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--charcoal);
+    background: #fff;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--navy);
+  }
+
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 0 2rem;
+  }
+  .nav-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+  }
+  .nav-logo-text {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--navy);
+  }
+  .nav-logo-text span { color: var(--gold); }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.88rem;
+    color: var(--slate);
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta {
+    background: var(--navy) !important;
+    color: #fff !important;
+    padding: 0.5rem 1.25rem !important;
+    border-radius: 5px;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--slate) !important; }
+
+  /* HERO */
+  .hero {
+    background: var(--ivory);
+    padding: 5.5rem 2rem 5rem;
+    border-bottom: 1px solid var(--ivory-dark);
+  }
+  .hero-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 5rem;
+    align-items: center;
+  }
+  .hero-kicker {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 3.5vw, 2.9rem);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    color: var(--navy);
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--gold);
+  }
+  .hero-sub {
+    font-size: 1.08rem;
+    color: var(--slate);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 480px;
+  }
+  .btn-primary {
+    background: var(--navy);
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.9rem 2.25rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.2s, transform 0.15s;
+    white-space: nowrap;
+  }
+  .btn-primary:hover { background: var(--slate); transform: translateY(-1px); color: #fff; }
+  .hero-reassurance {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+  .hero-reassurance strong { color: var(--navy); font-weight: 600; }
+  .hero-trust-line {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--ivory-dark);
+    font-size: 0.83rem;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+  .hero-trust-line strong { color: var(--navy); font-weight: 600; }
+
+  /* Hero photo */
+  .hero-photo-col { position: relative; }
+  .hero-photo-accent {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    opacity: 0.22;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .hero-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 12px 48px rgba(13,27,61,0.12);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* SECTION */
+  .section { padding: 5.5rem 2rem; }
+  .section-inner { max-width: 1060px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.85rem;
+    display: block;
+  }
+  .section-heading {
+    font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+    color: var(--navy);
+    letter-spacing: -0.015em;
+    margin-bottom: 1.25rem;
+  }
+  .section-intro {
+    font-size: 1.05rem;
+    color: var(--slate);
+    line-height: 1.75;
+    max-width: 580px;
+  }
+
+  /* OUTCOMES */
+  .outcomes { background: #fff; }
+  .outcomes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-top: 3.5rem;
+    border-top: 1px solid var(--light-gray);
+    border-left: 1px solid var(--light-gray);
+  }
+  .outcome-item {
+    padding: 2.25rem 2rem;
+    border-right: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .outcome-number {
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .outcome-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+    font-family: 'Sora', sans-serif;
+  }
+  .outcome-desc {
+    font-size: 0.88rem;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+
+  /* SERVICES */
+  .services { background: var(--ivory); }
+  .services-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 3.5rem;
+    border-top: 1px solid var(--ivory-dark);
+  }
+  .service-row {
+    padding: 2rem 2.5rem 2rem 0;
+    border-bottom: 1px solid var(--ivory-dark);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    align-items: start;
+    cursor: default;
+    transition: background 0.15s;
+  }
+  .service-row:nth-child(even) {
+    padding: 2rem 0 2rem 2.5rem;
+    border-left: 1px solid var(--ivory-dark);
+  }
+  .service-row:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    border-left: none;
+  }
+  .service-name {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+    transition: color 0.2s;
+  }
+  .service-desc {
+    font-size: 0.88rem;
+    color: var(--gray);
+    line-height: 1.65;
+  }
+  .service-arrow {
+    font-size: 1rem;
+    color: var(--gold);
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: transform 0.2s;
+  }
+  .service-row:hover .service-arrow { transform: translateX(3px); }
+  .service-row:hover .service-name { color: var(--gold); }
+
+  /* ABOUT */
+  .about { background: #fff; }
+  .about-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+  .about-photo {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    aspect-ratio: 4/5;
+    object-position: center top;
+    box-shadow: 0 8px 36px rgba(13,27,61,0.1);
+    position: sticky;
+    top: 90px;
+  }
+  .about-body h2 {
+    font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.015em;
+  }
+  .about-body h2 em { font-style: normal; color: var(--gold); }
+  .about-body p {
+    font-size: 0.98rem;
+    color: var(--slate);
+    line-height: 1.8;
+    margin-bottom: 1.1rem;
+  }
+  .about-quote {
+    border-left: 3px solid var(--gold);
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    margin: 1.75rem 0;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--navy);
+    line-height: 1.65;
+  }
+  .about-credentials {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--light-gray);
+    font-size: 0.82rem;
+    color: var(--gray);
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .about-cred-item strong {
+    display: block;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 2px;
+  }
+
+  /* WHAT TO EXPECT */
+  .expect { background: var(--ivory); }
+  .expect-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+  .expect-text h2 {
+    font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.015em;
+  }
+  .expect-text h2 em { font-style: normal; color: var(--gold); }
+  .expect-text p {
+    font-size: 0.98rem;
+    color: var(--slate);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  .expect-list {
+    list-style: none;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  .expect-list li {
+    font-size: 0.93rem;
+    color: var(--charcoal);
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.65;
+  }
+  .expect-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
+  }
+
+  /* CTA */
+  .cta-section { background: var(--navy); padding: 6rem 2rem; }
+  .cta-inner {
+    max-width: 660px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cta-inner h2 {
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+  }
+  .cta-inner h2 em { font-style: normal; color: var(--gold); }
+  .cta-inner p {
+    font-size: 1.02rem;
+    color: rgba(255,255,255,0.68);
+    line-height: 1.8;
+    margin-bottom: 2.25rem;
+  }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.2s, transform 0.15s;
+  }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .cta-fine {
+    margin-top: 1.1rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.35);
+    padding-bottom: 3rem;
+  }
+  .cta-details {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  }
+  .cta-detail {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+  .cta-detail strong {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.98rem;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); padding: 2.5rem 2rem; }
+  .footer-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-logo {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #fff;
+  }
+  .footer-logo span { color: var(--gold); }
+  .footer-links { display: flex; gap: 1.75rem; flex-wrap: wrap; }
+  .footer-links a {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+
+  /* RESPONSIVE */
+  @media (max-width: 860px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-photo-col { max-width: 300px; }
+    .outcomes-grid { grid-template-columns: 1fr 1fr; }
+    .about-layout { grid-template-columns: 1fr; }
+    .about-photo { position: static; max-width: 260px; }
+    .expect-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .services-layout { grid-template-columns: 1fr; }
+    .service-row:nth-child(even) { padding: 2rem 0; border-left: none; }
+    .service-row:last-child:nth-child(odd) { max-width: 100%; }
+  }
+  @media (max-width: 600px) {
+    .nav-links { display: none; }
+    .hero { padding: 3.5rem 1.25rem; }
+    .section { padding: 3.5rem 1.25rem; }
+    .cta-section { padding: 4rem 1.25rem; }
+    footer { padding: 2rem 1.25rem; }
+    .outcomes-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <!-- Swap this comment for <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" style="height:36px;"> once uploaded -->
+      <span class="nav-logo-text">HR Expert <span>to go</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#discovery" class="nav-cta">Book a discovery call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="hero-kicker">Virtual career coaching for early-career professionals</p>
+      <h1>You have worked hard<br>to get here.<br><em>Let's make it count.</em></h1>
+      <p class="hero-sub">The job market is competitive and the hiring process is not always transparent. What makes the difference is not just what you have done. It is how well you can communicate it, prepare for it, and position yourself around it.</p>
+      <a href="#discovery" class="btn-primary">Book a free discovery call</a>
+      <p class="hero-reassurance"><strong>20 minutes. No commitment.</strong> We will talk through where you are, what is getting in the way, and what the right next step looks like.</p>
+      <div class="hero-trust-line">
+        Guided by <strong>Ty Smith, SHRM-CP</strong> — 20+ years of HR leadership and consulting across corporate, non-profit, and growing organizations.
+      </div>
+    </div>
+    <div class="hero-photo-col">
+      <div class="hero-photo-accent"></div>
+      <img src="TyS.jpg" alt="Ty Smith, founder of HR Expert to Go" class="hero-photo" />
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section class="section outcomes" id="outcomes">
+  <div class="section-inner">
+    <span class="section-label">What changes</span>
+    <h2 class="section-heading">You will leave knowing exactly where you stand.</h2>
+    <p class="section-intro">Not with a pep talk. With a stronger resume, sharper answers, a clearer strategy, and the kind of confidence that only comes from being genuinely prepared.</p>
+    <div class="outcomes-grid">
+      <div class="outcome-item">
+        <div class="outcome-number">01</div>
+        <p class="outcome-label">A resume you know how to own</p>
+        <p class="outcome-desc">We work through it together so you understand what recruiters and hiring managers are actually looking for and how to speak directly to it.</p>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-number">02</div>
+        <p class="outcome-label">Interviews you are ready for</p>
+        <p class="outcome-desc">Not rehearsed scripts. Real answers that reflect who you are and what you bring.</p>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-number">03</div>
+        <p class="outcome-label">A search with direction</p>
+        <p class="outcome-desc">A focused strategy that gets your materials seen by the right people.</p>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-number">04</div>
+        <p class="outcome-label">Offers you understand</p>
+        <p class="outcome-desc">Know what you are worth and how to ask for it before you sign anything.</p>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-number">05</div>
+        <p class="outcome-label">A profile that gets found</p>
+        <p class="outcome-desc">Positioned so the right opportunities have a chance to find you too.</p>
+      </div>
+      <div class="outcome-item">
+        <div class="outcome-number">06</div>
+        <p class="outcome-label">Clarity going forward</p>
+        <p class="outcome-desc">Not just a better application. A better understanding of how to keep growing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="section-inner">
+    <span class="section-label">How we work together</span>
+    <h2 class="section-heading">Every session is built around your situation, not a script.</h2>
+    <p class="section-intro">We start with a free discovery call to understand exactly where you are. From there, I recommend what will actually move the needle.</p>
+    <div class="services-layout">
+      <div class="service-row">
+        <div>
+          <p class="service-name">Resume coaching</p>
+          <p class="service-desc">We go through your resume together, find what is not working, and rebuild it around the roles you actually want.</p>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-row">
+        <div>
+          <p class="service-name">Interview preparation</p>
+          <p class="service-desc">We practice real questions, work through your answers, and I give you the kind of honest feedback most people never get before the actual interview.</p>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-row">
+        <div>
+          <p class="service-name">Salary negotiation</p>
+          <p class="service-desc">We evaluate the offer together, talk through what is reasonable to ask for, and prepare you to have that conversation with confidence.</p>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-row">
+        <div>
+          <p class="service-name">Job search strategy</p>
+          <p class="service-desc">We build an organized, focused approach designed to get your materials in front of the right people at the right companies.</p>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-row">
+        <div>
+          <p class="service-name">Professional profile optimization</p>
+          <p class="service-desc">We position your professional profile so recruiters can find you and what they find makes them want to reach out.</p>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="section-inner">
+    <div class="about-layout">
+      <img src="TySmithAbout.jpg" alt="Ty Smith, HR Expert to Go" class="about-photo" />
+      <div class="about-body">
+        <span class="section-label">Why this works</span>
+        <h2>You are getting guidance from someone who has been <em>inside the process.</em></h2>
+        <p>Most career advice comes from people who have looked for jobs. This comes from someone who has spent over 20 years inside the process — as a certified HR professional and leadership consultant across corporate, non-profit, and growing organizations — making hiring decisions, coaching employees, and watching what actually separates the candidates who move forward from the ones who do not.</p>
+        <p>I have seen talented people miss great opportunities simply because no one ever showed them how the process really works from the inside. That gap is exactly what HR Expert to Go is designed to close.</p>
+        <div class="about-quote">
+          "My goal is not to promise you a job. No one can honestly do that. My goal is to help you become the strongest candidate you can be."
+        </div>
+        <p>Some of the most meaningful moments in this work happen months or even years later, when someone reaches back out to say they landed the role, earned the promotion, or finally found a career they enjoy. That is what preparation makes possible.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW A DISCOVERY CALL WORKS -->
+<section class="section expect" id="how">
+  <div class="section-inner">
+    <span class="section-label">How a discovery call works</span>
+    <h2 class="section-heading">Twenty minutes. No agenda except figuring out <em>what you actually need.</em></h2>
+    <p class="section-intro">A discovery call is not a sales pitch. It is a short conversation to understand where you are and whether I am the right person to help you move forward.</p>
+    <div class="expect-layout" style="margin-top:3rem;">
+      <div>
+        <ul class="expect-list">
+          <li><strong style="color:var(--navy);font-weight:600;">We start with you.</strong> What is your situation right now, what have you tried, and what feels stuck.</li>
+          <li><strong style="color:var(--navy);font-weight:600;">We get specific.</strong> Whether the biggest blocker is your resume, your interviews, your search strategy, or something else entirely.</li>
+          <li><strong style="color:var(--navy);font-weight:600;">I give you a clear recommendation.</strong> The right next step for your situation, not a packaged program that may or may not fit.</li>
+          <li><strong style="color:var(--navy);font-weight:600;">If there is a fit, we talk about how to work together.</strong> If there is not, I will tell you that too and point you in a better direction.</li>
+        </ul>
+      </div>
+      <div class="expect-text">
+        <h2 style="font-size:1.15rem; margin-bottom:1rem;">What it is not</h2>
+        <p>It is not a free coaching session. It is not a chance to get a quick resume review on the call. And it is not a commitment to anything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="discovery">
+  <div class="cta-inner">
+    <h2>Ready to find out<br><em>exactly where you stand?</em></h2>
+    <p>Book a free discovery call. We will talk through where you are, what is getting in the way, and what the right next step looks like. No commitment. No pressure. Just an honest conversation.</p>
+    <div class="cta-details">
+      <div class="cta-detail">
+        <strong>Virtual</strong>
+        Video call, no travel
+      </div>
+      <div class="cta-detail">
+        <strong>Free</strong>
+        No commitment required
+      </div>
+      <div class="cta-detail">
+        <strong>Honest</strong>
+        Fit-first, not sales-first
+      </div>
+    </div>
+    <a href="#" class="btn-gold">Book your free discovery call</a>
+    <p class="cta-fine">Usually available within a few days</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">HR Expert <span>to go</span></div>
+    <div class="footer-links">
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="#">Resources</a>
+      <a href="#">Book a discovery call</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 HR Expert to Go. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

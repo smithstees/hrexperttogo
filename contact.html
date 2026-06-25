@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | HR Expert to Go</title>
+<meta name="description" content="Get in touch with HR Expert to Go. Book a free discovery call or send a message directly to Ty Smith, SHRM-CP." />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0D1B3D;
+    --slate: #2F4A6D;
+    --gold: #D4AF37;
+    --gold-light: #e8c84a;
+    --ivory: #FBF7F0;
+    --ivory-dark: #EDE8DF;
+    --charcoal: #23272E;
+    --gray: #6B7280;
+    --light-gray: #E5E7EB;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: #fff; }
+  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
+  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .nav-logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--navy); }
+  .nav-logo-text span { color: var(--gold); }
+  .nav-links { display: flex; align-items: center; gap: 2.25rem; list-style: none; }
+  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; transition: background 0.2s !important; white-space: nowrap; }
+  .nav-cta:hover { background: var(--slate) !important; }
+
+  .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 4rem 2rem; }
+  .page-header-inner { max-width: 1060px; margin: 0 auto; }
+  .page-kicker { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.6rem); letter-spacing: -0.02em; }
+  .page-header p { font-size: 1.05rem; color: var(--slate); margin-top: 1rem; max-width: 520px; line-height: 1.75; }
+
+  .contact-section { padding: 5rem 2rem; }
+  .contact-inner { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+
+  .contact-details h2 { font-size: 1.25rem; margin-bottom: 1.75rem; }
+  .contact-item { margin-bottom: 1.75rem; }
+  .contact-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.35rem; }
+  .contact-value { font-size: 0.98rem; color: var(--slate); line-height: 1.6; }
+  .contact-value a { color: var(--navy); font-weight: 500; border-bottom: 1px solid var(--gold); padding-bottom: 1px; transition: color 0.2s; }
+  .contact-value a:hover { color: var(--gold); }
+
+  .contact-note { margin-top: 2.5rem; padding: 1.5rem; background: var(--ivory); border-radius: 6px; border-left: 3px solid var(--gold); }
+  .contact-note p { font-size: 0.9rem; color: var(--slate); line-height: 1.7; }
+
+  .contact-cta { background: var(--navy); border-radius: 8px; padding: 2.5rem; }
+  .contact-cta h2 { font-size: 1.3rem; color: #fff; margin-bottom: 0.75rem; }
+  .contact-cta p { font-size: 0.93rem; color: rgba(255,255,255,0.68); line-height: 1.75; margin-bottom: 1.75rem; }
+  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2rem; border-radius: 5px; display: inline-block; transition: background 0.2s, transform 0.15s; }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .contact-cta-note { font-size: 0.78rem; color: rgba(255,255,255,0.35); margin-top: 0.75rem; display: block; }
+
+  footer { background: var(--charcoal); padding: 2.5rem 2rem; }
+  .footer-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; color: #fff; }
+  .footer-logo span { color: var(--gold); }
+  .footer-links { display: flex; gap: 1.75rem; flex-wrap: wrap; }
+  .footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
+
+  @media (max-width: 860px) { .contact-inner { grid-template-columns: 1fr; gap: 3rem; } }
+  @media (max-width: 600px) { .nav-links { display: none; } .page-header { padding: 3rem 1.25rem; } .contact-section { padding: 3.5rem 1.25rem; } footer { padding: 2rem 1.25rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span class="nav-logo-text">HR Expert <span>to go</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#" class="nav-cta">Book a discovery call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <span class="page-kicker">Get in touch</span>
+    <h1>We would love to hear from you.</h1>
+    <p>Whether you have a question before booking or just want to make sure this is the right fit, reach out. There are no wrong questions here.</p>
+  </div>
+</div>
+
+<section class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-details">
+      <h2>Contact information</h2>
+
+      <div class="contact-item">
+        <p class="contact-label">Email</p>
+        <p class="contact-value"><a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a></p>
+      </div>
+
+      <div class="contact-item">
+        <p class="contact-label">Phone</p>
+        <p class="contact-value"><a href="tel:9193229019">919-322-9019</a></p>
+      </div>
+
+      <div class="contact-item">
+        <p class="contact-label">Mailing address</p>
+        <p class="contact-value">
+          HR Expert to Go<br>
+          40 Hanor Lane, #472<br>
+          Wendell, NC 27591
+        </p>
+      </div>
+
+      <div class="contact-item">
+        <p class="contact-label">Hours</p>
+        <p class="contact-value">Sessions are scheduled virtually and flexibly. Discovery calls are typically available within a few days of request.</p>
+      </div>
+
+      <div class="contact-note">
+        <p>All coaching is delivered virtually. You do not need to be local to Raleigh or North Carolina to work with HR Expert to Go.</p>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <h2>The best first step is a discovery call.</h2>
+      <p>Rather than going back and forth by email, a short discovery call is the fastest way to figure out whether and how I can help. It is free, it is focused, and there is no commitment on either side.</p>
+      <a href="#" class="btn-gold">Book a free discovery call</a>
+      <span class="contact-cta-note">Usually available within a few days</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">HR Expert <span>to go</span></div>
+    <div class="footer-links">
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 HR Expert to Go. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
