@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>HR Expert to Go | Virtual Career Coaching for College Students & Recent Graduates</title>
+<title>HR Expert to go | Virtual Career Coaching for College Students & Recent Graduates</title>
 <meta name="description" content="Practical 1:1 career coaching for college students, recent graduates, and early-career professionals. Resume help, interview prep, salary negotiation, and job search strategy from a real HR expert with 20+ years of experience." />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 <style>
@@ -41,20 +41,22 @@
   img { display: block; max-width: 100%; }
   a { color: inherit; text-decoration: none; }
 
-  /* NAV */
+    /* NAV */
   nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
-  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav-logo img { height: 52px; width: auto; display: block; }
   .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
   .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; text-decoration: none; }
   .nav-links a:hover { color: var(--navy); }
-  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; }
-  .nav-cta:hover { background: var(--slate) !important; color: #fff !important; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; transition: background 0.2s !important; }
+  .nav-cta:hover { background: var(--slate) !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; margin-left: auto; }
   .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
-  .mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 0; }
+  .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
   .mobile-menu a { font-size: 1rem; color: var(--slate); font-weight: 500; padding: 0.85rem 0; border-bottom: 1px solid var(--light-gray); text-decoration: none; display: block; }
   .mobile-menu a:last-child { border-bottom: none; }
-  .mobile-menu .mob-cta { background: var(--navy); color: #fff !important; padding: 0.75rem 1.25rem; border-radius: 5px; text-align: center; font-weight: 600; font-family: 'Sora', sans-serif; border-bottom: none; margin-top: 0.5rem; }
+  .mobile-menu .mob-cta { background: var(--navy); color: #fff !important; padding: 0.75rem 1.25rem; border-radius: 5px; text-align: center; font-weight: 600; font-family: 'Sora', sans-serif; border-bottom: none; margin-top: 0.75rem; }
+  .mobile-menu.open { display: flex; }
 
   /* HERO */
   .hero {
@@ -442,11 +444,38 @@
   .footer-legal a { font-size: 0.8rem; color: rgba(255,255,255,0.35); transition: color 0.2s; text-decoration: none; }
   .footer-legal a:hover { color: var(--gold); }
 
+  
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-photo-col { max-width: 260px; margin: 0 auto; }
+    .hero { padding: 3.5rem 1.25rem; }
+    .section { padding: 3.5rem 1.25rem; }
+    .cta-section { padding: 4rem 1.25rem; }
+    .about-layout { grid-template-columns: 1fr; }
+    .about-photo { position: static; max-width: 240px; margin: 0 auto; display: block; }
+    .story-layout { grid-template-columns: 1fr; }
+    .story-sidebar { position: static; }
+    .honest-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .expect-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .outcomes-grid { grid-template-columns: 1fr 1fr; }
+    .services-layout { grid-template-columns: 1fr; }
+    .service-row:nth-child(even) { padding: 2rem 0; border-left: none; }
+    .service-row:last-child:nth-child(odd) { max-width: 100%; }
+    .consult-box { grid-template-columns: 1fr; padding: 2.5rem 1.75rem; }
+    .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .page-header-inner { grid-template-columns: 1fr; }
+    .header-photo { max-width: 240px; margin: 0 auto; display: block; }
     .footer-top { grid-template-columns: 1fr; gap: 2rem; }
     .footer-bottom { flex-direction: column; align-items: flex-start; }
+    footer { padding: 2.5rem 1.25rem 2rem; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .cta-details { gap: 1.5rem; }
+  }
+  @media (max-width: 480px) {
+    .outcomes-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -455,16 +484,16 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" style="height:40px; width:auto;" /></a>
+    <div class="nav-logo">
+      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
+    </div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#services">Services</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="index.html#discovery" class="nav-cta">Book a discovery call</a></li>
     </ul>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -479,10 +508,8 @@
 </div>
 <script>
   function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
-    document.querySelector('.mobile-menu').style.display === 'flex'
-      ? document.querySelector('.mobile-menu').style.display = 'none'
-      : document.querySelector('.mobile-menu').style.display = 'flex';
+    var menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
   }
 </script><!-- HERO -->
 <section class="hero">
@@ -499,7 +526,7 @@
     </div>
     <div class="hero-photo-col">
       <div class="hero-photo-accent"></div>
-      <img src="TyS.jpg" alt="Ty Smith, founder of HR Expert to Go" class="hero-photo" />
+      <img src="TyS.jpg" alt="Ty Smith, founder of HR Expert to go" class="hero-photo" />
     </div>
   </div>
 </section>
@@ -595,12 +622,12 @@
 <section class="section about" id="about">
   <div class="section-inner">
     <div class="about-layout">
-      <img src="TySmithAbout.jpg" alt="Ty Smith, HR Expert to Go" class="about-photo" />
+      <img src="TySmithAbout.jpg" alt="Ty Smith, HR Expert to go" class="about-photo" />
       <div class="about-body">
         <span class="section-label">Why this works</span>
         <h2>You are getting guidance from someone who has been <em>inside the process.</em></h2>
         <p>Most career advice comes from people who have looked for jobs. This comes from someone who has spent over 20 years inside the process — as a certified HR professional and leadership consultant across corporate, non-profit, and growing organizations — making hiring decisions, coaching employees, and watching what actually separates the candidates who move forward from the ones who do not.</p>
-        <p>I have seen talented people miss great opportunities simply because no one ever showed them how the process really works from the inside. That gap is exactly what HR Expert to Go is designed to close.</p>
+        <p>I have seen talented people miss great opportunities simply because no one ever showed them how the process really works from the inside. That gap is exactly what HR Expert to go is designed to close.</p>
         <div class="about-quote">
           "My goal is not to promise you a job. No one can honestly do that. My goal is to help you become the strongest candidate you can be."
         </div>
@@ -662,7 +689,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to Go" />
+        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" />
         <p>Practical 1:1 career coaching for college students, recent graduates, and early-career professionals.</p>
       </div>
       <div class="footer-col">
@@ -681,7 +708,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2025 HR Expert to Go. All rights reserved.</p>
+      <p class="footer-copy">&copy; 2025 HR Expert to go. All rights reserved.</p>
       <div class="footer-legal">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
