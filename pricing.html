@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing | HR Expert to go</title>
+<meta name="description" content="Transparent pricing for HR Expert to go career coaching services. Resume coaching, interview prep, salary negotiation, job search strategy, and full launch packages for college students and recent graduates." />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LBCS8D922M');
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #0D1B3D; --slate: #2F4A6D; --gold: #D4AF37; --gold-light: #e8c84a; --ivory: #FBF7F0; --ivory-dark: #EDE8DF; --charcoal: #23272E; --gray: #6B7280; --light-gray: #E5E7EB; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: #fff; }
+  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
+  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav-logo a { display: block; }
+  .nav-logo img { height: 44px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; }
+  .nav-cta:hover { background: var(--slate) !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+  .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .mobile-menu a { font-size: 1rem; color: var(--slate); font-weight: 500; padding: 0.85rem 0; border-bottom: 1px solid var(--light-gray); display: block; }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu .mob-cta { background: var(--navy); color: #fff !important; padding: 0.75rem 1.25rem; border-radius: 5px; text-align: center; font-weight: 600; font-family: 'Sora', sans-serif; border-bottom: none; margin-top: 0.75rem; }
+  .mobile-menu.open { display: flex; }
+
+  /* PAGE HEADER */
+  .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 4.5rem 2rem; }
+  .page-header-inner { max-width: 760px; margin: 0 auto; }
+  .page-kicker { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -0.02em; color: var(--navy); margin-bottom: 1rem; }
+  .page-header p { font-size: 1.05rem; color: var(--slate); line-height: 1.8; }
+
+  /* PRICING SECTION */
+  .pricing-section { padding: 5rem 2rem; }
+  .pricing-inner { max-width: 1060px; margin: 0 auto; }
+  .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .section-heading { font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--navy); letter-spacing: -0.015em; margin-bottom: 1rem; }
+  .section-intro { font-size: 1rem; color: var(--slate); line-height: 1.75; max-width: 580px; margin-bottom: 3rem; }
+
+  /* PACKAGES GRID */
+  .packages-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 1.25rem; }
+  .packages-grid-bottom { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-bottom: 4rem; }
+
+  .package-card { border: 1px solid var(--light-gray); border-radius: 10px; padding: 2rem 1.75rem; display: flex; flex-direction: column; transition: border-color 0.2s, box-shadow 0.2s; background: #fff; }
+  .package-card:hover { border-color: var(--gold); box-shadow: 0 4px 24px rgba(13,27,61,0.07); }
+  .package-card.featured { border-color: var(--navy); background: var(--navy); }
+  .package-name { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
+  .package-card.featured .package-name { color: var(--gold); }
+  .package-price { font-family: 'Sora', sans-serif; font-size: 2rem; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 0.25rem; }
+  .package-card.featured .package-price { color: #fff; }
+  .package-duration { font-size: 0.8rem; color: var(--gray); margin-bottom: 1.25rem; }
+  .package-card.featured .package-duration { color: rgba(255,255,255,0.55); }
+  .package-divider { border: none; border-top: 1px solid var(--light-gray); margin-bottom: 1.25rem; }
+  .package-card.featured .package-divider { border-color: rgba(255,255,255,0.15); }
+  .package-includes { font-size: 0.88rem; color: var(--slate); line-height: 1.7; flex: 1; }
+  .package-card.featured .package-includes { color: rgba(255,255,255,0.75); }
+  .package-tag { display: inline-block; background: rgba(212,175,55,0.12); color: var(--gold); font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.25rem 0.75rem; border-radius: 100px; margin-bottom: 1rem; }
+
+  /* ADD ON */
+  .addon-section { background: var(--ivory); border-radius: 10px; padding: 2.5rem; margin-bottom: 4rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; border: 1px solid var(--ivory-dark); }
+  .addon-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 0.5rem; }
+  .addon-name { font-family: 'Sora', sans-serif; font-size: 1.1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.5rem; }
+  .addon-desc { font-size: 0.9rem; color: var(--slate); line-height: 1.7; }
+  .addon-price { text-align: center; flex-shrink: 0; }
+  .addon-amount { font-family: 'Sora', sans-serif; font-size: 1.8rem; font-weight: 700; color: var(--navy); line-height: 1; }
+  .addon-per { font-size: 0.8rem; color: var(--gray); margin-top: 3px; }
+
+  /* BOUNDARY */
+  .boundary-box { background: var(--ivory); border-left: 3px solid var(--gold); border-radius: 0 6px 6px 0; padding: 1.25rem 1.75rem; margin-bottom: 4rem; }
+  .boundary-box p { font-size: 0.88rem; color: var(--slate); line-height: 1.75; }
+
+  /* CTA */
+  .pricing-cta { background: var(--navy); border-radius: 10px; padding: 3.5rem; text-align: center; }
+  .pricing-cta h2 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); color: #fff; margin-bottom: 1rem; letter-spacing: -0.015em; }
+  .pricing-cta h2 em { font-style: normal; color: var(--gold); }
+  .pricing-cta p { font-size: 1rem; color: rgba(255,255,255,0.68); line-height: 1.75; margin-bottom: 2rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2.25rem; border-radius: 5px; display: inline-block; transition: background 0.2s; }
+  .btn-gold:hover { background: var(--gold-light); }
+  .cta-fine { margin-top: 1rem; font-size: 0.8rem; color: rgba(255,255,255,0.35); display: block; }
+
+  /* FOOTER */
+  footer { background: var(--ivory); border-top: 1px solid var(--ivory-dark); padding: 3.5rem 2rem 2rem; }
+  .footer-inner { max-width: 1060px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--ivory-dark); }
+  .footer-brand p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; max-width: 220px; margin-top: 0.75rem; }
+  .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .footer-col a { display: block; font-size: 0.88rem; color: var(--slate); margin-bottom: 0.6rem; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+  .footer-copy { font-size: 0.8rem; color: var(--gray); }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a { font-size: 0.8rem; color: var(--gray); transition: color 0.2s; }
+  .footer-legal a:hover { color: var(--gold); }
+
+  /* RESPONSIVE */
+  @media (max-width: 860px) {
+    .packages-grid { grid-template-columns: 1fr 1fr; }
+    .packages-grid-bottom { grid-template-columns: 1fr; }
+    .addon-section { grid-template-columns: 1fr; }
+    .addon-price { text-align: left; }
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .page-header { padding: 3rem 1.25rem; }
+    .pricing-section { padding: 3.5rem 1.25rem; }
+    .packages-grid { grid-template-columns: 1fr; }
+    .pricing-cta { padding: 2.5rem 1.5rem; }
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    footer { padding: 2.5rem 1.25rem 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="nav-cta">Book a discovery call</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#services">Services</a>
+  <a href="about.html">About</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="mob-cta">Book a discovery call</a>
+</div>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+</script>
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <span class="page-kicker">Pricing</span>
+    <h1>Clear pricing. No surprises.</h1>
+    <p>Every engagement starts with a free discovery call to make sure we choose the right path. Pricing is shared before you commit to anything.</p>
+  </div>
+</div>
+
+<section class="pricing-section">
+  <div class="pricing-inner">
+
+    <span class="section-label">Coaching packages</span>
+    <h2 class="section-heading">Choose what fits where you are right now.</h2>
+    <p class="section-intro">Not sure which package is right? That is exactly what the discovery call is for. We will figure it out together before you spend a dollar.</p>
+
+    <div class="packages-grid">
+
+      <div class="package-card">
+        <p class="package-name">Career Clarity Session</p>
+        <p class="package-price">$149</p>
+        <p class="package-duration">One focused session</p>
+        <hr class="package-divider" />
+        <p class="package-includes">One focused session on your resume, professional profile, or job search strategy. Best for candidates who have a specific question or area they want to work through before moving forward.</p>
+      </div>
+
+      <div class="package-card">
+        <p class="package-name">Interview Ready</p>
+        <p class="package-price">$299</p>
+        <p class="package-duration">Two sessions</p>
+        <hr class="package-divider" />
+        <p class="package-includes">Two interview preparation sessions including mock interview practice, honest feedback on your answers, and coaching on how to open and close with confidence.</p>
+      </div>
+
+      <div class="package-card">
+        <p class="package-name">Offer Review</p>
+        <p class="package-price">$125</p>
+        <p class="package-duration">30 to 45 minutes</p>
+        <hr class="package-divider" />
+        <p class="package-includes">A standalone session for candidates who have received an offer and want to understand it before responding. Covers compensation, role fit, and how to approach negotiation professionally.</p>
+      </div>
+
+    </div>
+
+    <div class="packages-grid-bottom">
+
+      <div class="package-card">
+        <p class="package-name">Job Search Jumpstart</p>
+        <p class="package-price">$449</p>
+        <p class="package-duration">Three sessions plus follow-up</p>
+        <hr class="package-divider" />
+        <p class="package-includes">Resume strategy, professional profile positioning, and job search strategy, plus one follow-up session to check in on progress and refine your approach. Best for candidates ready to build a focused, organized search from the ground up.</p>
+      </div>
+
+      <div class="package-card featured">
+        <span class="package-tag">Most comprehensive</span>
+        <p class="package-name">Early Career Launch</p>
+        <p class="package-price">$649</p>
+        <p class="package-duration">Five sessions</p>
+        <hr class="package-divider" />
+        <p class="package-includes">The full package. Covers resume strategy, professional profile positioning, job search strategy, interview preparation, and offer guidance if needed. Designed for candidates who want support across every stage of the search, from materials to offer.</p>
+      </div>
+
+    </div>
+
+    <!-- ADD ON -->
+    <span class="section-label">Optional add-on</span>
+    <div class="addon-section">
+      <div>
+        <p class="addon-label">Monthly subscription</p>
+        <p class="addon-name">Daily Job Leads</p>
+        <p class="addon-desc">Personalized job opportunities delivered to your inbox every morning based on your target role, location, experience level, and search preferences. Designed to keep your search active and consistent without spending hours searching from scratch each day. Available as an add-on for active coaching clients.</p>
+      </div>
+      <div class="addon-price">
+        <p class="addon-amount">$50</p>
+        <p class="addon-per">per month</p>
+      </div>
+    </div>
+
+    <!-- BOUNDARY -->
+    <div class="boundary-box">
+      <p>HR Expert to go provides coaching, guidance, and strategy. We do not provide done-for-you resume writing, profile rewriting, job applications, employer outreach, recruiting, placement, or guaranteed outcomes. All coaching is delivered virtually by video call.</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="pricing-cta">
+      <h2>Not sure where to start?<br><em>Start with a free discovery call.</em></h2>
+      <p>We will talk through where you are, what you need, and which package or service makes the most sense for your situation before you commit to anything.</p>
+      <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="btn-gold">Book your free discovery call</a>
+      <span class="cta-fine">Usually available within a few days</span>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" style="height:44px; width:auto;" />
+        <p>Practical 1:1 career coaching for college students, recent graduates, and early-career professionals.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener">Book a discovery call</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 HR Expert to go. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
