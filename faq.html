@@ -4,115 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>FAQ | HR Expert to go</title>
-<meta name="description" content="Answers to common questions about HR Expert to go career coaching services, discovery calls, pricing, and what to expect." />
+<meta name="description" content="Answers to common questions about HR Expert to go career coaching, discovery calls, resume coaching, interview prep, salary negotiation, job leads, and what to expect." />
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root { --navy: #0D1B3D; --slate: #2F4A6D; --gold: #D4AF37; --gold-light: #e8c84a; --ivory: #FBF7F0; --ivory-dark: #EDE8DF; --charcoal: #23272E; --gray: #6B7280; --light-gray: #E5E7EB; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: #fff; }
-  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
-  a { color: inherit; text-decoration: none; }
-
-  nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
-  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
-  .nav-logo-text { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 1.05rem; color: var(--navy); }
-  .nav-logo-text span { color: var(--gold); }
-  .nav-links { display: flex; align-items: center; gap: 2.25rem; list-style: none; }
-  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--navy); }
-  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; }
-  .nav-cta:hover { background: var(--slate) !important; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
-  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; }
-  .mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 1rem; }
-  .mobile-menu a { font-size: 1rem; color: var(--slate); font-weight: 500; padding: 0.5rem 0; border-bottom: 1px solid var(--light-gray); }
-  .mobile-menu a:last-child { border-bottom: none; }
-  .mobile-menu .mob-cta { background: var(--navy); color: #fff !important; padding: 0.75rem 1.25rem; border-radius: 5px; text-align: center; font-weight: 600; border-bottom: none; }
-  .mobile-menu.open { display: flex; }
-
-    .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 4.5rem 2rem; }
-  .page-header-inner { max-width: 1060px; margin: 0 auto; }
-  .page-kicker { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
-  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -0.02em; margin-bottom: 1rem; color: var(--navy); }
-  .page-header h1 em { font-style: normal; color: var(--gold); }
-  .page-header p { font-size: 1.05rem; color: var(--slate); line-height: 1.8; max-width: 580px; }
-
-  .faq-section { padding: 5rem 2rem 6rem; }
-  .faq-inner { max-width: 760px; margin: 0 auto; }
-
-  .faq-group { margin-bottom: 3.5rem; }
-  .faq-group-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: block; padding-bottom: 0.75rem; border-bottom: 1px solid var(--light-gray); }
-
-  .faq-item { padding: 1.5rem 0; border-bottom: 1px solid var(--light-gray); }
-  .faq-item:last-child { border-bottom: none; }
-  .faq-q { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.75rem; line-height: 1.4; }
-  .faq-a { font-size: 0.95rem; color: var(--slate); line-height: 1.8; }
-  .faq-a p { margin-bottom: 0.75rem; }
-  .faq-a p:last-child { margin-bottom: 0; }
-  .faq-a a { color: var(--navy); font-weight: 500; border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
-  .faq-a a:hover { color: var(--gold); }
-
-  .faq-cta { background: var(--navy); border-radius: 8px; padding: 2.5rem; margin-top: 3rem; text-align: center; }
-  .faq-cta h2 { font-size: 1.3rem; color: #fff; margin-bottom: 0.75rem; }
-  .faq-cta p { font-size: 0.93rem; color: rgba(255,255,255,0.68); line-height: 1.75; margin-bottom: 1.75rem; }
-  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2rem; border-radius: 5px; display: inline-block; transition: background 0.2s, transform 0.15s; }
-  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
-
-  footer { background: var(--navy); padding: 3.5rem 2rem 2rem; }
-  .footer-inner { max-width: 1060px; margin: 0 auto; }
-  .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-  .footer-brand img { height: 40px; width: auto; margin-bottom: 1rem; }
-  .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 220px; }
-  .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
-  .footer-col a { display: block; font-size: 0.88rem; color: rgba(255,255,255,0.6); margin-bottom: 0.6rem; transition: color 0.2s; }
-  .footer-col a:hover { color: var(--gold); }
-  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 1rem; }
-  .footer-copy { font-size: 0.8rem; color: rgba(255,255,255,0.3); }
-  .footer-legal { display: flex; gap: 1.5rem; }
-  .footer-legal a { font-size: 0.8rem; color: rgba(255,255,255,0.35); transition: color 0.2s; }
-  .footer-legal a:hover { color: var(--gold); }
-
-  
-    .hamburger { display: flex; }
-    .page-header { padding: 3rem 1.25rem; }
-    .faq-section { padding: 3.5rem 1.25rem 4rem; }
-    footer { padding: 2rem 1.25rem; }
-  }
-  @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hamburger { display: flex; }
-    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-    .hero-photo-col { max-width: 260px; margin: 0 auto; }
-    .hero { padding: 3.5rem 1.25rem; }
-    .section { padding: 3.5rem 1.25rem; }
-    .cta-section { padding: 4rem 1.25rem; }
-    .cta-band { padding: 3.5rem 1.25rem; }
-    .about-layout { grid-template-columns: 1fr; }
-    .about-photo { position: static; max-width: 240px; margin: 0 auto; display: block; }
-    .header-photo { display: none; }
-    .page-header-inner { grid-template-columns: 1fr; }
-    .story-layout { grid-template-columns: 1fr; }
-    .story-sidebar { position: static; }
-    .honest-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-    .expect-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-    .outcomes-grid { grid-template-columns: 1fr 1fr; }
-    .services-layout { grid-template-columns: 1fr; }
-    .service-row:nth-child(even) { padding: 2rem 0; border-left: none; }
-    .service-row:last-child:nth-child(odd) { max-width: 100%; }
-    .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
-    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
-    .footer-bottom { flex-direction: column; align-items: flex-start; }
-    footer { padding: 2.5rem 1.25rem 2rem; }
-    .page-header { padding: 3rem 1.25rem; }
-    .legal-body { padding: 3rem 1.25rem 4rem; }
-    .faq-section { padding: 3.5rem 1.25rem 4rem; }
-    .cta-details { gap: 1.5rem; }
-  }
-  @media (max-width: 480px) {
-    .outcomes-grid { grid-template-columns: 1fr; }
-  }
-</style>
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
 <script>
@@ -121,13 +14,97 @@
   gtag('js', new Date());
   gtag('config', 'G-LBCS8D922M');
 </script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #0D1B3D; --slate: #2F4A6D; --gold: #D4AF37; --gold-light: #e8c84a; --ivory: #FBF7F0; --ivory-dark: #EDE8DF; --charcoal: #23272E; --gray: #6B7280; --light-gray: #E5E7EB; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: #fff; }
+  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
+  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav-logo a { display: block; }
+  .nav-logo img { height: 44px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; }
+  .nav-cta:hover { background: var(--slate) !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+  .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .mobile-menu a { font-size: 1rem; color: var(--slate); font-weight: 500; padding: 0.85rem 0; border-bottom: 1px solid var(--light-gray); display: block; }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu .mob-cta { background: var(--navy); color: #fff !important; padding: 0.75rem 1.25rem; border-radius: 5px; text-align: center; font-weight: 600; font-family: 'Sora', sans-serif; border-bottom: none; margin-top: 0.75rem; }
+  .mobile-menu.open { display: flex; }
+
+  /* PAGE HEADER */
+  .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 4.5rem 2rem; }
+  .page-header-inner { max-width: 760px; margin: 0 auto; }
+  .page-kicker { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -0.02em; color: var(--navy); margin-bottom: 1rem; }
+  .page-header p { font-size: 1.05rem; color: var(--slate); line-height: 1.8; }
+  .page-header a { color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+
+  /* FAQ */
+  .faq-section { padding: 5rem 2rem 6rem; }
+  .faq-inner { max-width: 760px; margin: 0 auto; }
+  .faq-group { margin-bottom: 3.5rem; }
+  .faq-group-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: block; padding-bottom: 0.75rem; border-bottom: 1px solid var(--light-gray); }
+  .faq-item { padding: 1.5rem 0; border-bottom: 1px solid var(--light-gray); }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q { font-family: 'Sora', sans-serif; font-size: 1rem; font-weight: 600; color: var(--navy); margin-bottom: 0.75rem; line-height: 1.4; }
+  .faq-a { font-size: 0.95rem; color: var(--slate); line-height: 1.8; }
+  .faq-a p { margin-bottom: 0.75rem; }
+  .faq-a p:last-child { margin-bottom: 0; }
+  .faq-a a { color: var(--navy); font-weight: 500; border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+
+  /* BOUNDARY BOX */
+  .boundary-box { background: var(--ivory); border-left: 3px solid var(--gold); border-radius: 0 6px 6px 0; padding: 1.5rem 1.75rem; margin: 3rem 0; }
+  .boundary-box p { font-size: 0.9rem; color: var(--slate); line-height: 1.75; }
+
+  /* CTA */
+  .faq-cta { background: var(--navy); border-radius: 8px; padding: 2.5rem; margin-top: 3rem; text-align: center; }
+  .faq-cta h2 { font-size: 1.3rem; color: #fff; margin-bottom: 0.75rem; }
+  .faq-cta p { font-size: 0.93rem; color: rgba(255,255,255,0.68); line-height: 1.75; margin-bottom: 1.75rem; }
+  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2rem; border-radius: 5px; display: inline-block; transition: background 0.2s; }
+  .btn-gold:hover { background: var(--gold-light); }
+
+  /* FOOTER */
+  footer { background: var(--ivory); border-top: 1px solid var(--ivory-dark); padding: 3.5rem 2rem 2rem; }
+  .footer-inner { max-width: 1060px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--ivory-dark); }
+  .footer-brand p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; max-width: 220px; margin-top: 0.75rem; }
+  .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .footer-col a { display: block; font-size: 0.88rem; color: var(--slate); margin-bottom: 0.6rem; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+  .footer-copy { font-size: 0.8rem; color: var(--gray); }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a { font-size: 0.8rem; color: var(--gray); transition: color 0.2s; }
+  .footer-legal a:hover { color: var(--gold); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .page-header { padding: 3rem 1.25rem; }
+    .faq-section { padding: 3.5rem 1.25rem 4rem; }
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    footer { padding: 2.5rem 1.25rem 2rem; }
+  }
+</style>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">
-      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" style="height:44px; width:auto;" /></a>
+      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
     </div>
     <ul class="nav-links">
       <li><a href="about.html">About</a></li>
@@ -150,8 +127,7 @@
 </div>
 <script>
   function toggleMenu() {
-    var menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
   }
 </script>
 
@@ -159,13 +135,14 @@
   <div class="page-header-inner">
     <span class="page-kicker">FAQ</span>
     <h1>Questions people ask before they book.</h1>
-    <p>If something is not answered here, reach out directly at <a href="mailto:ty@hrexperttogo.com" style="color:var(--navy); border-bottom: 1px solid var(--gold); padding-bottom:1px;">ty@hrexperttogo.com</a>. There are no wrong questions.</p>
+    <p>If something is not answered here, reach out directly at <a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a>. There are no wrong questions.</p>
   </div>
 </div>
 
 <section class="faq-section">
   <div class="faq-inner">
 
+    <!-- DISCOVERY CALL -->
     <div class="faq-group">
       <span class="faq-group-label">About the discovery call</span>
 
@@ -180,7 +157,7 @@
       <div class="faq-item">
         <p class="faq-q">Is the discovery call really free?</p>
         <div class="faq-a">
-          <p>Yes. There is no charge and no obligation. If we are a good fit, I will walk you through next steps and what working together looks like. If we are not, I will tell you that honestly and point you toward something that might be a better fit.</p>
+          <p>Yes. There is no charge and no obligation. If we are a good fit, I will walk you through next steps and what working together looks like. If we are not, I will tell you that honestly and point you toward something that might be a better direction.</p>
         </div>
       </div>
 
@@ -190,22 +167,174 @@
           <p>Just come with a clear sense of where you are and what feels most stuck. If you have a current resume, have it nearby in case it comes up. You do not need to prepare anything formal. This is a conversation, not an interview.</p>
         </div>
       </div>
-    </div>
-
-    <div class="faq-group">
-      <span class="faq-group-label">About the coaching</span>
 
       <div class="faq-item">
-        <p class="faq-q">Will you write my resume for me?</p>
+        <p class="faq-q">What does the discovery call not include?</p>
         <div class="faq-a">
-          <p>No. Resume coaching at HR Expert to go is about working through your resume together so you understand how to position your experience clearly and speak directly to what recruiters and hiring managers are looking for. The words stay yours. That is intentional, because you are the one who has to stand behind them in an interview.</p>
+          <p>A free discovery call does not include resume review, interview practice, job search strategy, offer review, or any other paid coaching service. It is a short conversation to understand where you are and whether working together makes sense.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUME COACHING -->
+    <div class="faq-group">
+      <span class="faq-group-label">Resume coaching</span>
+
+      <div class="faq-item">
+        <p class="faq-q">Do you write resumes for clients?</p>
+        <div class="faq-a">
+          <p>No. HR Expert to go does not provide done-for-you resume writing. Resume coaching is a conversation where we look at your resume together from an HR and recruiter perspective. You will leave understanding what is working, what may be holding you back, and how to improve the resume yourself.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <p class="faq-q">How is this different from just searching for career tips online?</p>
+        <p class="faq-q">Why don't you write the resume for me?</p>
         <div class="faq-a">
-          <p>Generic advice is written for everyone, which means it is optimized for no one. What you get here is someone who has spent 20+ years inside the hiring process looking specifically at your situation, your resume, your answers, and your goals, and telling you what actually needs to change.</p>
+          <p>Because a stronger resume is only part of the goal. You also need to understand your own story well enough to explain it in an interview. The coaching approach helps you improve the document while also learning how to talk about your experience with more clarity and confidence.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">What is included in resume coaching?</p>
+        <div class="faq-a">
+          <p>Resume coaching may include feedback on structure, clarity, role alignment, keywords, accomplishments, gaps, and how your experience is coming across to someone reviewing it quickly. It does not include writing, rewriting, formatting, designing, or submitting your resume for you.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE COACHING -->
+    <div class="faq-group">
+      <span class="faq-group-label">Professional profile coaching</span>
+
+      <div class="faq-item">
+        <p class="faq-q">Do you rewrite professional profiles for clients?</p>
+        <div class="faq-a">
+          <p>No. Professional profile coaching is not a done-for-you rewrite service. We talk through how your profile is positioned, what recruiters may notice, what may be missing, and how to make your experience easier to understand. You are responsible for making the final updates to your own profile.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">What is included in professional profile coaching?</p>
+        <div class="faq-a">
+          <p>Professional profile coaching may include feedback on your headline, summary section, experience descriptions, skills, visibility, and overall positioning. It does not include rewriting your profile, managing your account, posting content, messaging recruiters, or making updates on your behalf.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTERVIEW PREP -->
+    <div class="faq-group">
+      <span class="faq-group-label">Interview preparation</span>
+
+      <div class="faq-item">
+        <p class="faq-q">How is this different from just searching for interview tips online?</p>
+        <div class="faq-a">
+          <p>Generic advice is written for everyone, which means it is optimized for no one. What you get here is someone who has spent 20+ years inside the hiring process looking specifically at your answers, your experience, and your goals, and telling you what actually needs to change.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">What happens in an interview prep session?</p>
+        <div class="faq-a">
+          <p>We work through real interview questions based on your target role. You answer, I give you honest feedback on what landed, what did not, and how to improve. We also work on how you open and close, how to talk about your experience clearly, and how to handle questions you are not sure about.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFER REVIEW -->
+    <div class="faq-group">
+      <span class="faq-group-label">Offer review and salary negotiation</span>
+
+      <div class="faq-item">
+        <p class="faq-q">What is offer review and negotiation guidance?</p>
+        <div class="faq-a">
+          <p>Offer review and negotiation guidance is a focused session for entry-level and early-career candidates who want to understand an offer before responding. We review the role, company, compensation range when available, and your screening conversations so you can decide whether and how to negotiate professionally.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Will you negotiate with the employer for me?</p>
+        <div class="faq-a">
+          <p>No. HR Expert to go does not contact employers, negotiate on your behalf, or represent you in employment conversations. I help you understand your offer and prepare for the conversation, but you are responsible for communicating directly with the employer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Can every entry-level offer be negotiated?</p>
+        <div class="faq-a">
+          <p>No. Some offers have room for negotiation, and some do not. For many entry-level roles the range may be narrow, especially if salary expectations were already discussed during screening. The goal is to help you understand what is reasonable, avoid overplaying your hand, and respond professionally.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Do you provide legal, tax, or financial advice?</p>
+        <div class="faq-a">
+          <p>No. Offer review and negotiation guidance is career coaching, not legal, tax, or financial advice. If you need help understanding legal terms, tax implications, equity, benefits, contracts, or anything more complex, you should consult an appropriate professional.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JOB LEADS -->
+    <div class="faq-group">
+      <span class="faq-group-label">Daily job leads add-on</span>
+
+      <div class="faq-item">
+        <p class="faq-q">What is the daily job leads add-on?</p>
+        <div class="faq-a">
+          <p>The daily job leads add-on sends relevant job opportunities to your inbox each morning based on your target roles, location, experience level, and search preferences. It is designed to help you stay active, apply earlier, and spend less time searching from scratch every day.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Are the job leads handpicked?</p>
+        <div class="faq-a">
+          <p>Job leads are curated using your search criteria and pulled from major job boards. The goal is relevance and consistency, but you should still review each posting carefully before applying.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How quickly should I apply to jobs you send?</p>
+        <div class="faq-a">
+          <p>As soon as reasonably possible. For many early-career roles, timing matters. Applying earlier can improve your chances of being seen, but it does not guarantee an interview or response.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Will you apply to jobs for me?</p>
+        <div class="faq-a">
+          <p>No. HR Expert to go does not submit applications, upload resumes, complete assessments, contact employers, or apply to jobs on your behalf. You remain responsible for deciding where to apply and completing your own applications.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Do you guarantee the job leads will be a perfect fit?</p>
+        <div class="faq-a">
+          <p>No. Job leads are a search support tool, not a guarantee. Some roles may be a stronger fit than others, and job postings can change, close, or contain inaccurate information. You are responsible for reviewing each opportunity before applying.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GENERAL -->
+    <div class="faq-group">
+      <span class="faq-group-label">General questions</span>
+
+      <div class="faq-item">
+        <p class="faq-q">Who is HR Expert to go for?</p>
+        <div class="faq-a">
+          <p>College students preparing for internships or full-time roles, recent graduates navigating a competitive market, and early-career professionals ready for their next move. If you are further along in your career and looking for executive coaching, this is probably not the right fit and I will tell you that on the discovery call.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Is HR Expert to go a recruiter or placement service?</p>
+        <div class="faq-a">
+          <p>No. HR Expert to go is a private career coaching service. We are not a recruiting firm, staffing agency, placement service, or employment agency. We do not represent employers, place candidates, or guarantee employment outcomes.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Can you guarantee I will get interviews or a job?</p>
+        <div class="faq-a">
+          <p>No. No career coach can honestly guarantee interviews, offers, salary increases, or job placement. What we can do is help you become more prepared, more focused, and more confident in how you present yourself.</p>
         </div>
       </div>
 
@@ -217,27 +346,9 @@
       </div>
 
       <div class="faq-item">
-        <p class="faq-q">Can you guarantee I will get a job?</p>
-        <div class="faq-a">
-          <p>No, and anyone who tells you they can is not being straight with you. What I can do is help you become the strongest candidate you can be. Hiring decisions involve factors outside anyone's control. What we can control is how prepared, how clear, and how confident you are going in.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="faq-group">
-      <span class="faq-group-label">About fit and pricing</span>
-
-      <div class="faq-item">
-        <p class="faq-q">Who is HR Expert to go for?</p>
-        <div class="faq-a">
-          <p>College students preparing for internships or full-time roles, recent graduates navigating a competitive market, and early-career professionals ready for their next move. If you are further along in your career and looking for executive coaching, this is probably not the right fit and I will tell you that on the discovery call.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
         <p class="faq-q">How much does coaching cost?</p>
         <div class="faq-a">
-          <p>Pricing is discussed on the discovery call based on what you actually need. Services are offered as focused packages rather than open-ended hourly sessions, so you know what you are getting and what it costs before you commit.</p>
+          <p>Focused coaching sessions start at $125, and most clients choose a package based on what they need. Pricing is shared clearly before you commit. The free discovery call helps determine whether a focused session, package, or job search support add-on is the right fit.</p>
         </div>
       </div>
 
@@ -249,9 +360,13 @@
       </div>
     </div>
 
+    <div class="boundary-box">
+      <p>HR Expert to go provides coaching, guidance, and strategy. We do not provide done-for-you resume writing, profile rewriting, job applications, employer outreach, recruiting, placement, or guaranteed outcomes.</p>
+    </div>
+
     <div class="faq-cta">
       <h2>Still have a question?</h2>
-      <p>The fastest way to get an answer is a discovery call. It is free, it is focused, and it is the best first step regardless of where you are in the process.</p>
+      <p>The fastest way to get an answer is a discovery call. It is free, focused, and the best first step regardless of where you are in the process.</p>
       <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="btn-gold">Book a free discovery call</a>
     </div>
 
