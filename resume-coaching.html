@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resume Coaching | HR Expert to go</title>
+<meta name="description" content="Resume coaching for college students and recent graduates. Learn what recruiters and hiring managers are actually looking for and how to position your experience to get noticed." />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LBCS8D922M');
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #0D1B3D; --slate: #2F4A6D; --gold: #D4AF37; --gold-light: #e8c84a; --ivory: #FBF7F0; --ivory-dark: #EDE8DF; --charcoal: #23272E; --gray: #6B7280; --light-gray: #E5E7EB; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: #fff; }
+  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  /* NAV */
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 0 2rem; }
+  .nav-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  .nav-logo a { display: block; }
+  .nav-logo img { height: 44px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.88rem; color: var(--slate); font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--navy); }
+  .nav-cta { background: var(--navy) !important; color: #fff !important; padding: 0.5rem 1.25rem !important; border-radius: 5px; font-size: 0.85rem !important; font-weight: 600 !important; white-space: nowrap; }
+  .nav-cta:hover { background: var(--slate) !important; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+  .hamburger span { display: block; width: 24px; height: 2px; background: var(--navy); border-radius: 2px; }
+  .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1.25rem 2rem; z-index: 99; flex-direction: column; gap: 0; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .mobile-menu a { font-size: 1rem; color: var(--slate); font-weight: 500; padding: 0.85rem 0; border-bottom: 1px solid var(--light-gray); display: block; }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu .mob-cta { background: var(--navy); color: #fff !important; padding: 0.75rem 1.25rem; border-radius: 5px; text-align: center; font-weight: 600; font-family: 'Sora', sans-serif; border-bottom: none; margin-top: 0.75rem; }
+  .mobile-menu.open { display: flex; }
+
+  /* PAGE HEADER */
+  .page-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 4.5rem 2rem; }
+  .page-header-inner { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: 1fr 340px; gap: 5rem; align-items: center; }
+  .page-kicker { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .page-header h1 { font-size: clamp(1.8rem, 3vw, 2.6rem); letter-spacing: -0.02em; color: var(--navy); margin-bottom: 1.25rem; }
+  .page-header h1 em { font-style: normal; color: var(--gold); }
+  .page-header p { font-size: 1.05rem; color: var(--slate); line-height: 1.8; margin-bottom: 1.5rem; }
+  .header-cta { display: inline-block; background: var(--navy); color: #fff; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 0.92rem; padding: 0.85rem 2rem; border-radius: 5px; transition: background 0.2s; }
+  .header-cta:hover { background: var(--slate); color: #fff; }
+  .header-price-card { background: #fff; border: 1px solid var(--light-gray); border-radius: 10px; padding: 2rem; box-shadow: 0 4px 24px rgba(13,27,61,0.06); }
+  .header-price-card .from { font-size: 0.78rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem; }
+  .header-price-card .price { font-family: 'Sora', sans-serif; font-size: 2.5rem; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 0.25rem; }
+  .header-price-card .price-note { font-size: 0.85rem; color: var(--gray); margin-bottom: 1.5rem; }
+  .price-divider { border: none; border-top: 1px solid var(--light-gray); margin-bottom: 1.25rem; }
+  .price-includes { font-size: 0.85rem; color: var(--slate); line-height: 1.7; margin-bottom: 1.25rem; }
+  .price-includes strong { color: var(--navy); font-weight: 600; display: block; margin-bottom: 0.35rem; }
+  .btn-gold-sm { display: block; text-align: center; background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.9rem; padding: 0.8rem 1.5rem; border-radius: 5px; transition: background 0.2s; margin-top: 1.25rem; }
+  .btn-gold-sm:hover { background: var(--gold-light); }
+
+  /* SECTIONS */
+  .section { padding: 5rem 2rem; }
+  .section-inner { max-width: 1060px; margin: 0 auto; }
+  .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.85rem; display: block; }
+  .section-heading { font-size: clamp(1.5rem, 2.5vw, 2rem); color: var(--navy); letter-spacing: -0.015em; margin-bottom: 1.25rem; }
+  .section-intro { font-size: 1rem; color: var(--slate); line-height: 1.75; max-width: 600px; }
+
+  /* WHAT HAPPENS */
+  .what-happens { background: #fff; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-top: 3rem; }
+  .what-col p { font-size: 0.98rem; color: var(--slate); line-height: 1.8; margin-bottom: 1.1rem; }
+  .what-col h3 { font-size: 1rem; color: var(--navy); margin-bottom: 0.75rem; margin-top: 1.75rem; }
+  .what-col h3:first-child { margin-top: 0; }
+  .includes-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+  .includes-list li { font-size: 0.93rem; color: var(--slate); padding-left: 1.25rem; position: relative; line-height: 1.6; }
+  .includes-list li::before { content: ''; position: absolute; left: 0; top: 0.58em; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+
+  /* RIGHT FOR YOU */
+  .right-for-you { background: var(--ivory); }
+  .right-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+  .right-card { background: #fff; border-radius: 8px; padding: 1.5rem; border: 1px solid var(--ivory-dark); }
+  .right-card h3 { font-size: 0.9rem; color: var(--navy); margin-bottom: 0.75rem; }
+  .right-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.65; }
+
+  /* BOUNDARY */
+  .boundary-section { background: #fff; padding: 3rem 2rem; }
+  .boundary-box { max-width: 1060px; margin: 0 auto; background: var(--ivory); border-left: 3px solid var(--gold); border-radius: 0 6px 6px 0; padding: 1.25rem 1.75rem; }
+  .boundary-box p { font-size: 0.88rem; color: var(--slate); line-height: 1.75; }
+
+  /* CTA */
+  .cta-section { background: var(--navy); padding: 6rem 2rem; }
+  .cta-inner { max-width: 660px; margin: 0 auto; text-align: center; }
+  .cta-inner h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); color: #fff; letter-spacing: -0.02em; margin-bottom: 1rem; }
+  .cta-inner h2 em { font-style: normal; color: var(--gold); }
+  .cta-inner p { font-size: 1rem; color: rgba(255,255,255,0.68); line-height: 1.8; margin-bottom: 2rem; }
+  .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Sora', sans-serif; font-weight: 700; font-size: 0.95rem; padding: 0.9rem 2.25rem; border-radius: 5px; display: inline-block; transition: background 0.2s; }
+  .btn-gold:hover { background: var(--gold-light); }
+  .cta-fine { margin-top: 1rem; font-size: 0.8rem; color: rgba(255,255,255,0.35); display: block; }
+
+  /* FOOTER */
+  footer { background: var(--ivory); border-top: 1px solid var(--ivory-dark); padding: 3.5rem 2rem 2rem; }
+  .footer-inner { max-width: 1060px; margin: 0 auto; }
+  .footer-top { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--ivory-dark); }
+  .footer-brand p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; max-width: 220px; margin-top: 0.75rem; }
+  .footer-col h4 { font-family: 'Sora', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .footer-col a { display: block; font-size: 0.88rem; color: var(--slate); margin-bottom: 0.6rem; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+  .footer-copy { font-size: 0.8rem; color: var(--gray); }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a { font-size: 0.8rem; color: var(--gray); transition: color 0.2s; }
+  .footer-legal a:hover { color: var(--gold); }
+
+  /* RESPONSIVE */
+  @media (max-width: 860px) {
+    .page-header-inner { grid-template-columns: 1fr; }
+    .two-col { grid-template-columns: 1fr; gap: 2.5rem; }
+    .right-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .page-header { padding: 3rem 1.25rem; }
+    .section { padding: 3.5rem 1.25rem; }
+    .cta-section { padding: 4rem 1.25rem; }
+    .boundary-section { padding: 2rem 1.25rem; }
+    .footer-top { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    footer { padding: 2.5rem 1.25rem 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="nav-cta">Book a discovery call</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#services">Services</a>
+  <a href="about.html">About</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="faq.html">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="mob-cta">Book a discovery call</a>
+</div>
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+</script>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div>
+      <span class="page-kicker">Resume coaching</span>
+      <h1>Your resume is not just a document.<br><em>It is your first impression.</em></h1>
+      <p>Most resumes are not rejected because the candidate is underqualified. They are rejected because the resume does not communicate the right things quickly enough. Resume coaching helps you understand what is working, what is not, and how to fix it yourself.</p>
+      <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="header-cta">Book a free discovery call</a>
+    </div>
+    <div class="header-price-card">
+      <p class="from">Starting at</p>
+      <p class="price">$149</p>
+      <p class="price-note">Career Clarity Session</p>
+      <hr class="price-divider" />
+      <p class="price-includes">
+        <strong>Also included in</strong>
+        Job Search Jumpstart ($449) and Early Career Launch ($649)
+      </p>
+      <a href="pricing.html" class="btn-gold-sm">View all packages</a>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT HAPPENS -->
+<section class="section what-happens">
+  <div class="section-inner">
+    <span class="section-label">What to expect</span>
+    <h2 class="section-heading">A conversation, not a critique.</h2>
+    <p class="section-intro">Resume coaching at HR Expert to go is not about handing your resume off and getting it back rewritten. It is about working through it together so you understand how a recruiter reads it and what you can do to make it stronger.</p>
+    <div class="two-col">
+      <div class="what-col">
+        <h3>What we cover</h3>
+        <ul class="includes-list">
+          <li>How your resume reads to someone reviewing it quickly</li>
+          <li>Whether your experience is positioned for the roles you are targeting</li>
+          <li>How your accomplishments are coming across and whether they are specific enough</li>
+          <li>Keywords and language that align with what hiring managers are looking for</li>
+          <li>Gaps, inconsistencies, or anything that might raise questions before an interview</li>
+          <li>Structure and clarity so your most relevant experience gets noticed first</li>
+        </ul>
+      </div>
+      <div class="what-col">
+        <h3>What this is not</h3>
+        <ul class="includes-list">
+          <li>Resume writing or rewriting on your behalf</li>
+          <li>Formatting or design services</li>
+          <li>Submitting your resume to employers for you</li>
+          <li>A guarantee of interviews or callbacks</li>
+        </ul>
+        <h3 style="margin-top:2rem;">Why we do it this way</h3>
+        <p>A stronger resume is only part of the goal. You also need to understand your own story well enough to explain it in an interview. Working through your resume together means you leave with both a better document and the confidence to back it up.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RIGHT FOR YOU -->
+<section class="section right-for-you">
+  <div class="section-inner">
+    <span class="section-label">Is this right for you</span>
+    <h2 class="section-heading">Resume coaching works best when you are ready to do the work.</h2>
+    <div class="right-grid">
+      <div class="right-card">
+        <h3>You are a good fit if</h3>
+        <p>You are a college student, recent graduate, or early-career professional who wants honest feedback on your resume and is willing to make the changes yourself based on what you learn.</p>
+      </div>
+      <div class="right-card">
+        <h3>You may need something different if</h3>
+        <p>You are looking for someone to write or rewrite your resume for you. That is a different service and not something HR Expert to go provides.</p>
+      </div>
+      <div class="right-card">
+        <h3>Come prepared with</h3>
+        <p>Your current resume, the types of roles you are targeting, and any specific feedback you have already received that you want to address.</p>
+      </div>
+      <div class="right-card">
+        <h3>Not sure if you need this</h3>
+        <p>Start with a free discovery call. We will look at where you are and whether resume coaching, a broader package, or something else entirely is the right next step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOUNDARY -->
+<div class="boundary-section">
+  <div class="boundary-box">
+    <p>Resume coaching is not resume writing. We review your resume together from an HR and recruiter perspective so you understand what is working, what may be missing, and how to improve it yourself. HR Expert to go does not write, rewrite, format, design, or submit resumes on behalf of clients.</p>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Ready to find out what your resume<br><em>is really saying?</em></h2>
+    <p>Book a free discovery call. We will talk through where you are and whether resume coaching is the right next step for your situation.</p>
+    <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener" class="btn-gold">Book a free discovery call</a>
+    <span class="cta-fine">Usually available within a few days</span>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" style="height:44px; width:auto;" />
+        <p>Practical 1:1 career coaching for college students, recent graduates, and early-career professionals.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <a href="https://calendly.com/hrexperttogo/30min" target="_blank" rel="noopener">Book a discovery call</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 HR Expert to go. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
