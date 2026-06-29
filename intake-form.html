@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Search Intake — HR Expert to Go</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: white;
+      padding: 36px 40px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      font-size: 14px;
+      opacity: 0.75;
+      line-height: 1.5;
+    }
+
+    form {
+      padding: 36px 40px;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 28px 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section-label:first-of-type { margin-top: 0; }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    label .optional {
+      font-weight: 400;
+      color: #aaa;
+      font-size: 11px;
+      margin-left: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #1a1a2e;
+      background: #fafafa;
+      transition: border-color 0.15s;
+      outline: none;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #4a6cf7;
+      background: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+      line-height: 1.5;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .hint {
+      font-size: 11px;
+      color: #999;
+      margin-top: 4px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #444;
+      cursor: pointer;
+      background: #f5f7fa;
+      border: 1.5px solid #e0e0e0;
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: all 0.15s;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+      width: auto;
+      accent-color: #4a6cf7;
+    }
+
+    .checkbox-group label:has(input:checked) {
+      background: #eef1ff;
+      border-color: #4a6cf7;
+      color: #4a6cf7;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #4a6cf7 0%, #6a3de8 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 28px;
+      transition: opacity 0.15s;
+    }
+
+    .submit-btn:hover { opacity: 0.9; }
+
+    .footer-note {
+      text-align: center;
+      font-size: 11px;
+      color: #bbb;
+      padding: 0 40px 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Job Search Intake Form</h1>
+      <p>Tell us about yourself and what you're looking for. We'll search for fresh job postings daily and deliver the best matches to your inbox.</p>
+    </div>
+
+    <!--
+      FORMSPREE SETUP:
+      Replace YOUR_FORMSPREE_FORM_ID below with your actual Formspree form ID.
+      Get it from formspree.io → New Form → copy the endpoint ID.
+    -->
+    <form action="https://job-agent-rho-five.vercel.app/api/onboard" method="POST">
+
+      <!-- ── Personal Info ── -->
+      <p class="section-label">About You</p>
+
+      <div class="row">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required placeholder="Jane Doe" />
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="jane@email.com" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="experience_years">Years of Experience</label>
+        <select id="experience_years" name="experience_years" required>
+          <option value="">Select…</option>
+          <option value="0-1">Less than 1 year</option>
+          <option value="1-3">1–3 years</option>
+          <option value="3-5">3–5 years</option>
+          <option value="5-10">5–10 years</option>
+          <option value="10+">10+ years</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="job_level">Job Level</label>
+        <select id="job_level" name="job_level" required>
+          <option value="">Select…</option>
+          <option value="entry">Entry Level / Junior</option>
+          <option value="mid">Mid Level</option>
+          <option value="senior">Senior</option>
+          <option value="lead">Lead / Staff</option>
+          <option value="manager">Manager</option>
+          <option value="director">Director</option>
+          <option value="vp">VP / C-Suite</option>
+        </select>
+      </div>
+
+      <!-- ── Job Preferences ── -->
+      <p class="section-label">Job Preferences</p>
+
+      <div class="field">
+        <label for="job_titles">Target Job Titles</label>
+        <input type="text" id="job_titles" name="job_titles" required
+          placeholder="e.g. Marketing Manager, Brand Manager, Content Strategist" />
+        <p class="hint">Comma-separated. Be specific — these drive your daily searches.</p>
+      </div>
+
+      <div class="field">
+        <label for="industries">Industries of Interest <span class="optional">(optional)</span></label>
+        <input type="text" id="industries" name="industries"
+          placeholder="e.g. Tech, Healthcare, Finance, Media" />
+        <p class="hint">Comma-separated.</p>
+      </div>
+
+      <div class="field">
+        <label for="industries_exclude">Industries to Exclude <span class="optional">(optional)</span></label>
+        <input type="text" id="industries_exclude" name="industries_exclude"
+          placeholder="e.g. Gambling, Tobacco, MLM" />
+      </div>
+
+      <div class="field">
+        <label for="target_companies">Dream Companies <span class="optional">(optional)</span></label>
+        <input type="text" id="target_companies" name="target_companies"
+          placeholder="e.g. Google, Salesforce, HubSpot" />
+        <p class="hint">We'll prioritize postings from these companies.</p>
+      </div>
+
+      <!-- ── Work Arrangement ── -->
+      <p class="section-label">Work Arrangement</p>
+
+      <div class="field">
+        <label for="work_type">Work Type</label>
+        <select id="work_type" name="work_type" required>
+          <option value="any">Open to anything</option>
+          <option value="remote">Remote only</option>
+          <option value="hybrid">Hybrid</option>
+          <option value="onsite">On-site only</option>
+          <option value="fulltime">Full-time only</option>
+          <option value="contract">Contract / Freelance</option>
+          <option value="parttime">Part-time</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="locations">Preferred Location(s)</label>
+        <input type="text" id="locations" name="locations"
+          placeholder="e.g. Atlanta, GA, Remote, New York, NY" />
+        <p class="hint">Comma-separated cities or states. Type "Remote" if fully remote.</p>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="commute_radius_miles">Max Commute <span class="optional">(miles)</span></label>
+          <input type="number" id="commute_radius_miles" name="commute_radius_miles"
+            placeholder="e.g. 30" min="0" max="200" />
+        </div>
+        <div class="field">
+          <label for="travel_tolerance">Travel Tolerance</label>
+          <select id="travel_tolerance" name="travel_tolerance">
+            <option value="none">No travel</option>
+            <option value="minimal">Minimal (under 10%)</option>
+            <option value="25">Up to 25%</option>
+            <option value="50">Up to 50%</option>
+            <option value="frequent">Frequent / OK with travel</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="relocation">Open to Relocation?</label>
+        <select id="relocation" name="relocation">
+          <option value="no">No</option>
+          <option value="yes">Yes — anywhere</option>
+          <option value="selective">Yes — specific cities only</option>
+        </select>
+      </div>
+
+      <!-- ── Compensation ── -->
+      <p class="section-label">Compensation</p>
+
+      <div class="row">
+        <div class="field">
+          <label for="min_salary">Minimum Salary</label>
+          <input type="number" id="min_salary" name="min_salary"
+            placeholder="e.g. 70000" min="0" step="1000" />
+          <p class="hint">Annual, in USD.</p>
+        </div>
+        <div class="field">
+          <label for="target_salary">Target / Ideal Salary <span class="optional">(optional)</span></label>
+          <input type="number" id="target_salary" name="target_salary"
+            placeholder="e.g. 95000" min="0" step="1000" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Benefits Priorities <span class="optional">(select all that apply)</span></label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="benefits" value="health_insurance" /> Health Insurance</label>
+          <label><input type="checkbox" name="benefits" value="401k" /> 401(k) / Retirement</label>
+          <label><input type="checkbox" name="benefits" value="equity" /> Equity / Stock</label>
+          <label><input type="checkbox" name="benefits" value="pto" /> Unlimited PTO</label>
+          <label><input type="checkbox" name="benefits" value="parental_leave" /> Parental Leave</label>
+          <label><input type="checkbox" name="benefits" value="stipends" /> Learning / Wellness Stipend</label>
+        </div>
+      </div>
+
+      <!-- ── Search Filters ── -->
+      <p class="section-label">Search Filters</p>
+
+      <div class="field">
+        <label for="must_have_keywords">Must-Have Keywords <span class="optional">(optional)</span></label>
+        <input type="text" id="must_have_keywords" name="must_have_keywords"
+          placeholder="e.g. Salesforce, HubSpot, Python" />
+        <p class="hint">Jobs must mention these tools or skills.</p>
+      </div>
+
+      <div class="field">
+        <label for="exclude_keywords">Keywords to Exclude <span class="optional">(optional)</span></label>
+        <input type="text" id="exclude_keywords" name="exclude_keywords"
+          placeholder="e.g. cold calling, on-call, sales quota" />
+        <p class="hint">Jobs containing these words will be filtered out.</p>
+      </div>
+
+      <div class="field">
+        <label for="company_size">Company Size Preference <span class="optional">(optional)</span></label>
+        <select id="company_size" name="company_size">
+          <option value="any">No preference</option>
+          <option value="startup">Startup (under 50)</option>
+          <option value="small">Small (50–200)</option>
+          <option value="midsize">Mid-size (200–1,000)</option>
+          <option value="large">Large (1,000–10,000)</option>
+          <option value="enterprise">Enterprise (10,000+)</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="needs_visa_sponsorship">Work Authorization</label>
+        <select id="needs_visa_sponsorship" name="needs_visa_sponsorship">
+          <option value="no">Authorized to work in the US — no sponsorship needed</option>
+          <option value="yes">Need visa sponsorship</option>
+        </select>
+      </div>
+
+      <!-- ── Resume ── -->
+      <p class="section-label">Your Background</p>
+
+      <div class="field">
+        <label for="resume_summary">Resume Summary / Key Skills</label>
+        <textarea id="resume_summary" name="resume_summary" rows="5" required
+          placeholder="Paste a short summary of your experience, top skills, and notable achievements. This helps us personalize your job matches."></textarea>
+        <p class="hint">3–8 sentences is ideal. Include tools, industries, and accomplishments.</p>
+      </div>
+
+
+      <button type="submit" class="submit-btn">Start My Job Search →</button>
+    </form>
+
+    <p class="footer-note">Your information is used only to power your personalized job search. We never share your data.</p>
+  </div>
+</body>
+</html>
