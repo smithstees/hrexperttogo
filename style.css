@@ -1,0 +1,393 @@
+/* ================================================
+   HR Expert to Go — style.css
+   Shared styles for all pages
+   ================================================ */
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: #1a3a5c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #1a1a1a;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.25rem; }
+h2 { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 1rem; }
+h3 { font-size: 1.2rem; margin-bottom: 0.75rem; }
+
+p { margin-bottom: 1.25rem; }
+
+em { font-style: italic; }
+strong { font-weight: 700; }
+
+/* --- Layout --- */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container--wide {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+/* --- Navigation --- */
+nav {
+  border-bottom: 1px solid #e8e8e8;
+  padding: 1.25rem 0;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #1a3a5c;
+  text-decoration: none;
+}
+
+.nav-cta {
+  background: #1a3a5c;
+  color: #ffffff !important;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.nav-cta:hover {
+  background: #142d48;
+  text-decoration: none !important;
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.btn-primary {
+  background: #1a3a5c;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #142d48;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn-outline {
+  border: 2px solid #1a3a5c;
+  color: #1a3a5c;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #1a3a5c;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* --- Page Header (eyebrow + title) --- */
+.page-header {
+  padding: 4rem 0 2rem;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 3rem;
+}
+
+.page-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a3a5c;
+  margin-bottom: 0.75rem;
+}
+
+/* --- Blog Post Layout --- */
+.blog-post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.blog-post h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.blog-post h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.blog-post p {
+  color: #333333;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-meta-divider {
+  color: #ccc;
+}
+
+.blog-featured-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* --- CTA Box (in-post) --- */
+.cta-box {
+  background: #f0f5fa;
+  border-left: 4px solid #1a3a5c;
+  border-radius: 0 8px 8px 0;
+  padding: 2rem 2rem 2rem 1.75rem;
+  margin: 2.5rem 0;
+}
+
+.cta-box h3 {
+  color: #1a3a5c;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.cta-box p {
+  margin-bottom: 1.25rem;
+  font-size: 0.975rem;
+}
+
+.cta-box .btn {
+  font-size: 0.95rem;
+  padding: 0.7rem 1.5rem;
+}
+
+/* --- Author Box --- */
+.author-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+
+.author-box img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author-box-text p {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0;
+}
+
+.author-box-text strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #1a1a1a;
+}
+
+/* --- Footer --- */
+footer {
+  background: #1a1a1a;
+  color: #cccccc;
+  padding: 3rem 0 2rem;
+  font-size: 0.875rem;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-brand img {
+  height: 32px;
+  width: auto;
+  margin-bottom: 0.75rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
+}
+
+.footer-brand p {
+  color: #aaa;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-nav h4 {
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-nav a {
+  color: #aaa;
+  font-size: 0.875rem;
+}
+
+.footer-nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 0;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.footer-bottom a {
+  color: #888;
+}
+
+.footer-bottom a:hover {
+  color: #ccc;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .author-box {
+    flex-direction: column;
+  }
+
+  .blog-post h2 {
+    font-size: 1.25rem;
+  }
+}
