@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You're In! — HR Expert to Go</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 520px;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 40px 40px 36px;
+    }
+
+    .checkmark {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 32px;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .body {
+      padding: 36px 40px;
+    }
+
+    .steps {
+      text-align: left;
+      margin-bottom: 28px;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .step:last-child { border-bottom: none; }
+
+    .step-icon {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      background: #eef1ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .step-text strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 2px;
+    }
+
+    .step-text span {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    .tip-box {
+      background: #f5f7fa;
+      border-left: 3px solid #4a6cf7;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+      text-align: left;
+      margin-bottom: 28px;
+    }
+
+    .tip-box p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .tip-box strong {
+      color: #1a1a2e;
+    }
+
+    .back-link {
+      display: inline-block;
+      font-size: 13px;
+      color: #4a6cf7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    .footer {
+      padding: 0 40px 28px;
+      font-size: 11px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="checkmark">✓</div>
+      <h1>You're all set!</h1>
+      <p>We received your intake form and your personalized job search starts today.</p>
+    </div>
+
+    <div class="body">
+      <div class="steps">
+        <div class="step">
+          <div class="step-icon">🔍</div>
+          <div class="step-text">
+            <strong>Daily job search</strong>
+            <span>We scan Indeed, LinkedIn, Glassdoor, and more every day for fresh postings that match your preferences.</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">📬</div>
+          <div class="step-text">
+            <strong>Straight to your inbox</strong>
+            <span>You'll receive a curated digest each morning with salary info and direct apply links — no job board logins needed.</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">🚫</div>
+          <div class="step-text">
+            <strong>No repeats</strong>
+            <span>Once we've sent you a listing, you won't see it again unless it's reposted as a new opening.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <p><strong>Pro tip:</strong> Apply within 24 hours of receiving your digest. Studies show early applicants are significantly more likely to get a callback — that's the whole point of this service.</p>
+      </div>
+
+      <a class="back-link" href="https://hrexperttogo.com">← Back to HR Expert to Go</a>
+    </div>
+
+    <div class="footer">
+      Questions? Reply to any of your daily digest emails and we'll get back to you.
+    </div>
+  </div>
+</body>
+</html>
