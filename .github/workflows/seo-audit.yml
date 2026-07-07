@@ -1,0 +1,143 @@
+name: Weekly SEO audit
+
+# Runs every Sunday at 12:00 UTC (8:00 AM ET during DST, 7:00 AM ET in EST).
+# GitHub cron uses UTC — 12:00 UTC on Sunday is 8am ET in July.
+# In winter (EST) this shifts to 7am ET. If you want 8am year-round in ET,
+# swap in two cron entries (one for DST, one for standard time) or accept the
+# hour drift — most people prefer "Sunday morning" so the drift is fine.
+on:
+  schedule:
+    - cron: "0 12 * * 0"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: true
+        default: "both"
+        type: choice
+        options:
+          - both
+          - safe-fix-only
+          - audit-only
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  audit-and-fix:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Determine mode
+        id: mode
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          if [ -z "$MODE" ]; then MODE="both"; fi
+          echo "mode=$MODE" >> $GITHUB_OUTPUT
+
+      # -------------------------------------------------------------------- #
+      # Step 1: safe-fix on main branch
+      # -------------------------------------------------------------------- #
+      - name: Run safe-fix audit
+        id: safefix
+        if: steps.mode.outputs.mode != 'audit-only'
+        run: python scripts/seo_audit.py --mode safe-fix
+
+      - name: Commit safe fixes
+        if: steps.mode.outputs.mode != 'audit-only'
+        run: |
+          git config user.name "seo-bot"
+          git config user.email "seo-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No safe fixes to commit."
+          else
+            git commit -m "chore(seo): weekly safe fixes ($(date -u +%Y-%m-%d))"
+            git push origin HEAD:main
+          fi
+
+      # -------------------------------------------------------------------- #
+      # Step 2: content-pr on a branch (opens/updates a PR)
+      # -------------------------------------------------------------------- #
+      - name: Run content-pr audit on branch
+        if: steps.mode.outputs.mode == 'both'
+        run: |
+          BRANCH="seo/content-updates-$(date -u +%Y-%m-%d)"
+          echo "BRANCH=$BRANCH" >> $GITHUB_ENV
+          # Ensure we're up to date after the safe-fix push
+          git pull --rebase origin main
+          git checkout -B "$BRANCH"
+          python scripts/seo_audit.py --mode content-pr
+          git add -A
+          if git diff --cached --quiet; then
+            echo "PR_NEEDED=false" >> $GITHUB_ENV
+          else
+            git commit -m "seo: audience-tuned title & description updates"
+            git push -f origin "$BRANCH"
+            echo "PR_NEEDED=true" >> $GITHUB_ENV
+          fi
+
+      - name: Open or update pull request
+        if: env.PR_NEEDED == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh pr view "$BRANCH" >/dev/null 2>&1; then
+            echo "PR already exists — updated with new push."
+          else
+            gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title "SEO: audience-tuned title & description updates" \
+              --body-file reports/seo-report.md
+          fi
+
+      # -------------------------------------------------------------------- #
+      # Step 3: post report as a GitHub Issue (GitHub emails you automatically)
+      # -------------------------------------------------------------------- #
+      - name: Upload report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-report
+          path: reports/
+
+      - name: Post report as GitHub Issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          TITLE="Weekly SEO audit — $DATE"
+          # Prepend a short summary + run link, then the full report
+          {
+            echo "**Run:** ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo
+            echo "Safe fixes (if any) were committed directly to \`main\`."
+            echo "Content suggestions (if any) were opened as a pull request labeled \`seo\`."
+            echo
+            echo "---"
+            echo
+            cat reports/seo-report.md
+          } > /tmp/issue-body.md
+          gh issue create \
+            --title "$TITLE" \
+            --body-file /tmp/issue-body.md \
+            --label "seo,automated" || \
+          gh issue create \
+            --title "$TITLE" \
+            --body-file /tmp/issue-body.md
