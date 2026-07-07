@@ -1,6 +1,6 @@
 {
   "date": "2026-07-07",
-  "mode": "safe-fix",
+  "mode": "content-pr",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -840,7 +840,30 @@
       "fix_note": ""
     }
   ],
-  "fixes_applied": [],
+  "fixes_applied": [
+    "about.html: updated <title>",
+    "about.html: updated meta description",
+    "contact.html: updated <title>",
+    "contact.html: updated meta description",
+    "faq.html: updated <title>",
+    "faq.html: updated meta description",
+    "index.html: updated <title>",
+    "index.html: updated meta description",
+    "interview-preparation.html: updated <title>",
+    "interview-preparation.html: updated meta description",
+    "job-search-strategy.html: updated <title>",
+    "job-search-strategy.html: updated meta description",
+    "pricing.html: updated <title>",
+    "pricing.html: updated meta description",
+    "profile-optimization.html: updated <title>",
+    "profile-optimization.html: updated meta description",
+    "resume-coaching.html: updated <title>",
+    "resume-coaching.html: updated meta description",
+    "salary-negotiation.html: updated <title>",
+    "salary-negotiation.html: updated meta description",
+    "why-your-college-grad-needs-career-coaching.html: updated <title>",
+    "why-your-college-grad-needs-career-coaching.html: updated meta description"
+  ],
   "content_proposals": [
     {
       "page": "about.html",

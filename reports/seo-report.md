@@ -1,10 +1,10 @@
 # SEO Audit Report — 2026-07-07
 
 **Site:** https://hrexperttogo.com  
-**Mode:** `safe-fix`  
+**Mode:** `content-pr`  
 **Pages scanned:** 15  
 **Issues found:** 28 (high: 4, medium: 12, low: 12)  
-**Automated fixes applied:** 0
+**Automated fixes applied:** 22
 
 ## Target audience keywords
 
@@ -19,6 +19,31 @@ Titles and descriptions are tuned toward:
 - job search coach for early career professionals
 - career coach for parents of college students
 - SHRM-certified career coach
+
+## Fixes applied this run
+
+- about.html: updated <title>
+- about.html: updated meta description
+- contact.html: updated <title>
+- contact.html: updated meta description
+- faq.html: updated <title>
+- faq.html: updated meta description
+- index.html: updated <title>
+- index.html: updated meta description
+- interview-preparation.html: updated <title>
+- interview-preparation.html: updated meta description
+- job-search-strategy.html: updated <title>
+- job-search-strategy.html: updated meta description
+- pricing.html: updated <title>
+- pricing.html: updated meta description
+- profile-optimization.html: updated <title>
+- profile-optimization.html: updated meta description
+- resume-coaching.html: updated <title>
+- resume-coaching.html: updated meta description
+- salary-negotiation.html: updated <title>
+- salary-negotiation.html: updated meta description
+- why-your-college-grad-needs-career-coaching.html: updated <title>
+- why-your-college-grad-needs-career-coaching.html: updated meta description
 
 ## Content changes proposed (in pull request)
 
