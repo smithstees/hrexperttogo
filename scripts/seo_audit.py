@@ -575,10 +575,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "reach the right people."),
     },
     "profile-optimization.html": {
-        "title": "LinkedIn Profile Optimization for New Grads | HR Expert to go",
+        "title": "Professional Profile Optimization for New Grads | HR Expert to go",
         "description": ("Professional profile optimization for early-career "
-                        "professionals — position yourself so recruiters "
-                        "find you and want to reach out."),
+                        "professionals — position your online presence so "
+                        "recruiters find you and want to reach out."),
     },
     "faq.html": {
         "title": "FAQ | HR Expert to go — Career Coaching for New Grads",
