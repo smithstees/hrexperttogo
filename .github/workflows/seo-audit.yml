@@ -23,6 +23,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 jobs:
   audit-and-fix:
@@ -134,10 +135,10 @@ jobs:
             echo
             cat reports/seo-report.md
           } > /tmp/issue-body.md
+          # Create labels (idempotent) then create issue
+          gh label create seo --color 0e8a16 --description "SEO improvements" 2>/dev/null || true
+          gh label create automated --color ededed --description "Automated by workflow" 2>/dev/null || true
           gh issue create \
             --title "$TITLE" \
             --body-file /tmp/issue-body.md \
-            --label "seo,automated" || \
-          gh issue create \
-            --title "$TITLE" \
-            --body-file /tmp/issue-body.md
+            --label "seo,automated"
