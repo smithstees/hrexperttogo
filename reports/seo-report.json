@@ -1,6 +1,6 @@
 {
   "date": "2026-07-07",
-  "mode": "safe-fix",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -133,8 +133,8 @@
     },
     "index.html": {
       "filename": "index.html",
-      "title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
-      "description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
+      "title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
+      "description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
@@ -420,7 +420,7 @@
     "resume-coaching.html": {
       "filename": "resume-coaching.html",
       "title": "Resume Coaching for Recent Graduates | HR Expert to go",
-      "description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
+      "description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
@@ -614,115 +614,7 @@
       ]
     }
   },
-  "issues": [
-    {
-      "page": "index.html",
-      "severity": "low",
-      "category": "title",
-      "message": "Title long (80 chars, prefer \u226460)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "index.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (190 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "resume-coaching.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (167 chars)",
-      "fixed": false,
-      "fix_note": ""
-    }
-  ],
-  "fixes_applied": [
-    "about.html: Added/updated og:title",
-    "about.html: Added/updated og:description",
-    "about.html: Added/updated twitter:title",
-    "about.html: Added/updated twitter:description",
-    "contact.html: Added/updated og:title",
-    "contact.html: Added/updated og:description",
-    "contact.html: Added/updated twitter:title",
-    "contact.html: Added/updated twitter:description",
-    "contact.html: Added JSON-LD: ContactPage",
-    "faq.html: Added/updated og:title",
-    "faq.html: Added/updated og:description",
-    "faq.html: Added/updated twitter:title",
-    "faq.html: Added/updated twitter:description",
-    "faq.html: Added JSON-LD: FAQPage",
-    "index.html: Added/updated og:title",
-    "index.html: Added/updated og:description",
-    "index.html: Added/updated twitter:title",
-    "index.html: Added/updated twitter:description",
-    "intake-form.html: Added utility meta description",
-    "intake-form.html: Added/updated og:description",
-    "intake-form.html: Added/updated twitter:description",
-    "intake-form.html: Added JSON-LD: WebPage",
-    "interview-preparation.html: Added/updated og:title",
-    "interview-preparation.html: Added/updated og:description",
-    "interview-preparation.html: Added/updated twitter:title",
-    "interview-preparation.html: Added/updated twitter:description",
-    "job-search-strategy.html: Added/updated og:title",
-    "job-search-strategy.html: Added/updated og:description",
-    "job-search-strategy.html: Added/updated twitter:title",
-    "job-search-strategy.html: Added/updated twitter:description",
-    "pricing.html: Added/updated og:title",
-    "pricing.html: Added/updated og:description",
-    "pricing.html: Added/updated twitter:title",
-    "pricing.html: Added/updated twitter:description",
-    "pricing.html: Added JSON-LD: WebPage",
-    "privacy.html: Added utility meta description",
-    "privacy.html: Added/updated og:description",
-    "privacy.html: Added/updated twitter:description",
-    "privacy.html: Added JSON-LD: WebPage",
-    "profile-optimization.html: Added/updated og:title",
-    "profile-optimization.html: Added/updated og:description",
-    "profile-optimization.html: Added/updated twitter:title",
-    "profile-optimization.html: Added/updated twitter:description",
-    "resume-coaching.html: Added/updated og:title",
-    "resume-coaching.html: Added/updated og:description",
-    "resume-coaching.html: Added/updated twitter:title",
-    "resume-coaching.html: Added/updated twitter:description",
-    "salary-negotiation.html: Added/updated og:title",
-    "salary-negotiation.html: Added/updated og:description",
-    "salary-negotiation.html: Added/updated twitter:title",
-    "salary-negotiation.html: Added/updated twitter:description",
-    "terms.html: Added utility meta description",
-    "terms.html: Added/updated og:description",
-    "terms.html: Added/updated twitter:description",
-    "terms.html: Added JSON-LD: WebPage",
-    "thank-you.html: Added utility meta description",
-    "thank-you.html: Extended short title to 'Thank You \u2014 What Happens Next | HR Expert to go'",
-    "thank-you.html: Added/updated og:title",
-    "thank-you.html: Added/updated og:description",
-    "thank-you.html: Added/updated twitter:title",
-    "thank-you.html: Added/updated twitter:description",
-    "thank-you.html: Added JSON-LD: WebPage",
-    "why-your-college-grad-needs-career-coaching.html: Added/updated og:title",
-    "why-your-college-grad-needs-career-coaching.html: Added/updated og:description",
-    "why-your-college-grad-needs-career-coaching.html: Added/updated twitter:title",
-    "why-your-college-grad-needs-career-coaching.html: Added/updated twitter:description",
-    "why-your-college-grad-needs-career-coaching.html: Added JSON-LD: Article"
-  ],
-  "content_proposals": [
-    {
-      "page": "index.html",
-      "current_title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
-      "proposed_title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
-      "current_description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
-      "proposed_description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert."
-    },
-    {
-      "page": "resume-coaching.html",
-      "current_title": "Resume Coaching for Recent Graduates | HR Expert to go",
-      "proposed_title": "Resume Coaching for Recent Graduates | HR Expert to go",
-      "current_description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
-      "proposed_description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes."
-    }
-  ]
+  "issues": [],
+  "fixes_applied": [],
+  "content_proposals": []
 }
