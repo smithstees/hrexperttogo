@@ -1,6 +1,6 @@
 {
   "date": "2026-07-07",
-  "mode": "content-pr",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -9,16 +9,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/about.html",
       "og_tags": {
-        "og:title": "About Ty Smith | HR Expert to go",
-        "og:description": "Ty Smith is a SHRM-CP certified HR professional with 20+ years of experience in HR leadership and consulting. Learn why HR Expert to go exists and what makes this coaching different.",
+        "og:title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
+        "og:description": "Meet Ty Smith, SHRM-CP \u2014 a career coach with 20+ years of HR leadership who helps recent college graduates and early-career professionals land the right role.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/about.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "About Ty Smith | HR Expert to go",
-        "twitter:description": "Ty Smith is a SHRM-CP certified HR professional with 20+ years of experience in HR leadership and consulting. Learn why HR Expert to go exists and what makes this coaching different.",
+        "twitter:title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
+        "twitter:description": "Meet Ty Smith, SHRM-CP \u2014 a career coach with 20+ years of HR leadership who helps recent college graduates and early-career professionals land the right role.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -52,19 +52,19 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/contact.html",
       "og_tags": {
-        "og:title": "Contact | HR Expert to go",
-        "og:description": "Get in touch with HR Expert to go. Book a free discovery call or send a message directly to Ty Smith, SHRM-CP.",
+        "og:title": "Contact HR Expert to go | Career Coach for New Grads",
+        "og:description": "Get in touch with Ty Smith, SHRM-CP \u2014 virtual career coach for college students and recent graduates.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/contact.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Contact | HR Expert to go",
-        "twitter:description": "Get in touch with HR Expert to go. Book a free discovery call or send a message directly to Ty Smith, SHRM-CP.",
+        "twitter:title": "Contact HR Expert to go | Career Coach for New Grads",
+        "twitter:description": "Get in touch with Ty Smith, SHRM-CP \u2014 virtual career coach for college students and recent graduates.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -95,19 +95,19 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/faq.html",
       "og_tags": {
-        "og:title": "FAQ | HR Expert to go",
-        "og:description": "Answers to common questions about HR Expert to go career coaching, discovery calls, resume coaching, interview prep, salary negotiation, job leads, and what to expect.",
+        "og:title": "FAQ | HR Expert to go \u2014 Career Coaching for New Grads",
+        "og:description": "Common questions about virtual career coaching for college students, recent graduates, and the parents helping them launch a career.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/faq.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "FAQ | HR Expert to go",
-        "twitter:description": "Answers to common questions about HR Expert to go career coaching, discovery calls, resume coaching, interview prep, salary negotiation, job leads, and what to expect.",
+        "twitter:title": "FAQ | HR Expert to go \u2014 Career Coaching for New Grads",
+        "twitter:description": "Common questions about virtual career coaching for college students, recent graduates, and the parents helping them launch a career.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -138,16 +138,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
-        "og:title": "HR Expert to go | Virtual Career Coaching for College Students & Recent Graduates",
-        "og:description": "Practical 1:1 career coaching for college students, recent graduates, and early-career professionals. Resume help, interview prep, salary negotiation, and job search strategy from a real HR expert with 20+ years of experience.",
+        "og:title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
+        "og:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "HR Expert to go | Virtual Career Coaching for College Students & Recent Graduates",
-        "twitter:description": "Practical 1:1 career coaching for college students, recent graduates, and early-career professionals. Resume help, interview prep, salary negotiation, and job search strategy from a real HR expert with 20+ years of experience.",
+        "twitter:title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
+        "twitter:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -182,12 +182,12 @@
     "intake-form.html": {
       "filename": "intake-form.html",
       "title": "Job Search Intake \u2014 HR Expert to Go",
-      "description": "",
+      "description": "Intake form for HR Expert to go clients. Share a bit about your situation before your first coaching session with Ty Smith, SHRM-CP.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/intake-form.html",
       "og_tags": {
         "og:title": "Job Search Intake \u2014 HR Expert to Go",
-        "og:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "og:description": "Intake form for HR Expert to go clients. Share a bit about your situation before your first coaching session with Ty Smith, SHRM-CP.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/intake-form.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
@@ -195,10 +195,10 @@
       "twitter_tags": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Job Search Intake \u2014 HR Expert to Go",
-        "twitter:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "twitter:description": "Intake form for HR Expert to go clients. Share a bit about your situation before your first coaching session with Ty Smith, SHRM-CP.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": []
     },
@@ -209,16 +209,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/interview-preparation.html",
       "og_tags": {
-        "og:title": "Interview Preparation | HR Expert to go",
-        "og:description": "Interview coaching for college students and recent graduates. Practice real questions, get honest feedback, and walk into your next interview knowing you are ready.",
+        "og:title": "Interview Prep for New Grads | Virtual Career Coach",
+        "og:description": "Interview coaching for college students and recent graduates. Practice real questions with a SHRM-certified HR expert and walk in ready.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/interview-preparation.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Interview Preparation | HR Expert to go",
-        "twitter:description": "Interview coaching for college students and recent graduates. Practice real questions, get honest feedback, and walk into your next interview knowing you are ready.",
+        "twitter:title": "Interview Prep for New Grads | Virtual Career Coach",
+        "twitter:description": "Interview coaching for college students and recent graduates. Practice real questions with a SHRM-certified HR expert and walk in ready.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -253,16 +253,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
-        "og:title": "Job Search Strategy | HR Expert to go",
-        "og:description": "Job search strategy coaching for recent graduates and early-career professionals. Build a focused, organized search that gets your materials in front of the right people.",
+        "og:title": "Job Search Strategy for New Grads | HR Expert to go",
+        "og:description": "A focused job search strategy for recent graduates and early-career professionals so your applications reach the right people.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/job-search-strategy.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Job Search Strategy | HR Expert to go",
-        "twitter:description": "Job search strategy coaching for recent graduates and early-career professionals. Build a focused, organized search that gets your materials in front of the right people.",
+        "twitter:title": "Job Search Strategy for New Grads | HR Expert to go",
+        "twitter:description": "A focused job search strategy for recent graduates and early-career professionals so your applications reach the right people.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -297,19 +297,19 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/pricing.html",
       "og_tags": {
-        "og:title": "Pricing | HR Expert to go",
-        "og:description": "Transparent pricing for HR Expert to go career coaching services. Resume coaching, interview prep, salary negotiation, job search strategy, and full launch packages for college students and recent graduates.",
+        "og:title": "Career Coaching Pricing for New Grads | HR Expert to go",
+        "og:description": "Transparent pricing for 1:1 virtual career coaching designed for college students, recent graduates, and the parents supporting them.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/pricing.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Pricing | HR Expert to go",
-        "twitter:description": "Transparent pricing for HR Expert to go career coaching services. Resume coaching, interview prep, salary negotiation, job search strategy, and full launch packages for college students and recent graduates.",
+        "twitter:title": "Career Coaching Pricing for New Grads | HR Expert to go",
+        "twitter:description": "Transparent pricing for 1:1 virtual career coaching designed for college students, recent graduates, and the parents supporting them.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -333,12 +333,12 @@
     "privacy.html": {
       "filename": "privacy.html",
       "title": "Privacy Policy | HR Expert to go",
-      "description": "",
+      "description": "Privacy policy for HR Expert to go \u2014 how Ty Smith's virtual career coaching practice collects, uses, and protects your personal information.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/privacy.html",
       "og_tags": {
         "og:title": "Privacy Policy | HR Expert to go",
-        "og:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "og:description": "Privacy policy for HR Expert to go \u2014 how Ty Smith's virtual career coaching practice collects, uses, and protects your personal information.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/privacy.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
@@ -346,10 +346,10 @@
       "twitter_tags": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Privacy Policy | HR Expert to go",
-        "twitter:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "twitter:description": "Privacy policy for HR Expert to go \u2014 how Ty Smith's virtual career coaching practice collects, uses, and protects your personal information.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -375,21 +375,21 @@
     },
     "profile-optimization.html": {
       "filename": "profile-optimization.html",
-      "title": "LinkedIn Profile Optimization for New Grads | HR Expert to go",
-      "description": "Professional profile optimization for early-career professionals \u2014 position yourself so recruiters find you and want to reach out.",
+      "title": "Professional Profile Optimization for New Grads | HR Expert to go",
+      "description": "Professional profile optimization for early-career professionals \u2014 position your online presence so recruiters find you and want to reach out.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/profile-optimization.html",
       "og_tags": {
-        "og:title": "Professional Profile Optimization | HR Expert to go",
-        "og:description": "Professional profile coaching for college students and recent graduates. Learn how to position your profile so recruiters can find you and what they find makes them want to reach out.",
+        "og:title": "Professional Profile Optimization for New Grads | HR Expert to go",
+        "og:description": "Professional profile optimization for early-career professionals \u2014 position your online presence so recruiters find you and want to reach out.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/profile-optimization.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Professional Profile Optimization | HR Expert to go",
-        "twitter:description": "Professional profile coaching for college students and recent graduates. Learn how to position your profile so recruiters can find you and what they find makes them want to reach out.",
+        "twitter:title": "Professional Profile Optimization for New Grads | HR Expert to go",
+        "twitter:description": "Professional profile optimization for early-career professionals \u2014 position your online presence so recruiters find you and want to reach out.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -424,16 +424,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
-        "og:title": "Resume Coaching | HR Expert to go",
-        "og:description": "Resume coaching for college students and recent graduates. Learn what recruiters and hiring managers are actually looking for and how to position your experience to get noticed.",
+        "og:title": "Resume Coaching for Recent Graduates | HR Expert to go",
+        "og:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/resume-coaching.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Resume Coaching | HR Expert to go",
-        "twitter:description": "Resume coaching for college students and recent graduates. Learn what recruiters and hiring managers are actually looking for and how to position your experience to get noticed.",
+        "twitter:title": "Resume Coaching for Recent Graduates | HR Expert to go",
+        "twitter:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -468,16 +468,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/salary-negotiation.html",
       "og_tags": {
-        "og:title": "Salary Negotiation & Offer Review | HR Expert to go",
-        "og:description": "Offer review and salary negotiation coaching for recent graduates and early-career professionals. Understand your offer, know what is reasonable to ask for, and negotiate with confidence.",
+        "og:title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
+        "og:description": "Salary negotiation coaching for early-career professionals. Understand the offer, know your worth, and ask with confidence.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/salary-negotiation.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Salary Negotiation & Offer Review | HR Expert to go",
-        "twitter:description": "Offer review and salary negotiation coaching for recent graduates and early-career professionals. Understand your offer, know what is reasonable to ask for, and negotiate with confidence.",
+        "twitter:title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
+        "twitter:description": "Salary negotiation coaching for early-career professionals. Understand the offer, know your worth, and ask with confidence.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -508,12 +508,12 @@
     "terms.html": {
       "filename": "terms.html",
       "title": "Terms of Service | HR Expert to go",
-      "description": "",
+      "description": "Terms of service for HR Expert to go \u2014 the guidelines that apply when you book coaching, use the website, or engage with our services.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/terms.html",
       "og_tags": {
         "og:title": "Terms of Service | HR Expert to go",
-        "og:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "og:description": "Terms of service for HR Expert to go \u2014 the guidelines that apply when you book coaching, use the website, or engage with our services.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/terms.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
@@ -521,10 +521,10 @@
       "twitter_tags": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Terms of Service | HR Expert to go",
-        "twitter:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "twitter:description": "Terms of service for HR Expert to go \u2014 the guidelines that apply when you book coaching, use the website, or engage with our services.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -550,24 +550,24 @@
     },
     "thank-you.html": {
       "filename": "thank-you.html",
-      "title": "You're In! \u2014 HR Expert to Go",
-      "description": "",
+      "title": "Thank You \u2014 What Happens Next | HR Expert to go",
+      "description": "Thanks for reaching out to HR Expert to go. Here is what happens next after you book a discovery call or submit an intake form.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/thank-you.html",
       "og_tags": {
-        "og:title": "You're In! \u2014 HR Expert to Go",
-        "og:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "og:title": "Thank You \u2014 What Happens Next | HR Expert to go",
+        "og:description": "Thanks for reaching out to HR Expert to go. Here is what happens next after you book a discovery call or submit an intake form.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/thank-you.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "You're In! \u2014 HR Expert to Go",
-        "twitter:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "twitter:title": "Thank You \u2014 What Happens Next | HR Expert to go",
+        "twitter:description": "Thanks for reaching out to HR Expert to go. Here is what happens next after you book a discovery call or submit an intake form.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "https://hrexperttogo.com"
@@ -580,19 +580,19 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
       "og_tags": {
-        "og:title": "Why Your College Grad Needs Career Coaching Before They Start Their Career | HR Expert to go",
-        "og:description": "A degree opens doors. It does not teach your child how to walk through them. Here is why career coaching before the job search makes all the difference for new grads.",
+        "og:title": "Why Your College Grad Needs a Career Coach | HR Expert to go",
+        "og:description": "A guide for parents of new college graduates: how career coaching helps your grad land the right job faster and with more confidence.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Why Your College Grad Needs Career Coaching Before They Start Their Career | HR Expert to go",
-        "twitter:description": "A degree opens doors. It does not teach your child how to walk through them. Here is why career coaching before the job search makes all the difference for new grads.",
+        "twitter:title": "Why Your College Grad Needs a Career Coach | HR Expert to go",
+        "twitter:description": "A guide for parents of new college graduates: how career coaching helps your grad land the right job faster and with more confidence.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -616,22 +616,6 @@
   },
   "issues": [
     {
-      "page": "contact.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "faq.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
       "page": "index.html",
       "severity": "low",
       "category": "title",
@@ -648,113 +632,97 @@
       "fix_note": ""
     },
     {
-      "page": "intake-form.html",
-      "severity": "high",
-      "category": "description",
-      "message": "Missing meta description",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "intake-form.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "pricing.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "privacy.html",
-      "severity": "high",
-      "category": "description",
-      "message": "Missing meta description",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "privacy.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
       "page": "resume-coaching.html",
       "severity": "low",
       "category": "description",
       "message": "Description long (167 chars)",
       "fixed": false,
       "fix_note": ""
-    },
-    {
-      "page": "terms.html",
-      "severity": "high",
-      "category": "description",
-      "message": "Missing meta description",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "terms.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "thank-you.html",
-      "severity": "medium",
-      "category": "title",
-      "message": "Title too short (28 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "thank-you.html",
-      "severity": "high",
-      "category": "description",
-      "message": "Missing meta description",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "thank-you.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "why-your-college-grad-needs-career-coaching.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
     }
   ],
   "fixes_applied": [
-    "profile-optimization.html: updated <title>",
-    "profile-optimization.html: updated meta description"
+    "about.html: Added/updated og:title",
+    "about.html: Added/updated og:description",
+    "about.html: Added/updated twitter:title",
+    "about.html: Added/updated twitter:description",
+    "contact.html: Added/updated og:title",
+    "contact.html: Added/updated og:description",
+    "contact.html: Added/updated twitter:title",
+    "contact.html: Added/updated twitter:description",
+    "contact.html: Added JSON-LD: ContactPage",
+    "faq.html: Added/updated og:title",
+    "faq.html: Added/updated og:description",
+    "faq.html: Added/updated twitter:title",
+    "faq.html: Added/updated twitter:description",
+    "faq.html: Added JSON-LD: FAQPage",
+    "index.html: Added/updated og:title",
+    "index.html: Added/updated og:description",
+    "index.html: Added/updated twitter:title",
+    "index.html: Added/updated twitter:description",
+    "intake-form.html: Added utility meta description",
+    "intake-form.html: Added/updated og:description",
+    "intake-form.html: Added/updated twitter:description",
+    "intake-form.html: Added JSON-LD: WebPage",
+    "interview-preparation.html: Added/updated og:title",
+    "interview-preparation.html: Added/updated og:description",
+    "interview-preparation.html: Added/updated twitter:title",
+    "interview-preparation.html: Added/updated twitter:description",
+    "job-search-strategy.html: Added/updated og:title",
+    "job-search-strategy.html: Added/updated og:description",
+    "job-search-strategy.html: Added/updated twitter:title",
+    "job-search-strategy.html: Added/updated twitter:description",
+    "pricing.html: Added/updated og:title",
+    "pricing.html: Added/updated og:description",
+    "pricing.html: Added/updated twitter:title",
+    "pricing.html: Added/updated twitter:description",
+    "pricing.html: Added JSON-LD: WebPage",
+    "privacy.html: Added utility meta description",
+    "privacy.html: Added/updated og:description",
+    "privacy.html: Added/updated twitter:description",
+    "privacy.html: Added JSON-LD: WebPage",
+    "profile-optimization.html: Added/updated og:title",
+    "profile-optimization.html: Added/updated og:description",
+    "profile-optimization.html: Added/updated twitter:title",
+    "profile-optimization.html: Added/updated twitter:description",
+    "resume-coaching.html: Added/updated og:title",
+    "resume-coaching.html: Added/updated og:description",
+    "resume-coaching.html: Added/updated twitter:title",
+    "resume-coaching.html: Added/updated twitter:description",
+    "salary-negotiation.html: Added/updated og:title",
+    "salary-negotiation.html: Added/updated og:description",
+    "salary-negotiation.html: Added/updated twitter:title",
+    "salary-negotiation.html: Added/updated twitter:description",
+    "terms.html: Added utility meta description",
+    "terms.html: Added/updated og:description",
+    "terms.html: Added/updated twitter:description",
+    "terms.html: Added JSON-LD: WebPage",
+    "thank-you.html: Added utility meta description",
+    "thank-you.html: Extended short title to 'Thank You \u2014 What Happens Next | HR Expert to go'",
+    "thank-you.html: Added/updated og:title",
+    "thank-you.html: Added/updated og:description",
+    "thank-you.html: Added/updated twitter:title",
+    "thank-you.html: Added/updated twitter:description",
+    "thank-you.html: Added JSON-LD: WebPage",
+    "why-your-college-grad-needs-career-coaching.html: Added/updated og:title",
+    "why-your-college-grad-needs-career-coaching.html: Added/updated og:description",
+    "why-your-college-grad-needs-career-coaching.html: Added/updated twitter:title",
+    "why-your-college-grad-needs-career-coaching.html: Added/updated twitter:description",
+    "why-your-college-grad-needs-career-coaching.html: Added JSON-LD: Article"
   ],
   "content_proposals": [
     {
-      "page": "profile-optimization.html",
-      "current_title": "LinkedIn Profile Optimization for New Grads | HR Expert to go",
-      "proposed_title": "Professional Profile Optimization for New Grads | HR Expert to go",
-      "current_description": "Professional profile optimization for early-career professionals \u2014 position yourself so recruiters find you and want to reach out.",
-      "proposed_description": "Professional profile optimization for early-career professionals \u2014 position your online presence so recruiters find you and want to reach out."
+      "page": "index.html",
+      "current_title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
+      "proposed_title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
+      "current_description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
+      "proposed_description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert."
+    },
+    {
+      "page": "resume-coaching.html",
+      "current_title": "Resume Coaching for Recent Graduates | HR Expert to go",
+      "proposed_title": "Resume Coaching for Recent Graduates | HR Expert to go",
+      "current_description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
+      "proposed_description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes."
     }
   ]
 }

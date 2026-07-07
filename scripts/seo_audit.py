@@ -56,6 +56,36 @@ AUDIENCE_KEYWORDS = [
 # Pages that shouldn't be indexed prominently or need special handling.
 LOW_PRIORITY_PAGES = {"thank-you.html", "intake-form.html"}
 
+# Meta descriptions for utility/legal pages. Kept concise and factual — these
+# pages are not primary SEO targets, but Google still wants a description.
+UTILITY_DESCRIPTIONS: dict[str, str] = {
+    "privacy.html": (
+        "Privacy policy for HR Expert to go — how Ty Smith's virtual "
+        "career coaching practice collects, uses, and protects your "
+        "personal information."
+    ),
+    "terms.html": (
+        "Terms of service for HR Expert to go — the guidelines that "
+        "apply when you book coaching, use the website, or engage with "
+        "our services."
+    ),
+    "thank-you.html": (
+        "Thanks for reaching out to HR Expert to go. Here is what "
+        "happens next after you book a discovery call or submit an "
+        "intake form."
+    ),
+    "intake-form.html": (
+        "Intake form for HR Expert to go clients. Share a bit about "
+        "your situation before your first coaching session with Ty "
+        "Smith, SHRM-CP."
+    ),
+}
+
+# Longer, more descriptive titles for utility pages (thank-you was too short).
+UTILITY_TITLES: dict[str, str] = {
+    "thank-you.html": "Thank You — What Happens Next | HR Expert to go",
+}
+
 
 @dataclass
 class Issue:
@@ -334,6 +364,33 @@ def apply_safe_fixes(path: Path, info: PageInfo) -> list[str]:
     if ensure_canonical(soup, canonical_url):
         changes.append("Added/updated canonical link")
 
+    # Backfill meta description on utility/legal pages that don't have one.
+    # (Safe: these pages currently have NO description, so we're adding not
+    # overwriting. Primary marketing pages route through the content-pr flow.)
+    if not info.description and path.name in UTILITY_DESCRIPTIONS:
+        util_desc = UTILITY_DESCRIPTIONS[path.name]
+        if ensure_meta(soup, name="description", content=util_desc):
+            changes.append("Added utility meta description")
+            info.description = util_desc
+
+    # Extend utility page titles that are too short. Only touch when the
+    # existing title is under 30 chars AND we have a preferred alternative.
+    if path.name in UTILITY_TITLES:
+        title_tag = soup.find("title")
+        current_title = title_tag.get_text(strip=True) if title_tag else ""
+        if len(current_title) < 30:
+            new_title = UTILITY_TITLES[path.name]
+            if title_tag:
+                title_tag.string = new_title
+            else:
+                head = soup.find("head")
+                if head:
+                    new_tag = soup.new_tag("title")
+                    new_tag.string = new_title
+                    head.insert(0, new_tag)
+            changes.append(f"Extended short title to '{new_title}'")
+            info.title = new_title
+
     # Open Graph
     og_title = info.title or humanize_filename(path.name)
     og_desc = info.description or f"{SITE_NAME} — practical 1:1 career coaching."
@@ -469,6 +526,68 @@ def build_jsonld_for(filename: str, info: PageInfo) -> list[dict[str, Any]]:
             "url": canonical_url_for(filename),
             "description": info.description,
         }]
+    if filename == "pricing.html":
+        return [{
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Career coaching pricing",
+            "url": canonical_url_for(filename),
+            "description": info.description,
+            "provider": {"@type": "Organization", "name": SITE_NAME,
+                         "url": SITE_URL},
+        }]
+    if filename == "contact.html":
+        return [{
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact HR Expert to go",
+            "url": canonical_url_for(filename),
+            "description": info.description,
+            "mainEntity": {"@type": "Organization", "name": SITE_NAME,
+                           "url": SITE_URL},
+        }]
+    if filename == "faq.html":
+        return [{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "url": canonical_url_for(filename),
+            "name": "HR Expert to go — Frequently Asked Questions",
+            "description": info.description,
+        }]
+    if filename == "why-your-college-grad-needs-career-coaching.html":
+        return [{
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Why Your College Grad Needs a Career Coach",
+            "url": canonical_url_for(filename),
+            "description": info.description,
+            "author": {"@type": "Person", "name": "Ty Smith"},
+            "publisher": {
+                "@type": "Organization",
+                "name": SITE_NAME,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": f"{SITE_URL}/HR_Expert_to_Go_Primary.png",
+                },
+            },
+        }]
+    if filename in ("privacy.html", "terms.html", "thank-you.html",
+                    "intake-form.html"):
+        name_map = {
+            "privacy.html": "Privacy Policy",
+            "terms.html": "Terms of Service",
+            "thank-you.html": "Thank You",
+            "intake-form.html": "Client Intake Form",
+        }
+        return [{
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": name_map[filename],
+            "url": canonical_url_for(filename),
+            "description": info.description or "HR Expert to go",
+            "isPartOf": {"@type": "WebSite", "name": SITE_NAME,
+                         "url": SITE_URL},
+        }]
     return []
 
 
@@ -530,11 +649,11 @@ def refresh_sitemap(pages: dict[str, PageInfo]) -> list[str]:
 # Tuned drafts. Kept conservative — reviewer must merge PR.
 CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     "index.html": {
-        "title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
+        "title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
         "description": ("1:1 virtual career coaching for college students, "
                         "recent graduates, and their parents. Resume, "
                         "interview, and salary help from a SHRM-certified "
-                        "HR expert with 20+ years of hiring experience."),
+                        "HR expert."),
     },
     "about.html": {
         "title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
@@ -553,8 +672,7 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
         "title": "Resume Coaching for Recent Graduates | HR Expert to go",
         "description": ("Resume coaching for new college graduates and "
                         "early-career professionals from an HR expert who "
-                        "has read thousands of resumes. Build one recruiters "
-                        "actually respond to."),
+                        "has read thousands of resumes."),
     },
     "interview-preparation.html": {
         "title": "Interview Prep for New Grads | Virtual Career Coach",
