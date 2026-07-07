@@ -1,11 +1,11 @@
 {
   "date": "2026-07-07",
-  "mode": "safe-fix",
+  "mode": "content-pr",
   "pages": {
     "about.html": {
       "filename": "about.html",
-      "title": "About Ty Smith | HR Expert to go",
-      "description": "Ty Smith is a SHRM-CP certified HR professional with 20+ years of experience in HR leadership and consulting. Learn why HR Expert to go exists and what makes this coaching different.",
+      "title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
+      "description": "Meet Ty Smith, SHRM-CP \u2014 a career coach with 20+ years of HR leadership who helps recent college graduates and early-career professionals land the right role.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/about.html",
       "og_tags": {
@@ -47,8 +47,8 @@
     },
     "contact.html": {
       "filename": "contact.html",
-      "title": "Contact | HR Expert to go",
-      "description": "Get in touch with HR Expert to go. Book a free discovery call or send a message directly to Ty Smith, SHRM-CP.",
+      "title": "Contact HR Expert to go | Career Coach for New Grads",
+      "description": "Get in touch with Ty Smith, SHRM-CP \u2014 virtual career coach for college students and recent graduates.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/contact.html",
       "og_tags": {
@@ -90,8 +90,8 @@
     },
     "faq.html": {
       "filename": "faq.html",
-      "title": "FAQ | HR Expert to go",
-      "description": "Answers to common questions about HR Expert to go career coaching, discovery calls, resume coaching, interview prep, salary negotiation, job leads, and what to expect.",
+      "title": "FAQ | HR Expert to go \u2014 Career Coaching for New Grads",
+      "description": "Common questions about virtual career coaching for college students, recent graduates, and the parents helping them launch a career.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/faq.html",
       "og_tags": {
@@ -133,8 +133,8 @@
     },
     "index.html": {
       "filename": "index.html",
-      "title": "HR Expert to go | Virtual Career Coaching for College Students & Recent Graduates",
-      "description": "Practical 1:1 career coaching for college students, recent graduates, and early-career professionals. Resume help, interview prep, salary negotiation, and job search strategy from a real HR expert with 20+ years of experience.",
+      "title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
+      "description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
@@ -204,8 +204,8 @@
     },
     "interview-preparation.html": {
       "filename": "interview-preparation.html",
-      "title": "Interview Preparation | HR Expert to go",
-      "description": "Interview coaching for college students and recent graduates. Practice real questions, get honest feedback, and walk into your next interview knowing you are ready.",
+      "title": "Interview Prep for New Grads | Virtual Career Coach",
+      "description": "Interview coaching for college students and recent graduates. Practice real questions with a SHRM-certified HR expert and walk in ready.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/interview-preparation.html",
       "og_tags": {
@@ -248,8 +248,8 @@
     },
     "job-search-strategy.html": {
       "filename": "job-search-strategy.html",
-      "title": "Job Search Strategy | HR Expert to go",
-      "description": "Job search strategy coaching for recent graduates and early-career professionals. Build a focused, organized search that gets your materials in front of the right people.",
+      "title": "Job Search Strategy for New Grads | HR Expert to go",
+      "description": "A focused job search strategy for recent graduates and early-career professionals so your applications reach the right people.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
@@ -292,8 +292,8 @@
     },
     "pricing.html": {
       "filename": "pricing.html",
-      "title": "Pricing | HR Expert to go",
-      "description": "Transparent pricing for HR Expert to go career coaching services. Resume coaching, interview prep, salary negotiation, job search strategy, and full launch packages for college students and recent graduates.",
+      "title": "Career Coaching Pricing for New Grads | HR Expert to go",
+      "description": "Transparent pricing for 1:1 virtual career coaching designed for college students, recent graduates, and the parents supporting them.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/pricing.html",
       "og_tags": {
@@ -375,8 +375,8 @@
     },
     "profile-optimization.html": {
       "filename": "profile-optimization.html",
-      "title": "Professional Profile Optimization | HR Expert to go",
-      "description": "Professional profile coaching for college students and recent graduates. Learn how to position your profile so recruiters can find you and what they find makes them want to reach out.",
+      "title": "LinkedIn Profile Optimization for New Grads | HR Expert to go",
+      "description": "Professional profile optimization for early-career professionals \u2014 position yourself so recruiters find you and want to reach out.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/profile-optimization.html",
       "og_tags": {
@@ -419,8 +419,8 @@
     },
     "resume-coaching.html": {
       "filename": "resume-coaching.html",
-      "title": "Resume Coaching | HR Expert to go",
-      "description": "Resume coaching for college students and recent graduates. Learn what recruiters and hiring managers are actually looking for and how to position your experience to get noticed.",
+      "title": "Resume Coaching for Recent Graduates | HR Expert to go",
+      "description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
@@ -463,8 +463,8 @@
     },
     "salary-negotiation.html": {
       "filename": "salary-negotiation.html",
-      "title": "Salary Negotiation & Offer Review | HR Expert to go",
-      "description": "Offer review and salary negotiation coaching for recent graduates and early-career professionals. Understand your offer, know what is reasonable to ask for, and negotiate with confidence.",
+      "title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
+      "description": "Salary negotiation coaching for early-career professionals. Understand the offer, know your worth, and ask with confidence.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/salary-negotiation.html",
       "og_tags": {
@@ -575,8 +575,8 @@
     },
     "why-your-college-grad-needs-career-coaching.html": {
       "filename": "why-your-college-grad-needs-career-coaching.html",
-      "title": "Why Your College Grad Needs Career Coaching Before They Start Their Career | HR Expert to go",
-      "description": "A degree opens doors. It does not teach your child how to walk through them. Here is why career coaching before the job search makes all the difference for new grads.",
+      "title": "Why Your College Grad Needs a Career Coach | HR Expert to go",
+      "description": "A guide for parents of new college graduates: how career coaching helps your grad land the right job faster and with more confidence.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
       "og_tags": {
@@ -616,42 +616,10 @@
   },
   "issues": [
     {
-      "page": "about.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (182 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "contact.html",
-      "severity": "medium",
-      "category": "title",
-      "message": "Title too short (25 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
       "page": "contact.html",
       "severity": "medium",
       "category": "structured-data",
       "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "faq.html",
-      "severity": "medium",
-      "category": "title",
-      "message": "Title too short (21 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "faq.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (167 chars)",
       "fixed": false,
       "fix_note": ""
     },
@@ -667,7 +635,7 @@
       "page": "index.html",
       "severity": "low",
       "category": "title",
-      "message": "Title long (81 chars, prefer \u226460)",
+      "message": "Title long (80 chars, prefer \u226460)",
       "fixed": false,
       "fix_note": ""
     },
@@ -675,7 +643,7 @@
       "page": "index.html",
       "severity": "low",
       "category": "description",
-      "message": "Description long (226 chars)",
+      "message": "Description long (190 chars)",
       "fixed": false,
       "fix_note": ""
     },
@@ -692,38 +660,6 @@
       "severity": "medium",
       "category": "structured-data",
       "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "interview-preparation.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (164 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "job-search-strategy.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (170 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "pricing.html",
-      "severity": "medium",
-      "category": "title",
-      "message": "Title too short (25 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "pricing.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (207 chars)",
       "fixed": false,
       "fix_note": ""
     },
@@ -748,14 +684,6 @@
       "severity": "medium",
       "category": "structured-data",
       "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "profile-optimization.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (183 chars)",
       "fixed": false,
       "fix_note": ""
     },
@@ -763,15 +691,7 @@
       "page": "resume-coaching.html",
       "severity": "low",
       "category": "description",
-      "message": "Description long (177 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "salary-negotiation.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (187 chars)",
+      "message": "Description long (167 chars)",
       "fixed": false,
       "fix_note": ""
     },
@@ -817,22 +737,6 @@
     },
     {
       "page": "why-your-college-grad-needs-career-coaching.html",
-      "severity": "low",
-      "category": "title",
-      "message": "Title long (92 chars, prefer \u226460)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "why-your-college-grad-needs-career-coaching.html",
-      "severity": "low",
-      "category": "description",
-      "message": "Description long (166 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "why-your-college-grad-needs-career-coaching.html",
       "severity": "medium",
       "category": "structured-data",
       "message": "No JSON-LD structured data",
@@ -840,84 +744,17 @@
       "fix_note": ""
     }
   ],
-  "fixes_applied": [],
+  "fixes_applied": [
+    "profile-optimization.html: updated <title>",
+    "profile-optimization.html: updated meta description"
+  ],
   "content_proposals": [
     {
-      "page": "about.html",
-      "current_title": "About Ty Smith | HR Expert to go",
-      "proposed_title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
-      "current_description": "Ty Smith is a SHRM-CP certified HR professional with 20+ years of experience in HR leadership and consulting. Learn why HR Expert to go exists and what makes this coaching different.",
-      "proposed_description": "Meet Ty Smith, SHRM-CP \u2014 a career coach with 20+ years of HR leadership who helps recent college graduates and early-career professionals land the right role."
-    },
-    {
-      "page": "contact.html",
-      "current_title": "Contact | HR Expert to go",
-      "proposed_title": "Contact HR Expert to go | Career Coach for New Grads",
-      "current_description": "Get in touch with HR Expert to go. Book a free discovery call or send a message directly to Ty Smith, SHRM-CP.",
-      "proposed_description": "Get in touch with Ty Smith, SHRM-CP \u2014 virtual career coach for college students and recent graduates."
-    },
-    {
-      "page": "faq.html",
-      "current_title": "FAQ | HR Expert to go",
-      "proposed_title": "FAQ | HR Expert to go \u2014 Career Coaching for New Grads",
-      "current_description": "Answers to common questions about HR Expert to go career coaching, discovery calls, resume coaching, interview prep, salary negotiation, job leads, and what to expect.",
-      "proposed_description": "Common questions about virtual career coaching for college students, recent graduates, and the parents helping them launch a career."
-    },
-    {
-      "page": "index.html",
-      "current_title": "HR Expert to go | Virtual Career Coaching for College Students & Recent Graduates",
-      "proposed_title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
-      "current_description": "Practical 1:1 career coaching for college students, recent graduates, and early-career professionals. Resume help, interview prep, salary negotiation, and job search strategy from a real HR expert with 20+ years of experience.",
-      "proposed_description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience."
-    },
-    {
-      "page": "interview-preparation.html",
-      "current_title": "Interview Preparation | HR Expert to go",
-      "proposed_title": "Interview Prep for New Grads | Virtual Career Coach",
-      "current_description": "Interview coaching for college students and recent graduates. Practice real questions, get honest feedback, and walk into your next interview knowing you are ready.",
-      "proposed_description": "Interview coaching for college students and recent graduates. Practice real questions with a SHRM-certified HR expert and walk in ready."
-    },
-    {
-      "page": "job-search-strategy.html",
-      "current_title": "Job Search Strategy | HR Expert to go",
-      "proposed_title": "Job Search Strategy for New Grads | HR Expert to go",
-      "current_description": "Job search strategy coaching for recent graduates and early-career professionals. Build a focused, organized search that gets your materials in front of the right people.",
-      "proposed_description": "A focused job search strategy for recent graduates and early-career professionals so your applications reach the right people."
-    },
-    {
-      "page": "pricing.html",
-      "current_title": "Pricing | HR Expert to go",
-      "proposed_title": "Career Coaching Pricing for New Grads | HR Expert to go",
-      "current_description": "Transparent pricing for HR Expert to go career coaching services. Resume coaching, interview prep, salary negotiation, job search strategy, and full launch packages for college students and recent graduates.",
-      "proposed_description": "Transparent pricing for 1:1 virtual career coaching designed for college students, recent graduates, and the parents supporting them."
-    },
-    {
       "page": "profile-optimization.html",
-      "current_title": "Professional Profile Optimization | HR Expert to go",
-      "proposed_title": "LinkedIn Profile Optimization for New Grads | HR Expert to go",
-      "current_description": "Professional profile coaching for college students and recent graduates. Learn how to position your profile so recruiters can find you and what they find makes them want to reach out.",
-      "proposed_description": "Professional profile optimization for early-career professionals \u2014 position yourself so recruiters find you and want to reach out."
-    },
-    {
-      "page": "resume-coaching.html",
-      "current_title": "Resume Coaching | HR Expert to go",
-      "proposed_title": "Resume Coaching for Recent Graduates | HR Expert to go",
-      "current_description": "Resume coaching for college students and recent graduates. Learn what recruiters and hiring managers are actually looking for and how to position your experience to get noticed.",
-      "proposed_description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to."
-    },
-    {
-      "page": "salary-negotiation.html",
-      "current_title": "Salary Negotiation & Offer Review | HR Expert to go",
-      "proposed_title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
-      "current_description": "Offer review and salary negotiation coaching for recent graduates and early-career professionals. Understand your offer, know what is reasonable to ask for, and negotiate with confidence.",
-      "proposed_description": "Salary negotiation coaching for early-career professionals. Understand the offer, know your worth, and ask with confidence."
-    },
-    {
-      "page": "why-your-college-grad-needs-career-coaching.html",
-      "current_title": "Why Your College Grad Needs Career Coaching Before They Start Their Career | HR Expert to go",
-      "proposed_title": "Why Your College Grad Needs a Career Coach | HR Expert to go",
-      "current_description": "A degree opens doors. It does not teach your child how to walk through them. Here is why career coaching before the job search makes all the difference for new grads.",
-      "proposed_description": "A guide for parents of new college graduates: how career coaching helps your grad land the right job faster and with more confidence."
+      "current_title": "LinkedIn Profile Optimization for New Grads | HR Expert to go",
+      "proposed_title": "Professional Profile Optimization for New Grads | HR Expert to go",
+      "current_description": "Professional profile optimization for early-career professionals \u2014 position yourself so recruiters find you and want to reach out.",
+      "proposed_description": "Professional profile optimization for early-career professionals \u2014 position your online presence so recruiters find you and want to reach out."
     }
   ]
 }
