@@ -771,6 +771,22 @@ def apply_content_suggestions(proposals: list[dict[str, str]]) -> list[str]:
 # Reporting
 # --------------------------------------------------------------------------- #
 
+def load_gsc_performance() -> dict[str, Any] | None:
+    """Read GSC performance data written by the workflow (if present).
+
+    The workflow writes reports/gsc-performance.json before this script's
+    report step runs. If the file is missing or malformed we skip the
+    section quietly — the audit itself does not depend on GSC.
+    """
+    gsc_path = ROOT / "reports" / "gsc-performance.json"
+    if not gsc_path.exists():
+        return None
+    try:
+        return json.loads(gsc_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
 def write_report(pages: dict[str, PageInfo], all_issues: list[Issue],
                  fixes_applied: list[str],
                  content_proposals: list[dict[str, str]],
@@ -839,6 +855,48 @@ def write_report(pages: dict[str, PageInfo], all_issues: list[Issue],
             lines.append("")
             for issue in group:
                 lines.append(f"- **{issue.page}** · {issue.category} — {issue.message}")
+            lines.append("")
+
+    gsc = load_gsc_performance()
+    if gsc:
+        lines.append("## Search Console — last 7 days")
+        lines.append("")
+        totals = gsc.get("totals", {})
+        lines.append(f"**Impressions:** {totals.get('impressions', 0):,}  ")
+        lines.append(f"**Clicks:** {totals.get('clicks', 0):,}  ")
+        ctr = totals.get('ctr', 0)
+        lines.append(f"**CTR:** {ctr * 100:.2f}%  ")
+        lines.append(f"**Avg position:** {totals.get('position', 0):.1f}")
+        lines.append("")
+        top_queries = gsc.get("top_queries", [])
+        if top_queries:
+            lines.append("### Top queries")
+            lines.append("")
+            lines.append("| Query | Clicks | Impressions | CTR | Position |")
+            lines.append("|---|---:|---:|---:|---:|")
+            for row in top_queries[:15]:
+                q = row.get("query", "")
+                lines.append(
+                    f"| {q} | {row.get('clicks', 0)} | "
+                    f"{row.get('impressions', 0)} | "
+                    f"{row.get('ctr', 0) * 100:.1f}% | "
+                    f"{row.get('position', 0):.1f} |"
+                )
+            lines.append("")
+        top_pages = gsc.get("top_pages", [])
+        if top_pages:
+            lines.append("### Top pages")
+            lines.append("")
+            lines.append("| Page | Clicks | Impressions | CTR | Position |")
+            lines.append("|---|---:|---:|---:|---:|")
+            for row in top_pages[:10]:
+                page = row.get("page", "").replace(SITE_URL, "") or "/"
+                lines.append(
+                    f"| {page} | {row.get('clicks', 0)} | "
+                    f"{row.get('impressions', 0)} | "
+                    f"{row.get('ctr', 0) * 100:.1f}% | "
+                    f"{row.get('position', 0):.1f} |"
+                )
             lines.append("")
 
     lines.append("## Page inventory")
