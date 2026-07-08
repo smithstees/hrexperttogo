@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Payment | HR Expert to go</title>
+<meta name="robots" content="noindex, nofollow" />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LBCS8D922M');
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #0D1B3D; --slate: #2F4A6D; --gold: #D4AF37; --gold-light: #e8c84a; --ivory: #FBF7F0; --ivory-dark: #EDE8DF; --charcoal: #23272E; --gray: #6B7280; --light-gray: #E5E7EB; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: #fff; }
+  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+
+  /* HEADER */
+  .pay-header { background: var(--ivory); border-bottom: 1px solid var(--ivory-dark); padding: 2.5rem 2rem; }
+  .pay-header-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .pay-header img { height: 44px; width: auto; }
+  .pay-header-text { text-align: right; }
+  .pay-header-text p { font-size: 0.85rem; color: var(--gray); }
+  .pay-header-text a { font-size: 0.85rem; color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+
+  /* INTRO */
+  .pay-intro { background: var(--navy); padding: 3rem 2rem; text-align: center; }
+  .pay-intro h1 { font-size: clamp(1.4rem, 2.5vw, 1.9rem); color: #fff; margin-bottom: 0.75rem; letter-spacing: -0.015em; }
+  .pay-intro h1 em { font-style: normal; color: var(--gold); }
+  .pay-intro p { font-size: 0.95rem; color: rgba(255,255,255,0.68); line-height: 1.75; max-width: 540px; margin: 0 auto; }
+
+  /* PACKAGES */
+  .pay-section { padding: 4rem 2rem; background: #fff; }
+  .pay-inner { max-width: 860px; margin: 0 auto; }
+  .pay-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 2rem; display: block; }
+
+  .pay-card { border: 1px solid var(--light-gray); border-radius: 10px; padding: 2rem; margin-bottom: 1.25rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: start; transition: border-color 0.2s; }
+  .pay-card:hover { border-color: var(--gold); }
+  .pay-card.featured { border-color: var(--navy); background: var(--ivory); }
+
+  .pay-card-name { font-family: 'Sora', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.25rem; }
+  .pay-card-price { font-family: 'Sora', sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1; margin-bottom: 0.5rem; }
+  .pay-card-desc { font-size: 0.88rem; color: var(--gray); line-height: 1.65; margin-bottom: 0.75rem; }
+  .pay-card-link { font-size: 0.82rem; color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 1px; display: inline-block; }
+  .pay-card-link:hover { color: var(--gold); }
+  .pay-tag { display: inline-block; background: var(--navy); color: var(--gold); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.2rem 0.65rem; border-radius: 100px; margin-bottom: 0.5rem; }
+
+  .pay-card-action { display: flex; flex-direction: column; align-items: center; gap: 1rem; flex-shrink: 0; }
+
+  /* PayPal button wrapper */
+  .paypal-btn-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+  .paypal-btn-wrap form { margin: 0; }
+
+  /* QR code */
+  .qr-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; }
+  .qr-wrap img { width: 80px; height: 80px; border: 1px solid var(--light-gray); border-radius: 6px; padding: 4px; background: #fff; }
+  .qr-label { font-size: 0.7rem; color: var(--gray); text-align: center; }
+
+  /* SUBSCRIPTION */
+  .sub-card { border: 2px solid var(--gold); border-radius: 10px; padding: 2rem; margin-top: 2.5rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; background: var(--ivory); }
+  .sub-badge { display: inline-block; background: var(--gold); color: var(--navy); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.2rem 0.65rem; border-radius: 100px; margin-bottom: 0.5rem; }
+  .sub-name { font-family: 'Sora', sans-serif; font-size: 1.05rem; font-weight: 600; color: var(--navy); margin-bottom: 0.25rem; }
+  .sub-price { font-family: 'Sora', sans-serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); line-height: 1; }
+  .sub-per { font-size: 0.8rem; color: var(--gray); margin-bottom: 0.5rem; }
+  .sub-desc { font-size: 0.88rem; color: var(--gray); line-height: 1.65; }
+  .sub-action { display: flex; flex-direction: column; align-items: center; gap: 1rem; flex-shrink: 0; }
+  .sub-note { font-size: 0.75rem; color: var(--gray); text-align: center; max-width: 120px; }
+
+  /* SECURE NOTE */
+  .secure-note { max-width: 860px; margin: 0 auto; padding: 0 2rem 4rem; }
+  .secure-box { background: var(--ivory); border-radius: 8px; padding: 1.25rem 1.5rem; text-align: center; }
+  .secure-box p { font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
+  .secure-box a { color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+
+  /* FOOTER */
+  footer { background: var(--ivory); border-top: 1px solid var(--ivory-dark); padding: 2rem; }
+  .footer-bottom { max-width: 860px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-copy { font-size: 0.8rem; color: var(--gray); }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a { font-size: 0.8rem; color: var(--gray); transition: color 0.2s; }
+  .footer-legal a:hover { color: var(--gold); }
+
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    .pay-card { grid-template-columns: 1fr; }
+    .pay-card-action { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
+    .sub-card { grid-template-columns: 1fr; }
+    .sub-action { align-items: flex-start; }
+    .pay-header-text { text-align: left; }
+    .pay-intro { padding: 2.5rem 1.25rem; }
+    .pay-section { padding: 3rem 1.25rem; }
+    .secure-note { padding: 0 1.25rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="pay-header">
+  <div class="pay-header-inner">
+    <a href="index.html"><img src="HR_Expert_to_Go_Primary.png" alt="HR Expert to go" /></a>
+    <div class="pay-header-text">
+      <p>Questions before you pay?</p>
+      <a href="contact.html">Contact Ty directly</a>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div class="pay-intro">
+  <h1>Secure your coaching session.<br><em>You are one step away.</em></h1>
+  <p>Select your package below to complete payment through PayPal. You can pay with any major credit or debit card — no PayPal account required.</p>
+</div>
+
+<!-- PACKAGES -->
+<section class="pay-section">
+  <div class="pay-inner">
+
+    <span class="pay-label">Coaching packages</span>
+
+    <!-- Career Clarity Session -->
+    <div class="pay-card">
+      <div>
+        <p class="pay-card-name">Career Clarity Session</p>
+        <p class="pay-card-price">$149</p>
+        <p class="pay-card-desc">One focused session on your resume, professional profile, or job search strategy.</p>
+        <a href="resume-coaching.html" class="pay-card-link">Review what is included →</a>
+      </div>
+      <div class="pay-card-action">
+        <div class="paypal-btn-wrap">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="smithconsolidatedllc@gmail.com" />
+            <input type="hidden" name="item_name" value="HR Expert to go - Career Clarity Session" />
+            <input type="hidden" name="amount" value="149.00" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="return" value="https://hrexperttogo.com/thank-you.html" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="Pay $149 via PayPal" />
+          </form>
+        </div>
+        <div class="qr-wrap">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://www.paypal.com/cgi-bin/webscr?cmd=_xclick%26business=smithconsolidatedllc@gmail.com%26item_name=Career+Clarity+Session%26amount=149.00%26currency_code=USD" alt="QR code for Career Clarity Session payment" />
+          <span class="qr-label">Scan to pay<br>on mobile</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interview Ready -->
+    <div class="pay-card">
+      <div>
+        <p class="pay-card-name">Interview Ready</p>
+        <p class="pay-card-price">$299</p>
+        <p class="pay-card-desc">Two interview preparation sessions with honest feedback and mock interview practice.</p>
+        <a href="interview-preparation.html" class="pay-card-link">Review what is included →</a>
+      </div>
+      <div class="pay-card-action">
+        <div class="paypal-btn-wrap">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="smithconsolidatedllc@gmail.com" />
+            <input type="hidden" name="item_name" value="HR Expert to go - Interview Ready" />
+            <input type="hidden" name="amount" value="299.00" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="return" value="https://hrexperttogo.com/thank-you.html" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="Pay $299 via PayPal" />
+          </form>
+        </div>
+        <div class="qr-wrap">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://www.paypal.com/cgi-bin/webscr?cmd=_xclick%26business=smithconsolidatedllc@gmail.com%26item_name=Interview+Ready%26amount=299.00%26currency_code=USD" alt="QR code for Interview Ready payment" />
+          <span class="qr-label">Scan to pay<br>on mobile</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer Review -->
+    <div class="pay-card">
+      <div>
+        <p class="pay-card-name">Offer Review</p>
+        <p class="pay-card-price">$125</p>
+        <p class="pay-card-desc">A focused 30 to 45 minute session to evaluate your offer and prepare your response.</p>
+        <a href="salary-negotiation.html" class="pay-card-link">Review what is included →</a>
+      </div>
+      <div class="pay-card-action">
+        <div class="paypal-btn-wrap">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="smithconsolidatedllc@gmail.com" />
+            <input type="hidden" name="item_name" value="HR Expert to go - Offer Review" />
+            <input type="hidden" name="amount" value="125.00" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="return" value="https://hrexperttogo.com/thank-you.html" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="Pay $125 via PayPal" />
+          </form>
+        </div>
+        <div class="qr-wrap">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://www.paypal.com/cgi-bin/webscr?cmd=_xclick%26business=smithconsolidatedllc@gmail.com%26item_name=Offer+Review%26amount=125.00%26currency_code=USD" alt="QR code for Offer Review payment" />
+          <span class="qr-label">Scan to pay<br>on mobile</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Search Jumpstart -->
+    <div class="pay-card">
+      <div>
+        <p class="pay-card-name">Job Search Jumpstart</p>
+        <p class="pay-card-price">$449</p>
+        <p class="pay-card-desc">Resume strategy, professional profile positioning, job search strategy, plus one follow-up session.</p>
+        <a href="job-search-strategy.html" class="pay-card-link">Review what is included →</a>
+      </div>
+      <div class="pay-card-action">
+        <div class="paypal-btn-wrap">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="smithconsolidatedllc@gmail.com" />
+            <input type="hidden" name="item_name" value="HR Expert to go - Job Search Jumpstart" />
+            <input type="hidden" name="amount" value="449.00" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="return" value="https://hrexperttogo.com/thank-you.html" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="Pay $449 via PayPal" />
+          </form>
+        </div>
+        <div class="qr-wrap">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://www.paypal.com/cgi-bin/webscr?cmd=_xclick%26business=smithconsolidatedllc@gmail.com%26item_name=Job+Search+Jumpstart%26amount=449.00%26currency_code=USD" alt="QR code for Job Search Jumpstart payment" />
+          <span class="qr-label">Scan to pay<br>on mobile</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Early Career Launch -->
+    <div class="pay-card featured">
+      <div>
+        <span class="pay-tag">Most comprehensive</span>
+        <p class="pay-card-name">Early Career Launch</p>
+        <p class="pay-card-price">$649</p>
+        <p class="pay-card-desc">Five sessions covering resume strategy, profile positioning, job search strategy, interview prep, and offer guidance if needed.</p>
+        <a href="pricing.html" class="pay-card-link">Review what is included →</a>
+      </div>
+      <div class="pay-card-action">
+        <div class="paypal-btn-wrap">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="smithconsolidatedllc@gmail.com" />
+            <input type="hidden" name="item_name" value="HR Expert to go - Early Career Launch" />
+            <input type="hidden" name="amount" value="649.00" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="return" value="https://hrexperttogo.com/thank-you.html" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="Pay $649 via PayPal" />
+          </form>
+        </div>
+        <div class="qr-wrap">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://www.paypal.com/cgi-bin/webscr?cmd=_xclick%26business=smithconsolidatedllc@gmail.com%26item_name=Early+Career+Launch%26amount=649.00%26currency_code=USD" alt="QR code for Early Career Launch payment" />
+          <span class="qr-label">Scan to pay<br>on mobile</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Daily Job Leads Subscription -->
+    <div class="sub-card">
+      <div>
+        <span class="sub-badge">Monthly subscription</span>
+        <p class="sub-name">Daily Job Leads</p>
+        <p class="sub-price">$50</p>
+        <p class="sub-per">per month, billed automatically</p>
+        <p class="sub-desc">Personalized job opportunities delivered to your inbox every morning. Billed monthly and can be canceled at any time by contacting Ty directly.</p>
+      </div>
+      <div class="sub-action">
+        <div class="paypal-btn-wrap">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+            <input type="hidden" name="business" value="smithconsolidatedllc@gmail.com" />
+            <input type="hidden" name="item_name" value="HR Expert to go - Daily Job Leads" />
+            <input type="hidden" name="a3" value="50.00" />
+            <input type="hidden" name="p3" value="1" />
+            <input type="hidden" name="t3" value="M" />
+            <input type="hidden" name="src" value="1" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="hidden" name="no_shipping" value="1" />
+            <input type="hidden" name="return" value="https://hrexperttogo.com/thank-you.html" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" alt="Subscribe for $50/month via PayPal" />
+          </form>
+        </div>
+        <div class="qr-wrap">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://hrexperttogo.com/payment.html" alt="QR code for Daily Job Leads subscription" />
+          <span class="qr-label">Scan to pay<br>on mobile</span>
+        </div>
+        <p class="sub-note">Cancel anytime by emailing ty@hrexperttogo.com</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECURE NOTE -->
+<div class="secure-note">
+  <div class="secure-box">
+    <p>All payments are processed securely through PayPal. You do not need a PayPal account to pay — any major credit or debit card is accepted. If you have questions about your payment or need to make changes to your package, contact Ty directly at <a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a>.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2025 HR Expert to go. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
