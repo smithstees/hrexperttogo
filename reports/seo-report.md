@@ -1,10 +1,10 @@
 # SEO Audit Report — 2026-07-12
 
 **Site:** https://hrexperttogo.com  
-**Mode:** `safe-fix`  
+**Mode:** `content-pr`  
 **Pages scanned:** 16  
 **Issues found:** 3 (high: 1, medium: 2, low: 0)  
-**Automated fixes applied:** 34
+**Automated fixes applied:** 0
 
 ## Target audience keywords
 
@@ -19,43 +19,6 @@ Titles and descriptions are tuned toward:
 - job search coach for early career professionals
 - career coach for parents of college students
 - SHRM-certified career coach
-
-## Fixes applied this run
-
-- Refreshed sitemap.xml (lastmod=2026-07-12)
-- index.html: Added/updated og:title
-- index.html: Added/updated og:description
-- index.html: Added/updated twitter:title
-- index.html: Added/updated twitter:description
-- payment.html: Added/updated canonical link
-- payment.html: Added/updated og:title
-- payment.html: Added/updated og:description
-- payment.html: Added/updated og:type
-- payment.html: Added/updated og:url
-- payment.html: Added/updated og:image
-- payment.html: Added/updated og:site_name
-- payment.html: Added/updated twitter:card
-- payment.html: Added/updated twitter:title
-- payment.html: Added/updated twitter:description
-- payment.html: Added/updated twitter:image
-- payment.html: Set robots=index,follow
-- resume-coaching.html: Added/updated og:description
-- resume-coaching.html: Added/updated twitter:description
-- thank-you.html: Added/updated canonical link
-- thank-you.html: Added utility meta description
-- thank-you.html: Extended short title to 'Thank You — What Happens Next | HR Expert to go'
-- thank-you.html: Added/updated og:title
-- thank-you.html: Added/updated og:description
-- thank-you.html: Added/updated og:type
-- thank-you.html: Added/updated og:url
-- thank-you.html: Added/updated og:image
-- thank-you.html: Added/updated og:site_name
-- thank-you.html: Added/updated twitter:card
-- thank-you.html: Added/updated twitter:title
-- thank-you.html: Added/updated twitter:description
-- thank-you.html: Added/updated twitter:image
-- thank-you.html: Set robots=noindex,follow (utility page)
-- thank-you.html: Added JSON-LD: WebPage
 
 ## Remaining issues
 

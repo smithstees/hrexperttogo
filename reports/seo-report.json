@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "mode": "safe-fix",
+  "mode": "content-pr",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -674,41 +674,6 @@
       "fix_note": ""
     }
   ],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-07-12)",
-    "index.html: Added/updated og:title",
-    "index.html: Added/updated og:description",
-    "index.html: Added/updated twitter:title",
-    "index.html: Added/updated twitter:description",
-    "payment.html: Added/updated canonical link",
-    "payment.html: Added/updated og:title",
-    "payment.html: Added/updated og:description",
-    "payment.html: Added/updated og:type",
-    "payment.html: Added/updated og:url",
-    "payment.html: Added/updated og:image",
-    "payment.html: Added/updated og:site_name",
-    "payment.html: Added/updated twitter:card",
-    "payment.html: Added/updated twitter:title",
-    "payment.html: Added/updated twitter:description",
-    "payment.html: Added/updated twitter:image",
-    "payment.html: Set robots=index,follow",
-    "resume-coaching.html: Added/updated og:description",
-    "resume-coaching.html: Added/updated twitter:description",
-    "thank-you.html: Added/updated canonical link",
-    "thank-you.html: Added utility meta description",
-    "thank-you.html: Extended short title to 'Thank You \u2014 What Happens Next | HR Expert to go'",
-    "thank-you.html: Added/updated og:title",
-    "thank-you.html: Added/updated og:description",
-    "thank-you.html: Added/updated og:type",
-    "thank-you.html: Added/updated og:url",
-    "thank-you.html: Added/updated og:image",
-    "thank-you.html: Added/updated og:site_name",
-    "thank-you.html: Added/updated twitter:card",
-    "thank-you.html: Added/updated twitter:title",
-    "thank-you.html: Added/updated twitter:description",
-    "thank-you.html: Added/updated twitter:image",
-    "thank-you.html: Set robots=noindex,follow (utility page)",
-    "thank-you.html: Added JSON-LD: WebPage"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
