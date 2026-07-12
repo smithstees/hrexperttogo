@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-07-12T11:46:01.277788+00:00",
+  "date_range": {
+    "start": "2026-07-05",
+    "end": "2026-07-12"
+  },
+  "totals": {
+    "clicks": 0,
+    "impressions": 9,
+    "ctr": 0.0,
+    "position": 80.55555555555556
+  },
+  "top_queries": [
+    {
+      "query": "go-to hiring experts",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 39
+    },
+    {
+      "query": "graduate coach",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 62
+    },
+    {
+      "query": "hire searchie expert",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 69
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://hrexperttogo.com/",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://hrexperttogo.com/about.html",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3.5
+    },
+    {
+      "page": "https://hrexperttogo.com/contact.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 270
+    },
+    {
+      "page": "https://hrexperttogo.com/job-search-strategy.html",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 63.5
+    },
+    {
+      "page": "https://hrexperttogo.com/pricing.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "page": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 20
+    }
+  ]
+}
