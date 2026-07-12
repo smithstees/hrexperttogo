@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-07",
-  "mode": "audit-only",
+  "date": "2026-07-12",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -138,16 +138,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
-        "og:title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
-        "og:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
+        "og:title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
+        "og:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Virtual Career Coach for New College Grads & Early Career Pros | HR Expert to go",
-        "twitter:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert with 20+ years of hiring experience.",
+        "twitter:title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
+        "twitter:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -290,6 +290,39 @@
         "terms.html"
       ]
     },
+    "payment.html": {
+      "filename": "payment.html",
+      "title": "Payment | HR Expert to go",
+      "description": "",
+      "h1_count": 1,
+      "canonical": "https://hrexperttogo.com/payment.html",
+      "og_tags": {
+        "og:title": "Payment | HR Expert to go",
+        "og:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "og:type": "website",
+        "og:url": "https://hrexperttogo.com/payment.html",
+        "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Payment | HR Expert to go",
+        "twitter:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "has_jsonld": false,
+      "images_missing_alt": 0,
+      "internal_links": [
+        "index.html",
+        "contact.html",
+        "resume-coaching.html",
+        "interview-preparation.html",
+        "salary-negotiation.html",
+        "job-search-strategy.html",
+        "pricing.html",
+        "privacy.html",
+        "terms.html"
+      ]
+    },
     "pricing.html": {
       "filename": "pricing.html",
       "title": "Career Coaching Pricing for New Grads | HR Expert to go",
@@ -425,7 +458,7 @@
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
         "og:title": "Resume Coaching for Recent Graduates | HR Expert to go",
-        "og:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
+        "og:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/resume-coaching.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
@@ -433,7 +466,7 @@
       "twitter_tags": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Resume Coaching for Recent Graduates | HR Expert to go",
-        "twitter:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes. Build one recruiters actually respond to.",
+        "twitter:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -570,7 +603,8 @@
       "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
-        "https://hrexperttogo.com"
+        "index.html",
+        "index.html"
       ]
     },
     "why-your-college-grad-needs-career-coaching.html": {
@@ -614,7 +648,67 @@
       ]
     }
   },
-  "issues": [],
-  "fixes_applied": [],
+  "issues": [
+    {
+      "page": "payment.html",
+      "severity": "medium",
+      "category": "title",
+      "message": "Title too short (25 chars)",
+      "fixed": false,
+      "fix_note": ""
+    },
+    {
+      "page": "payment.html",
+      "severity": "high",
+      "category": "description",
+      "message": "Missing meta description",
+      "fixed": false,
+      "fix_note": ""
+    },
+    {
+      "page": "payment.html",
+      "severity": "medium",
+      "category": "structured-data",
+      "message": "No JSON-LD structured data",
+      "fixed": false,
+      "fix_note": ""
+    }
+  ],
+  "fixes_applied": [
+    "Refreshed sitemap.xml (lastmod=2026-07-12)",
+    "index.html: Added/updated og:title",
+    "index.html: Added/updated og:description",
+    "index.html: Added/updated twitter:title",
+    "index.html: Added/updated twitter:description",
+    "payment.html: Added/updated canonical link",
+    "payment.html: Added/updated og:title",
+    "payment.html: Added/updated og:description",
+    "payment.html: Added/updated og:type",
+    "payment.html: Added/updated og:url",
+    "payment.html: Added/updated og:image",
+    "payment.html: Added/updated og:site_name",
+    "payment.html: Added/updated twitter:card",
+    "payment.html: Added/updated twitter:title",
+    "payment.html: Added/updated twitter:description",
+    "payment.html: Added/updated twitter:image",
+    "payment.html: Set robots=index,follow",
+    "resume-coaching.html: Added/updated og:description",
+    "resume-coaching.html: Added/updated twitter:description",
+    "thank-you.html: Added/updated canonical link",
+    "thank-you.html: Added utility meta description",
+    "thank-you.html: Extended short title to 'Thank You \u2014 What Happens Next | HR Expert to go'",
+    "thank-you.html: Added/updated og:title",
+    "thank-you.html: Added/updated og:description",
+    "thank-you.html: Added/updated og:type",
+    "thank-you.html: Added/updated og:url",
+    "thank-you.html: Added/updated og:image",
+    "thank-you.html: Added/updated og:site_name",
+    "thank-you.html: Added/updated twitter:card",
+    "thank-you.html: Added/updated twitter:title",
+    "thank-you.html: Added/updated twitter:description",
+    "thank-you.html: Added/updated twitter:image",
+    "thank-you.html: Set robots=noindex,follow (utility page)",
+    "thank-you.html: Added JSON-LD: WebPage"
+  ],
   "content_proposals": []
 }
