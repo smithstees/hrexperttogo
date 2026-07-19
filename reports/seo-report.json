@@ -1,6 +1,6 @@
 {
   "date": "2026-07-19",
-  "mode": "safe-fix",
+  "mode": "content-pr",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -713,12 +713,6 @@
       "fix_note": ""
     }
   ],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-07-19)",
-    "helping-new-graduate-launch-career-parents-guide.html: Added/updated og:title",
-    "helping-new-graduate-launch-career-parents-guide.html: Added/updated og:image",
-    "helping-new-graduate-launch-career-parents-guide.html: Added/updated twitter:title",
-    "helping-new-graduate-launch-career-parents-guide.html: Added/updated twitter:image"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
