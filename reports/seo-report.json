@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-19",
   "mode": "safe-fix",
   "pages": {
     "about.html": {
@@ -121,6 +121,45 @@
         "pricing.html",
         "faq.html",
         "contact.html",
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "faq.html",
+        "contact.html",
+        "privacy.html",
+        "terms.html"
+      ]
+    },
+    "helping-new-graduate-launch-career-parents-guide.html": {
+      "filename": "helping-new-graduate-launch-career-parents-guide.html",
+      "title": "New Graduate Job Search: A Parent's Guide | HR Expert to go",
+      "description": "Struggling to help your new college graduate find a job? Get practical, expert-backed tips on how parents can support the job search without taking over.",
+      "h1_count": 1,
+      "canonical": "https://hrexperttogo.com/helping-new-graduate-launch-career-parents-guide.html",
+      "og_tags": {
+        "og:title": "New Graduate Job Search: A Parent's Guide | HR Expert to go",
+        "og:description": "Struggling to help your new college graduate find a job? Get practical, expert-backed tips on how parents can support the job search without taking over.",
+        "og:type": "website",
+        "og:url": "https://hrexperttogo.com/helping-new-graduate-launch-career-parents-guide.html",
+        "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "New Graduate Job Search: A Parent's Guide | HR Expert to go",
+        "twitter:description": "Struggling to help your new college graduate find a job? Get practical, expert-backed tips on how parents can support the job search without taking over.",
+        "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "has_jsonld": true,
+      "images_missing_alt": 0,
+      "internal_links": [
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "faq.html",
+        "contact.html",
+        "index.html",
         "index.html",
         "index.html#services",
         "about.html",
@@ -675,40 +714,11 @@
     }
   ],
   "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-07-12)",
-    "index.html: Added/updated og:title",
-    "index.html: Added/updated og:description",
-    "index.html: Added/updated twitter:title",
-    "index.html: Added/updated twitter:description",
-    "payment.html: Added/updated canonical link",
-    "payment.html: Added/updated og:title",
-    "payment.html: Added/updated og:description",
-    "payment.html: Added/updated og:type",
-    "payment.html: Added/updated og:url",
-    "payment.html: Added/updated og:image",
-    "payment.html: Added/updated og:site_name",
-    "payment.html: Added/updated twitter:card",
-    "payment.html: Added/updated twitter:title",
-    "payment.html: Added/updated twitter:description",
-    "payment.html: Added/updated twitter:image",
-    "payment.html: Set robots=index,follow",
-    "resume-coaching.html: Added/updated og:description",
-    "resume-coaching.html: Added/updated twitter:description",
-    "thank-you.html: Added/updated canonical link",
-    "thank-you.html: Added utility meta description",
-    "thank-you.html: Extended short title to 'Thank You \u2014 What Happens Next | HR Expert to go'",
-    "thank-you.html: Added/updated og:title",
-    "thank-you.html: Added/updated og:description",
-    "thank-you.html: Added/updated og:type",
-    "thank-you.html: Added/updated og:url",
-    "thank-you.html: Added/updated og:image",
-    "thank-you.html: Added/updated og:site_name",
-    "thank-you.html: Added/updated twitter:card",
-    "thank-you.html: Added/updated twitter:title",
-    "thank-you.html: Added/updated twitter:description",
-    "thank-you.html: Added/updated twitter:image",
-    "thank-you.html: Set robots=noindex,follow (utility page)",
-    "thank-you.html: Added JSON-LD: WebPage"
+    "Refreshed sitemap.xml (lastmod=2026-07-19)",
+    "helping-new-graduate-launch-career-parents-guide.html: Added/updated og:title",
+    "helping-new-graduate-launch-career-parents-guide.html: Added/updated og:image",
+    "helping-new-graduate-launch-career-parents-guide.html: Added/updated twitter:title",
+    "helping-new-graduate-launch-career-parents-guide.html: Added/updated twitter:image"
   ],
   "content_proposals": []
 }
