@@ -1,10 +1,10 @@
 # SEO Audit Report — 2026-07-19
 
 **Site:** https://hrexperttogo.com  
-**Mode:** `safe-fix`  
+**Mode:** `content-pr`  
 **Pages scanned:** 17  
 **Issues found:** 3 (high: 1, medium: 2, low: 0)  
-**Automated fixes applied:** 5
+**Automated fixes applied:** 0
 
 ## Target audience keywords
 
@@ -19,14 +19,6 @@ Titles and descriptions are tuned toward:
 - job search coach for early career professionals
 - career coach for parents of college students
 - SHRM-certified career coach
-
-## Fixes applied this run
-
-- Refreshed sitemap.xml (lastmod=2026-07-19)
-- helping-new-graduate-launch-career-parents-guide.html: Added/updated og:title
-- helping-new-graduate-launch-career-parents-guide.html: Added/updated og:image
-- helping-new-graduate-launch-career-parents-guide.html: Added/updated twitter:title
-- helping-new-graduate-launch-career-parents-guide.html: Added/updated twitter:image
 
 ## Remaining issues
 
