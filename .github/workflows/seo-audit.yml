@@ -97,14 +97,33 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # Ensure labels exist
+          gh label create seo --color 0e8a16 --description "SEO improvements" 2>/dev/null || true
+          gh label create automated --color ededed --description "Automated by workflow" 2>/dev/null || true
+          gh label create hold --color d93f0b --description "Do not auto-merge — keep open" 2>/dev/null || true
+
+          # PR body: include a review-window notice at the top
+          {
+            echo "> **Review window:** This PR will auto-merge in **48 hours** if no action is taken."
+            echo "> - **Approve:** merge now via the button below"
+            echo "> - **Reject:** close the PR (without merging)"
+            echo "> - **Delay:** add the \`hold\` label to keep it open indefinitely"
+            echo
+            echo "---"
+            echo
+            cat reports/seo-report.md
+          } > /tmp/pr-body.md
+
           if gh pr view "$BRANCH" >/dev/null 2>&1; then
-            echo "PR already exists — updated with new push."
+            echo "PR already exists — updating body with new report."
+            gh pr edit "$BRANCH" --body-file /tmp/pr-body.md
           else
             gh pr create \
               --base main \
               --head "$BRANCH" \
               --title "SEO: audience-tuned title & description updates" \
-              --body-file reports/seo-report.md
+              --label "seo,automated" \
+              --body-file /tmp/pr-body.md
           fi
 
       # -------------------------------------------------------------------- #

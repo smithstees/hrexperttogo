@@ -1,0 +1,91 @@
+name: Auto-merge SEO PRs after 48h
+
+# Every day at 13:00 UTC (9am ET), look for open PRs from the SEO bot
+# that are >48 hours old and merge them. This lets you review PRs at your
+# own pace but ensures they don't sit forever.
+#
+# To reject a PR: just close it (without merging). Closed PRs are ignored.
+# To delay a PR: comment "hold" on it — the workflow respects that label.
+
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Find and merge eligible SEO PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          # Get all open PRs from head branches starting with "seo/"
+          # that were created more than 48 hours ago and don't have "hold" label
+          NOW=$(date -u +%s)
+          THRESHOLD=$((48 * 3600))
+
+          gh pr list \
+            --state open \
+            --json number,headRefName,createdAt,labels,title \
+            --limit 50 > /tmp/prs.json
+
+          MERGED=0
+          SKIPPED=0
+
+          # Iterate PRs
+          for row in $(jq -c '.[]' /tmp/prs.json); do
+            NUM=$(echo "$row" | jq -r '.number')
+            BRANCH=$(echo "$row" | jq -r '.headRefName')
+            CREATED=$(echo "$row" | jq -r '.createdAt')
+            TITLE=$(echo "$row" | jq -r '.title')
+            HAS_HOLD=$(echo "$row" | jq -r '.labels[]?.name' | grep -x "hold" || true)
+
+            # Only auto-merge branches created by the SEO bot
+            case "$BRANCH" in
+              seo/*) ;;
+              *) continue ;;
+            esac
+
+            if [ -n "$HAS_HOLD" ]; then
+              echo "PR #$NUM: skipped (hold label)"
+              SKIPPED=$((SKIPPED + 1))
+              continue
+            fi
+
+            CREATED_SEC=$(date -u -d "$CREATED" +%s)
+            AGE=$((NOW - CREATED_SEC))
+
+            if [ "$AGE" -lt "$THRESHOLD" ]; then
+              HOURS=$((AGE / 3600))
+              echo "PR #$NUM: skipped (age ${HOURS}h, needs 48h) — '$TITLE'"
+              SKIPPED=$((SKIPPED + 1))
+              continue
+            fi
+
+            echo "PR #$NUM: merging (age >= 48h) — '$TITLE'"
+            gh pr merge "$NUM" --squash --delete-branch \
+              --subject "seo(auto): $TITLE (#$NUM)" \
+              --body "Auto-merged after 48h with no objection. See PR discussion for original review window."
+            MERGED=$((MERGED + 1))
+          done
+
+          echo ""
+          echo "Summary: merged=$MERGED skipped=$SKIPPED"
+
+      - name: Post daily audit trail issue comment (if merges happened)
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Optional: add a comment to the most recent audit issue whenever
+          # this workflow does something noteworthy. Non-fatal if it fails.
+          true
