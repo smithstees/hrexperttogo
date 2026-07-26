@@ -59,6 +59,11 @@ LOW_PRIORITY_PAGES = {"thank-you.html", "intake-form.html"}
 # Meta descriptions for utility/legal pages. Kept concise and factual — these
 # pages are not primary SEO targets, but Google still wants a description.
 UTILITY_DESCRIPTIONS: dict[str, str] = {
+    "payment.html": (
+        "Secure payment page for your HR Expert to go coaching session. "
+        "Book time with Ty Smith, SHRM-CP for career, resume, or "
+        "salary negotiation coaching."
+    ),
     "privacy.html": (
         "Privacy policy for HR Expert to go — how Ty Smith's virtual "
         "career coaching practice collects, uses, and protects your "
@@ -84,6 +89,7 @@ UTILITY_DESCRIPTIONS: dict[str, str] = {
 # Longer, more descriptive titles for utility pages (thank-you was too short).
 UTILITY_TITLES: dict[str, str] = {
     "thank-you.html": "Thank You — What Happens Next | HR Expert to go",
+    "payment.html": "Secure Your Coaching Session | HR Expert to go",
 }
 
 
@@ -572,12 +578,13 @@ def build_jsonld_for(filename: str, info: PageInfo) -> list[dict[str, Any]]:
             },
         }]
     if filename in ("privacy.html", "terms.html", "thank-you.html",
-                    "intake-form.html"):
+                    "intake-form.html", "payment.html"):
         name_map = {
             "privacy.html": "Privacy Policy",
             "terms.html": "Terms of Service",
             "thank-you.html": "Thank You",
             "intake-form.html": "Client Intake Form",
+            "payment.html": "Secure Coaching Payment",
         }
         return [{
             "@context": "https://schema.org",
@@ -649,18 +656,16 @@ def refresh_sitemap(pages: dict[str, PageInfo]) -> list[str]:
 # Tuned drafts. Kept conservative — reviewer must merge PR.
 CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     "index.html": {
-        "title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
-        "description": ("1:1 virtual career coaching for college students, "
-                        "recent graduates, and their parents. Resume, "
-                        "interview, and salary help from a SHRM-certified "
-                        "HR expert."),
+        "title": "Career Coach for New Grads & Graduates | HR Expert to go",
+        "description": ("1:1 virtual career and graduate coaching for "
+                        "college students, recent graduates, and their "
+                        "parents — from a SHRM-certified HR expert."),
     },
     "about.html": {
-        "title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
-        "description": ("Meet Ty Smith, SHRM-CP — a career coach with 20+ "
-                        "years of HR leadership who helps recent college "
-                        "graduates and early-career professionals land the "
-                        "right role."),
+        "title": "Meet Ty Smith, SHRM-CP — Career Coach for New Grads",
+        "description": ("Ty Smith, SHRM-CP — 20+ years hiring and coaching "
+                        "early-career talent. Helping your grad land the "
+                        "right first job. Book a free intro call."),
     },
     "pricing.html": {
         "title": "Career Coaching Pricing for New Grads | HR Expert to go",
@@ -669,10 +674,11 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "and the parents supporting them."),
     },
     "resume-coaching.html": {
-        "title": "Resume Coaching for Recent Graduates | HR Expert to go",
-        "description": ("Resume coaching for new college graduates and "
-                        "early-career professionals from an HR expert who "
-                        "has read thousands of resumes."),
+        "title": "Resume Coach for New Grads — Resume Help | HR Expert to go",
+        "description": ("Resume coaching and resume help for new college "
+                        "graduates and early-career professionals from a "
+                        "SHRM-certified HR expert who has reviewed "
+                        "thousands of resumes."),
     },
     "interview-preparation.html": {
         "title": "Interview Prep for New Grads | Virtual Career Coach",
@@ -681,10 +687,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "SHRM-certified HR expert and walk in ready."),
     },
     "salary-negotiation.html": {
-        "title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
-        "description": ("Salary negotiation coaching for early-career "
-                        "professionals. Understand the offer, know your "
-                        "worth, and ask with confidence."),
+        "title": "Salary Negotiation Coach for New Grads | HR Expert to go",
+        "description": ("1:1 salary negotiation coaching for new graduates "
+                        "and early-career professionals. Learn to negotiate "
+                        "from a coach who has sat on the hiring side."),
     },
     "job-search-strategy.html": {
         "title": "Job Search Strategy for New Grads | HR Expert to go",

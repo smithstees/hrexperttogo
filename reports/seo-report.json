@@ -1,11 +1,11 @@
 {
   "date": "2026-07-26",
-  "mode": "safe-fix",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
-      "title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
-      "description": "Meet Ty Smith, SHRM-CP \u2014 a career coach with 20+ years of HR leadership who helps recent college graduates and early-career professionals land the right role.",
+      "title": "Meet Ty Smith, SHRM-CP \u2014 Career Coach for New Grads",
+      "description": "Ty Smith, SHRM-CP \u2014 20+ years hiring and coaching early-career talent. Helping your grad land the right first job. Book a free intro call.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/about.html",
       "og_tags": {
@@ -172,8 +172,8 @@
     },
     "index.html": {
       "filename": "index.html",
-      "title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
-      "description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert.",
+      "title": "Career Coach for New Grads & Graduates | HR Expert to go",
+      "description": "1:1 virtual career and graduate coaching for college students, recent graduates, and their parents \u2014 from a SHRM-certified HR expert.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
@@ -331,24 +331,24 @@
     },
     "payment.html": {
       "filename": "payment.html",
-      "title": "Payment | HR Expert to go",
-      "description": "",
+      "title": "Secure Your Coaching Session | HR Expert to go",
+      "description": "Secure payment page for your HR Expert to go coaching session. Book time with Ty Smith, SHRM-CP for career, resume, or salary negotiation coaching.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/payment.html",
       "og_tags": {
-        "og:title": "Payment | HR Expert to go",
-        "og:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "og:title": "Secure Your Coaching Session | HR Expert to go",
+        "og:description": "Secure payment page for your HR Expert to go coaching session. Book time with Ty Smith, SHRM-CP for career, resume, or salary negotiation coaching.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/payment.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Payment | HR Expert to go",
-        "twitter:description": "HR Expert to go \u2014 practical 1:1 career coaching.",
+        "twitter:title": "Secure Your Coaching Session | HR Expert to go",
+        "twitter:description": "Secure payment page for your HR Expert to go coaching session. Book time with Ty Smith, SHRM-CP for career, resume, or salary negotiation coaching.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -491,8 +491,8 @@
     },
     "resume-coaching.html": {
       "filename": "resume-coaching.html",
-      "title": "Resume Coaching for Recent Graduates | HR Expert to go",
-      "description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes.",
+      "title": "Resume Coach for New Grads \u2014 Resume Help | HR Expert to go",
+      "description": "Resume coaching and resume help for new college graduates and early-career professionals from a SHRM-certified HR expert who has reviewed thousands of resumes.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
@@ -535,8 +535,8 @@
     },
     "salary-negotiation.html": {
       "filename": "salary-negotiation.html",
-      "title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
-      "description": "Salary negotiation coaching for early-career professionals. Understand the offer, know your worth, and ask with confidence.",
+      "title": "Salary Negotiation Coach for New Grads | HR Expert to go",
+      "description": "1:1 salary negotiation coaching for new graduates and early-career professionals. Learn to negotiate from a coach who has sat on the hiring side.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/salary-negotiation.html",
       "og_tags": {
@@ -687,34 +687,7 @@
       ]
     }
   },
-  "issues": [
-    {
-      "page": "payment.html",
-      "severity": "medium",
-      "category": "title",
-      "message": "Title too short (25 chars)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "payment.html",
-      "severity": "high",
-      "category": "description",
-      "message": "Missing meta description",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "payment.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    }
-  ],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-07-26)"
-  ],
+  "issues": [],
+  "fixes_applied": [],
   "content_proposals": []
 }
