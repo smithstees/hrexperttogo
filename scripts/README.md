@@ -22,10 +22,15 @@ Runs every Sunday at 12:00 UTC (8am ET in summer, 7am ET in winter) and:
    - Refreshed `sitemap.xml`
    - `lang="en"` on `<html>`
 3. **Opens a pull request** with audience-tuned title / meta description
-   changes (anything that alters visible copy) for you to review and merge.
+   changes (anything that alters visible copy) for you to review. **PRs
+   auto-merge after 48 hours** unless closed or labeled `hold` — see the
+   auto-merge workflow (`.github/workflows/auto-merge-seo-prs.yml`).
 4. **Posts a GitHub Issue** with the full report each run. Because your
    GitHub account already emails you when new issues are opened, the report
    arrives in your inbox with no SMTP setup required.
+5. **A separate weekly Perplexity task** analyzes fresh GSC data every
+   Sunday at 9am ET and proposes new keyword-driven copy changes as their
+   own PR (also subject to the 48h auto-merge).
 
 ## Files
 
@@ -77,6 +82,17 @@ The audit tunes titles and descriptions toward:
 
 Edit `AUDIENCE_KEYWORDS` and `CONTENT_SUGGESTIONS` in `seo_audit.py` to
 adjust.
+
+## PR review options
+
+When an SEO PR opens, you have three options:
+
+- **Approve early**: Click the merge button on the PR.
+- **Reject**: Close the PR without merging.
+- **Delay indefinitely**: Add the `hold` label — the auto-merge workflow
+  will skip PRs with this label.
+
+If you take no action, the PR auto-merges after 48 hours.
 
 ## Cadence
 
