@@ -42,6 +42,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # Manuia SCS) and standard search intent for the niche.
 AUDIENCE_KEYWORDS = [
     "career coaching for college graduates",
+    "college career coaching",
     "career coach for new grads",
     "help my college graduate find a job",
     "virtual career coaching",
@@ -693,10 +694,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "from a coach who has sat on the hiring side."),
     },
     "job-search-strategy.html": {
-        "title": "Job Search Strategy for New Grads | HR Expert to go",
-        "description": ("A focused job search strategy for recent graduates "
-                        "and early-career professionals so your applications "
-                        "reach the right people."),
+        "title": "Job Search Coach for New Grads | HR Expert to go",
+        "description": ("Help your new grad find a job with a focused search "
+                        "plan from a SHRM-certified HR expert. Target the "
+                        "right roles and turn applications into interviews."),
     },
     "profile-optimization.html": {
         "title": "Professional Profile Optimization for New Grads | HR Expert to go",
