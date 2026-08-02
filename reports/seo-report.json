@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-26",
-  "mode": "audit-only",
+  "date": "2026-08-02",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -9,16 +9,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/about.html",
       "og_tags": {
-        "og:title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
-        "og:description": "Meet Ty Smith, SHRM-CP \u2014 a career coach with 20+ years of HR leadership who helps recent college graduates and early-career professionals land the right role.",
+        "og:title": "Meet Ty Smith, SHRM-CP \u2014 Career Coach for New Grads",
+        "og:description": "Ty Smith, SHRM-CP \u2014 20+ years hiring and coaching early-career talent. Helping your grad land the right first job. Book a free intro call.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/about.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "About Ty Smith, SHRM-CP | Career Coach for New Grads",
-        "twitter:description": "Meet Ty Smith, SHRM-CP \u2014 a career coach with 20+ years of HR leadership who helps recent college graduates and early-career professionals land the right role.",
+        "twitter:title": "Meet Ty Smith, SHRM-CP \u2014 Career Coach for New Grads",
+        "twitter:description": "Ty Smith, SHRM-CP \u2014 20+ years hiring and coaching early-career talent. Helping your grad land the right first job. Book a free intro call.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -177,16 +177,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
-        "og:title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
-        "og:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert.",
+        "og:title": "Career Coach for New Grads & Graduates | HR Expert to go",
+        "og:description": "1:1 virtual career and graduate coaching for college students, recent graduates, and their parents \u2014 from a SHRM-certified HR expert.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Career Coach for New Grads & Early Career Pros | HR Expert to go",
-        "twitter:description": "1:1 virtual career coaching for college students, recent graduates, and their parents. Resume, interview, and salary help from a SHRM-certified HR expert.",
+        "twitter:title": "Career Coach for New Grads & Graduates | HR Expert to go",
+        "twitter:description": "1:1 virtual career and graduate coaching for college students, recent graduates, and their parents \u2014 from a SHRM-certified HR expert.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -496,16 +496,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
-        "og:title": "Resume Coaching for Recent Graduates | HR Expert to go",
-        "og:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes.",
+        "og:title": "Resume Coach for New Grads \u2014 Resume Help | HR Expert to go",
+        "og:description": "Resume coaching and resume help for new college graduates and early-career professionals from a SHRM-certified HR expert who has reviewed thousands of resumes.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/resume-coaching.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Resume Coaching for Recent Graduates | HR Expert to go",
-        "twitter:description": "Resume coaching for new college graduates and early-career professionals from an HR expert who has read thousands of resumes.",
+        "twitter:title": "Resume Coach for New Grads \u2014 Resume Help | HR Expert to go",
+        "twitter:description": "Resume coaching and resume help for new college graduates and early-career professionals from a SHRM-certified HR expert who has reviewed thousands of resumes.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -540,16 +540,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/salary-negotiation.html",
       "og_tags": {
-        "og:title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
-        "og:description": "Salary negotiation coaching for early-career professionals. Understand the offer, know your worth, and ask with confidence.",
+        "og:title": "Salary Negotiation Coach for New Grads | HR Expert to go",
+        "og:description": "1:1 salary negotiation coaching for new graduates and early-career professionals. Learn to negotiate from a coach who has sat on the hiring side.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/salary-negotiation.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Salary Negotiation Coaching for New Grads | HR Expert to go",
-        "twitter:description": "Salary negotiation coaching for early-career professionals. Understand the offer, know your worth, and ask with confidence.",
+        "twitter:title": "Salary Negotiation Coach for New Grads | HR Expert to go",
+        "twitter:description": "1:1 salary negotiation coaching for new graduates and early-career professionals. Learn to negotiate from a coach who has sat on the hiring side.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -688,6 +688,24 @@
     }
   },
   "issues": [],
-  "fixes_applied": [],
+  "fixes_applied": [
+    "Refreshed sitemap.xml (lastmod=2026-08-02)",
+    "about.html: Added/updated og:title",
+    "about.html: Added/updated og:description",
+    "about.html: Added/updated twitter:title",
+    "about.html: Added/updated twitter:description",
+    "index.html: Added/updated og:title",
+    "index.html: Added/updated og:description",
+    "index.html: Added/updated twitter:title",
+    "index.html: Added/updated twitter:description",
+    "resume-coaching.html: Added/updated og:title",
+    "resume-coaching.html: Added/updated og:description",
+    "resume-coaching.html: Added/updated twitter:title",
+    "resume-coaching.html: Added/updated twitter:description",
+    "salary-negotiation.html: Added/updated og:title",
+    "salary-negotiation.html: Added/updated og:description",
+    "salary-negotiation.html: Added/updated twitter:title",
+    "salary-negotiation.html: Added/updated twitter:description"
+  ],
   "content_proposals": []
 }
