@@ -1,6 +1,6 @@
 {
   "date": "2026-08-02",
-  "mode": "safe-fix",
+  "mode": "content-pr",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -688,24 +688,6 @@
     }
   },
   "issues": [],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-08-02)",
-    "about.html: Added/updated og:title",
-    "about.html: Added/updated og:description",
-    "about.html: Added/updated twitter:title",
-    "about.html: Added/updated twitter:description",
-    "index.html: Added/updated og:title",
-    "index.html: Added/updated og:description",
-    "index.html: Added/updated twitter:title",
-    "index.html: Added/updated twitter:description",
-    "resume-coaching.html: Added/updated og:title",
-    "resume-coaching.html: Added/updated og:description",
-    "resume-coaching.html: Added/updated twitter:title",
-    "resume-coaching.html: Added/updated twitter:description",
-    "salary-negotiation.html: Added/updated og:title",
-    "salary-negotiation.html: Added/updated og:description",
-    "salary-negotiation.html: Added/updated twitter:title",
-    "salary-negotiation.html: Added/updated twitter:description"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
