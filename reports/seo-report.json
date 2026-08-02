@@ -1,6 +1,6 @@
 {
   "date": "2026-08-02",
-  "mode": "safe-fix",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -287,8 +287,8 @@
     },
     "job-search-strategy.html": {
       "filename": "job-search-strategy.html",
-      "title": "Job Search Strategy for New Grads | HR Expert to go",
-      "description": "A focused job search strategy for recent graduates and early-career professionals so your applications reach the right people.",
+      "title": "Job Search Coach for New Grads | HR Expert to go",
+      "description": "Help your new grad find a job with a focused search plan from a SHRM-certified HR expert. Target the right roles and turn applications into interviews.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
@@ -688,24 +688,6 @@
     }
   },
   "issues": [],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-08-02)",
-    "about.html: Added/updated og:title",
-    "about.html: Added/updated og:description",
-    "about.html: Added/updated twitter:title",
-    "about.html: Added/updated twitter:description",
-    "index.html: Added/updated og:title",
-    "index.html: Added/updated og:description",
-    "index.html: Added/updated twitter:title",
-    "index.html: Added/updated twitter:description",
-    "resume-coaching.html: Added/updated og:title",
-    "resume-coaching.html: Added/updated og:description",
-    "resume-coaching.html: Added/updated twitter:title",
-    "resume-coaching.html: Added/updated twitter:description",
-    "salary-negotiation.html: Added/updated og:title",
-    "salary-negotiation.html: Added/updated og:description",
-    "salary-negotiation.html: Added/updated twitter:title",
-    "salary-negotiation.html: Added/updated twitter:description"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
