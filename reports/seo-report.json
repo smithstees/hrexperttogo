@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-02",
-  "mode": "audit-only",
+  "date": "2026-08-09",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -292,16 +292,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
-        "og:title": "Job Search Strategy for New Grads | HR Expert to go",
-        "og:description": "A focused job search strategy for recent graduates and early-career professionals so your applications reach the right people.",
+        "og:title": "Job Search Coach for New Grads | HR Expert to go",
+        "og:description": "Help your new grad find a job with a focused search plan from a SHRM-certified HR expert. Target the right roles and turn applications into interviews.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/job-search-strategy.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Job Search Strategy for New Grads | HR Expert to go",
-        "twitter:description": "A focused job search strategy for recent graduates and early-career professionals so your applications reach the right people.",
+        "twitter:title": "Job Search Coach for New Grads | HR Expert to go",
+        "twitter:description": "Help your new grad find a job with a focused search plan from a SHRM-certified HR expert. Target the right roles and turn applications into interviews.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -688,6 +688,12 @@
     }
   },
   "issues": [],
-  "fixes_applied": [],
+  "fixes_applied": [
+    "Refreshed sitemap.xml (lastmod=2026-08-09)",
+    "job-search-strategy.html: Added/updated og:title",
+    "job-search-strategy.html: Added/updated og:description",
+    "job-search-strategy.html: Added/updated twitter:title",
+    "job-search-strategy.html: Added/updated twitter:description"
+  ],
   "content_proposals": []
 }
