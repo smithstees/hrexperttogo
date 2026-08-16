@@ -1,6 +1,6 @@
 {
   "date": "2026-08-16",
-  "mode": "safe-fix",
+  "mode": "content-pr",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -688,8 +688,6 @@
     }
   },
   "issues": [],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-08-16)"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
