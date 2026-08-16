@@ -83,7 +83,11 @@ jobs:
           git pull --rebase origin main
           git checkout -B "$BRANCH"
           python scripts/seo_audit.py --mode content-pr
+          # Never commit auto-generated reports on PR branches — they
+          # regenerate on merge and only cause conflicts otherwise.
           git add -A
+          git reset HEAD -- reports/seo-report.md reports/seo-report.json 2>/dev/null || true
+          git checkout -- reports/seo-report.md reports/seo-report.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "PR_NEEDED=false" >> $GITHUB_ENV
           else

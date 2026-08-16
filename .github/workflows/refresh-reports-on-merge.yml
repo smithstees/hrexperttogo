@@ -1,0 +1,49 @@
+name: Refresh SEO reports on merge
+
+# When any SEO PR merges to main, regenerate reports/seo-report.md and
+# reports/seo-report.json so main always reflects post-change state. Reports
+# are intentionally NOT committed on PR branches (they cause merge conflicts
+# with the weekly audit workflow), so this keeps them in sync on main.
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    # Only run on merged PRs (not just closed) whose branch starts with seo/
+    if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.head.ref, 'seo/')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Regenerate reports
+        run: python scripts/seo_audit.py --mode audit-only
+
+      - name: Commit regenerated reports if changed
+        run: |
+          git config user.name "seo-bot"
+          git config user.email "seo-bot@users.noreply.github.com"
+          git add reports/seo-report.md reports/seo-report.json
+          if git diff --cached --quiet; then
+            echo "Reports unchanged — nothing to commit."
+          else
+            git commit -m "chore(seo): refresh reports after PR #${{ github.event.pull_request.number }}"
+            git push origin main
+          fi
