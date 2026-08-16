@@ -1,6 +1,6 @@
 {
   "date": "2026-08-16",
-  "mode": "safe-fix",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -365,7 +365,7 @@
     "pricing.html": {
       "filename": "pricing.html",
       "title": "Career Coaching Pricing for New Grads | HR Expert to go",
-      "description": "Transparent pricing for 1:1 virtual career coaching designed for college students, recent graduates, and the parents supporting them.",
+      "description": "See transparent pricing for 1:1 career coaching that helps your college grad launch a career. Virtual support for resumes, interviews, and job searches.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/pricing.html",
       "og_tags": {
@@ -491,8 +491,8 @@
     },
     "resume-coaching.html": {
       "filename": "resume-coaching.html",
-      "title": "Resume Coach for New Grads \u2014 Resume Help | HR Expert to go",
-      "description": "Resume coaching and resume help for new college graduates and early-career professionals from a SHRM-certified HR expert who has reviewed thousands of resumes.",
+      "title": "Resume Coach for New Grads | HR Expert to go",
+      "description": "Get resume writing and career coaching for your new college graduate. Build a stronger resume and job search with a SHRM-certified HR expert.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
@@ -688,8 +688,6 @@
     }
   },
   "issues": [],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-08-16)"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
