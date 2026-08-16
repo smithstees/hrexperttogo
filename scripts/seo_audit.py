@@ -49,6 +49,8 @@ AUDIENCE_KEYWORDS = [
     "resume help for recent graduates",
     "interview coaching for college students",
     "salary negotiation coaching",
+    "salary negotiation coach",
+    "resume writing and career coaching",
     "job search coach for early career professionals",
     "career coach for parents of college students",
     "SHRM-certified career coach",
@@ -670,16 +672,15 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     },
     "pricing.html": {
         "title": "Career Coaching Pricing for New Grads | HR Expert to go",
-        "description": ("Transparent pricing for 1:1 virtual career coaching "
-                        "designed for college students, recent graduates, "
-                        "and the parents supporting them."),
+        "description": ("See transparent pricing for 1:1 career coaching that "
+                        "helps your college grad launch a career. Virtual "
+                        "support for resumes, interviews, and job searches."),
     },
     "resume-coaching.html": {
-        "title": "Resume Coach for New Grads — Resume Help | HR Expert to go",
-        "description": ("Resume coaching and resume help for new college "
-                        "graduates and early-career professionals from a "
-                        "SHRM-certified HR expert who has reviewed "
-                        "thousands of resumes."),
+        "title": "Resume Coach for New Grads | HR Expert to go",
+        "description": ("Get resume writing and career coaching for your new "
+                        "college graduate. Build a stronger resume and job "
+                        "search with a SHRM-certified HR expert."),
     },
     "interview-preparation.html": {
         "title": "Interview Prep for New Grads | Virtual Career Coach",

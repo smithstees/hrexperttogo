@@ -1,10 +1,10 @@
 # SEO Audit Report — 2026-08-16
 
 **Site:** https://hrexperttogo.com  
-**Mode:** `safe-fix`  
+**Mode:** `audit-only`  
 **Pages scanned:** 17  
 **Issues found:** 0 (high: 0, medium: 0, low: 0)  
-**Automated fixes applied:** 1
+**Automated fixes applied:** 0
 
 ## Target audience keywords
 
@@ -17,13 +17,11 @@ Titles and descriptions are tuned toward:
 - resume help for recent graduates
 - interview coaching for college students
 - salary negotiation coaching
+- salary negotiation coach
+- resume writing and career coaching
 - job search coach for early career professionals
 - career coach for parents of college students
 - SHRM-certified career coach
-
-## Fixes applied this run
-
-- Refreshed sitemap.xml (lastmod=2026-08-16)
 
 ## Search Console — last 7 days
 
@@ -69,10 +67,10 @@ Titles and descriptions are tuned toward:
 | interview-preparation.html | 51 | 136 | 1 | yes | yes |
 | job-search-strategy.html | 48 | 151 | 1 | yes | yes |
 | payment.html | 46 | 147 | 1 | yes | yes |
-| pricing.html | 55 | 133 | 1 | yes | yes |
+| pricing.html | 55 | 152 | 1 | yes | yes |
 | privacy.html | 32 | 140 | 1 | yes | yes |
 | profile-optimization.html | 65 | 142 | 1 | yes | yes |
-| resume-coaching.html | 58 | 159 | 1 | yes | yes |
+| resume-coaching.html | 44 | 141 | 1 | yes | yes |
 | salary-negotiation.html | 56 | 145 | 1 | yes | yes |
 | terms.html | 34 | 134 | 1 | yes | yes |
 | thank-you.html | 47 | 127 | 1 | yes | yes |
