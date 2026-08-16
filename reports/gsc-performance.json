@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-09T11:47:10.627643+00:00",
+  "generated_at": "2026-08-16T11:47:21.911764+00:00",
   "date_range": {
-    "start": "2026-08-02",
-    "end": "2026-08-09"
+    "start": "2026-08-09",
+    "end": "2026-08-16"
   },
   "totals": {
     "clicks": 0,
-    "impressions": 22,
+    "impressions": 36,
     "ctr": 0.0,
-    "position": 55.81818181818182
+    "position": 47.0
   },
   "top_queries": [
     {
@@ -16,86 +16,100 @@
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 38
+      "position": 40
+    },
+    {
+      "query": "hr expert",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "hr to go",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
     },
     {
       "query": "negotiation coach",
       "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 66.5
-    },
-    {
-      "query": "resume writing and career coaching",
-      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 97
+      "position": 64
     },
     {
       "query": "salary negotiation coach",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 4,
       "ctr": 0,
-      "position": 63
+      "position": 57
     },
     {
       "query": "salary negotiation coaching",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 6,
       "ctr": 0,
-      "position": 56
+      "position": 58
     }
   ],
   "top_pages": [
     {
       "page": "http://hrexperttogo.com/",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 101
+      "position": 2.5
     },
     {
       "page": "https://hrexperttogo.com/about.html",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 6,
       "ctr": 0,
-      "position": 9.5
+      "position": 13.666666666666666
     },
     {
       "page": "https://hrexperttogo.com/contact.html",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 67.75
+      "position": 11
     },
     {
       "page": "https://hrexperttogo.com/job-search-strategy.html",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 19
+      "position": 20
+    },
+    {
+      "page": "https://hrexperttogo.com/pricing.html",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 56.5
     },
     {
       "page": "https://hrexperttogo.com/resume-coaching.html",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 4,
       "ctr": 0,
-      "position": 50.5
+      "position": 86
     },
     {
       "page": "https://hrexperttogo.com/salary-negotiation.html",
       "clicks": 0,
-      "impressions": 8,
+      "impressions": 15,
       "ctr": 0,
-      "position": 66.5
+      "position": 60.666666666666664
     },
     {
       "page": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 73.5
+      "position": 55.666666666666664
     }
   ]
 }
