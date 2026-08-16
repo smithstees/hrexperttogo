@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-09",
+  "date": "2026-08-16",
   "mode": "safe-fix",
   "pages": {
     "about.html": {
@@ -689,11 +689,7 @@
   },
   "issues": [],
   "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-08-09)",
-    "job-search-strategy.html: Added/updated og:title",
-    "job-search-strategy.html: Added/updated og:description",
-    "job-search-strategy.html: Added/updated twitter:title",
-    "job-search-strategy.html: Added/updated twitter:description"
+    "Refreshed sitemap.xml (lastmod=2026-08-16)"
   ],
   "content_proposals": []
 }
