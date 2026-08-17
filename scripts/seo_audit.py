@@ -41,19 +41,73 @@ ROOT = Path(__file__).resolve().parent.parent
 # early-career persona based on competitor positioning (Robin Ryan,
 # Manuia SCS) and standard search intent for the niche.
 AUDIENCE_KEYWORDS = [
-    "career coaching for college graduates",
-    "college career coaching",
-    "career coach for new grads",
+    "career coaching for college students",
+    "career coaching for recent graduates",
+    "career coach for college students",
+    "career coach for new college graduates",
+    "career counseling for young adults",
     "help my college graduate find a job",
+    "my college graduate can't find a job",
+    "career coach for my son",
+    "career coach for my daughter",
+    "resume help for college students",
+    "interview coach for college students",
+    "first job offer negotiation",
+    "entry level salary negotiation help",
     "virtual career coaching",
-    "resume help for recent graduates",
-    "interview coaching for college students",
-    "salary negotiation coaching",
-    "salary negotiation coach",
-    "resume writing and career coaching",
-    "job search coach for early career professionals",
-    "career coach for parents of college students",
     "SHRM-certified career coach",
+]
+
+# --- Parent-signal query tracking -------------------------------------------
+# Exact and partial phrases we want to see enter the Search Console index over
+# the next 4-8 weeks. Split into two buckets:
+#   TRACKED   : specific phrases we're actively optimizing pages for. Reported
+#               even at 0 impressions so the team sees whether Google is
+#               starting to associate the site with each phrase.
+#   SIGNALS   : substring patterns that identify "parent voice" queries in
+#               general (e.g. anything containing "my son" or "help my").
+#               Matched queries are surfaced as a bonus section, distinct from
+#               the tracked list.
+PARENT_TRACKED_QUERIES: list[str] = [
+    "career coach for college students",
+    "career coaching for college students",
+    "career coach for new college graduates",
+    "career coach for recent graduates",
+    "career coaching for recent graduates",
+    "career counseling for young adults",
+    "career coach for my son",
+    "career coach for my daughter",
+    "career coach for my child",
+    "my college graduate can't find a job",
+    "my son can't find a job",
+    "my daughter can't find a job",
+    "help my college student get a job",
+    "help my college graduate find a job",
+    "resume help for college students",
+    "resume help for recent graduates",
+    "interview coach for college students",
+    "mock interview for college students",
+    "first job offer negotiation",
+    "first job salary negotiation",
+    "entry level salary negotiation",
+    "job search help for recent graduates",
+    "career counseling vs career coaching",
+    "is a career coach worth it",
+]
+
+PARENT_SIGNAL_PATTERNS: list[str] = [
+    "my son",
+    "my daughter",
+    "my child",
+    "my college student",
+    "my college graduate",
+    "my grad",
+    "help my",
+    "for my son",
+    "for my daughter",
+    "parent",
+    "college graduate can't",
+    "can't find a job",
 ]
 
 # Pages that shouldn't be indexed prominently or need special handling.
@@ -795,6 +849,65 @@ def load_gsc_performance() -> dict[str, Any] | None:
         return None
 
 
+def extract_parent_query_data(
+    gsc: dict[str, Any],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Split GSC queries into (tracked, parent-signal) buckets.
+
+    - tracked : one row per phrase in PARENT_TRACKED_QUERIES, in declared
+                order. Rows for phrases not present in GSC data are returned
+                with zeroed metrics so the reader can see what is still
+                unranked.
+    - signals : all GSC queries whose text contains any PARENT_SIGNAL_PATTERNS
+                substring but does NOT exactly match a tracked query (to
+                avoid double-reporting). Sorted by impressions desc.
+    """
+    all_queries = gsc.get("all_queries") or gsc.get("top_queries") or []
+    by_query: dict[str, dict[str, Any]] = {}
+    for row in all_queries:
+        q = (row.get("query") or "").strip().lower()
+        if not q:
+            continue
+        by_query[q] = row
+
+    tracked_rows: list[dict[str, Any]] = []
+    for phrase in PARENT_TRACKED_QUERIES:
+        key = phrase.lower()
+        row = by_query.get(key)
+        if row:
+            tracked_rows.append({
+                "query": phrase,
+                "clicks": row.get("clicks", 0),
+                "impressions": row.get("impressions", 0),
+                "ctr": row.get("ctr", 0),
+                "position": row.get("position", 0),
+            })
+        else:
+            tracked_rows.append({
+                "query": phrase,
+                "clicks": 0,
+                "impressions": 0,
+                "ctr": 0,
+                "position": 0,
+            })
+
+    tracked_keys = {p.lower() for p in PARENT_TRACKED_QUERIES}
+    signal_rows: list[dict[str, Any]] = []
+    for q, row in by_query.items():
+        if q in tracked_keys:
+            continue
+        if any(pat in q for pat in PARENT_SIGNAL_PATTERNS):
+            signal_rows.append({
+                "query": row.get("query", q),
+                "clicks": row.get("clicks", 0),
+                "impressions": row.get("impressions", 0),
+                "ctr": row.get("ctr", 0),
+                "position": row.get("position", 0),
+            })
+    signal_rows.sort(key=lambda r: r["impressions"], reverse=True)
+    return tracked_rows, signal_rows
+
+
 def write_report(pages: dict[str, PageInfo], all_issues: list[Issue],
                  fixes_applied: list[str],
                  content_proposals: list[dict[str, str]],
@@ -829,6 +942,56 @@ def write_report(pages: dict[str, PageInfo], all_issues: list[Issue],
     for kw in AUDIENCE_KEYWORDS:
         lines.append(f"- {kw}")
     lines.append("")
+
+    # Parent-keyword tracking (pulled from GSC data if available).
+    gsc_early = load_gsc_performance()
+    if gsc_early:
+        tracked_rows, signal_rows = extract_parent_query_data(gsc_early)
+        lines.append("## Parent-keyword tracking")
+        lines.append("")
+        lines.append(
+            "Queries we're actively optimizing for. `-` means Google has "
+            "not yet associated the site with that phrase in the reporting "
+            "window."
+        )
+        lines.append("")
+        lines.append("| Tracked query | Clicks | Impressions | CTR | Position |")
+        lines.append("|---|---:|---:|---:|---:|")
+        for row in tracked_rows:
+            if row["impressions"] == 0 and row["clicks"] == 0:
+                lines.append(f"| {row['query']} | - | - | - | - |")
+            else:
+                lines.append(
+                    f"| {row['query']} | {row['clicks']} | "
+                    f"{row['impressions']} | "
+                    f"{row['ctr'] * 100:.1f}% | "
+                    f"{row['position']:.1f} |"
+                )
+        lines.append("")
+        if signal_rows:
+            lines.append("### Parent-voice queries detected")
+            lines.append("")
+            lines.append(
+                "Any GSC query containing parent-buyer language (\"my son\", "
+                "\"help my\", \"my college graduate\", etc.)."
+            )
+            lines.append("")
+            lines.append("| Query | Clicks | Impressions | CTR | Position |")
+            lines.append("|---|---:|---:|---:|---:|")
+            for row in signal_rows[:25]:
+                lines.append(
+                    f"| {row['query']} | {row['clicks']} | "
+                    f"{row['impressions']} | "
+                    f"{row['ctr'] * 100:.1f}% | "
+                    f"{row['position']:.1f} |"
+                )
+            lines.append("")
+        else:
+            lines.append(
+                "_No parent-voice queries detected in this reporting "
+                "window yet._"
+            )
+            lines.append("")
 
     if fixes_applied:
         lines.append("## Fixes applied this run")
@@ -924,6 +1087,16 @@ def write_report(pages: dict[str, PageInfo], all_issues: list[Issue],
 
     md_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
+    # Include parent-keyword tracking in JSON output for downstream tooling.
+    gsc_for_json = load_gsc_performance()
+    parent_tracking: dict[str, Any] = {}
+    if gsc_for_json:
+        tracked_rows, signal_rows = extract_parent_query_data(gsc_for_json)
+        parent_tracking = {
+            "tracked": tracked_rows,
+            "signals": signal_rows,
+        }
+
     json_path.write_text(json.dumps({
         "date": today,
         "mode": mode,
@@ -931,6 +1104,7 @@ def write_report(pages: dict[str, PageInfo], all_issues: list[Issue],
         "issues": [asdict(i) for i in all_issues],
         "fixes_applied": fixes_applied,
         "content_proposals": content_proposals,
+        "parent_tracking": parent_tracking,
     }, indent=2), encoding="utf-8")
 
     return md_path, json_path
