@@ -3,7 +3,7 @@
 **Site:** https://hrexperttogo.com  
 **Mode:** `audit-only`  
 **Pages scanned:** 19  
-**Issues found:** 3 (high: 0, medium: 1, low: 2)  
+**Issues found:** 2 (high: 0, medium: 1, low: 1)  
 **Automated fixes applied:** 0
 
 ## Target audience keywords
@@ -30,10 +30,9 @@ Titles and descriptions are tuned toward:
 
 - **blog.html** · structured-data — No JSON-LD structured data
 
-### Low (2)
+### Low (1)
 
 - **blog.html** · title — Title long (70 chars, prefer ≤60)
-- **my-college-grad-still-doesnt-have-a-job.html** · title — Title long (80 chars, prefer ≤60)
 
 ## Search Console — last 7 days
 
@@ -76,20 +75,20 @@ Titles and descriptions are tuned toward:
 |---|---|---|---|---|---|
 | about.html | 51 | 136 | 1 | yes | yes |
 | blog.html | 70 | 128 | 1 | yes | no |
-| contact.html | 52 | 101 | 1 | yes | yes |
+| contact.html | 56 | 141 | 1 | yes | yes |
 | faq.html | 53 | 132 | 1 | yes | yes |
 | helping-new-graduate-launch-career-parents-guide.html | 59 | 153 | 1 | yes | yes |
-| index.html | 56 | 133 | 1 | yes | yes |
+| index.html | 57 | 141 | 1 | yes | yes |
 | intake-form.html | 35 | 132 | 1 | yes | yes |
 | interview-preparation.html | 51 | 136 | 1 | yes | yes |
 | job-search-strategy.html | 43 | 157 | 1 | yes | yes |
-| my-college-grad-still-doesnt-have-a-job.html | 80 | 160 | 1 | yes | yes |
+| my-college-grad-still-doesnt-have-a-job.html | 59 | 154 | 1 | yes | yes |
 | payment.html | 46 | 147 | 1 | yes | yes |
 | pricing.html | 55 | 152 | 1 | yes | yes |
 | privacy.html | 32 | 140 | 1 | yes | yes |
-| profile-optimization.html | 65 | 142 | 1 | yes | yes |
+| profile-optimization.html | 52 | 142 | 1 | yes | yes |
 | resume-coaching.html | 44 | 141 | 1 | yes | yes |
-| salary-negotiation.html | 56 | 145 | 1 | yes | yes |
+| salary-negotiation.html | 56 | 147 | 1 | yes | yes |
 | terms.html | 34 | 134 | 1 | yes | yes |
 | thank-you.html | 47 | 127 | 1 | yes | yes |
 | why-your-college-grad-needs-career-coaching.html | 60 | 133 | 1 | yes | yes |
