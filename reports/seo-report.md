@@ -1,10 +1,10 @@
 # SEO Audit Report — 2026-08-23
 
 **Site:** https://hrexperttogo.com  
-**Mode:** `safe-fix`  
+**Mode:** `audit-only`  
 **Pages scanned:** 19  
 **Issues found:** 3 (high: 0, medium: 1, low: 2)  
-**Automated fixes applied:** 11
+**Automated fixes applied:** 0
 
 ## Target audience keywords
 
@@ -16,26 +16,13 @@ Titles and descriptions are tuned toward:
 - virtual career coaching
 - resume help for recent graduates
 - interview coaching for college students
+- negotiation coach
 - salary negotiation coaching
 - salary negotiation coach
 - resume writing and career coaching
 - job search coach for early career professionals
 - career coach for parents of college students
 - SHRM-certified career coach
-
-## Fixes applied this run
-
-- Refreshed sitemap.xml (lastmod=2026-08-23)
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated og:title
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated og:image
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:title
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:image
-- pricing.html: Added/updated og:description
-- pricing.html: Added/updated twitter:description
-- resume-coaching.html: Added/updated og:title
-- resume-coaching.html: Added/updated og:description
-- resume-coaching.html: Added/updated twitter:title
-- resume-coaching.html: Added/updated twitter:description
 
 ## Remaining issues
 
@@ -87,7 +74,7 @@ Titles and descriptions are tuned toward:
 
 | Page | Title length | Desc length | H1s | Canonical | JSON-LD |
 |---|---|---|---|---|---|
-| about.html | 51 | 138 | 1 | yes | yes |
+| about.html | 51 | 136 | 1 | yes | yes |
 | blog.html | 70 | 128 | 1 | yes | no |
 | contact.html | 52 | 101 | 1 | yes | yes |
 | faq.html | 53 | 132 | 1 | yes | yes |
@@ -95,7 +82,7 @@ Titles and descriptions are tuned toward:
 | index.html | 56 | 133 | 1 | yes | yes |
 | intake-form.html | 35 | 132 | 1 | yes | yes |
 | interview-preparation.html | 51 | 136 | 1 | yes | yes |
-| job-search-strategy.html | 48 | 151 | 1 | yes | yes |
+| job-search-strategy.html | 43 | 157 | 1 | yes | yes |
 | my-college-grad-still-doesnt-have-a-job.html | 80 | 160 | 1 | yes | yes |
 | payment.html | 46 | 147 | 1 | yes | yes |
 | pricing.html | 55 | 152 | 1 | yes | yes |

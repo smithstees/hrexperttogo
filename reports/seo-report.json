@@ -1,11 +1,11 @@
 {
   "date": "2026-08-23",
-  "mode": "safe-fix",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
-      "title": "Meet Ty Smith, SHRM-CP \u2014 Career Coach for New Grads",
-      "description": "Ty Smith, SHRM-CP \u2014 20+ years hiring and coaching early-career talent. Helping your grad land the right first job. Book a free intro call.",
+      "title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",
+      "description": "Career coaching for new grads and the parents supporting them. Meet Ty Smith, SHRM-CP, with 20+ years in hiring. Book a free intro call.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/about.html",
       "og_tags": {
@@ -335,8 +335,8 @@
     },
     "job-search-strategy.html": {
       "filename": "job-search-strategy.html",
-      "title": "Job Search Coach for New Grads | HR Expert to go",
-      "description": "Help your new grad find a job with a focused search plan from a SHRM-certified HR expert. Target the right roles and turn applications into interviews.",
+      "title": "New Grad Job Search Coach | HR Expert to go",
+      "description": "Help your college grad find the right job with a focused plan from a SHRM-certified HR expert. Target better-fit roles and turn applications into interviews.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
@@ -805,18 +805,6 @@
       "fix_note": ""
     }
   ],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-08-23)",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:title",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:image",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:title",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:image",
-    "pricing.html: Added/updated og:description",
-    "pricing.html: Added/updated twitter:description",
-    "resume-coaching.html: Added/updated og:title",
-    "resume-coaching.html: Added/updated og:description",
-    "resume-coaching.html: Added/updated twitter:title",
-    "resume-coaching.html: Added/updated twitter:description"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
