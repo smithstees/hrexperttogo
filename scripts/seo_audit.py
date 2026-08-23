@@ -581,6 +581,41 @@ def build_jsonld_for(filename: str, info: PageInfo) -> list[dict[str, Any]]:
                 },
             },
         }]
+    if filename == "my-college-grad-still-doesnt-have-a-job.html":
+        return [{
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "My College Grad Still Doesn't Have a Job",
+            "url": canonical_url_for(filename),
+            "description": info.description,
+            "author": {"@type": "Person", "name": "Ty Smith"},
+            "publisher": {
+                "@type": "Organization",
+                "name": SITE_NAME,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": f"{SITE_URL}/HR_Expert_to_Go_Primary.png",
+                },
+            },
+        }]
+    if filename == "blog.html":
+        return [{
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "HR Expert to go Blog",
+            "url": canonical_url_for(filename),
+            "description": info.description,
+            "publisher": {
+                "@type": "Organization",
+                "name": SITE_NAME,
+                "url": SITE_URL,
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": f"{SITE_URL}/HR_Expert_to_Go_Primary.png",
+                },
+            },
+            "author": {"@type": "Person", "name": "Ty Smith"},
+        }]
     if filename in ("privacy.html", "terms.html", "thank-you.html",
                     "intake-form.html", "payment.html"):
         name_map = {
@@ -621,6 +656,8 @@ def refresh_sitemap(pages: dict[str, PageInfo]) -> list[str]:
         "faq.html": "0.8",
         "why-your-college-grad-needs-career-coaching.html": "0.7",
         "contact.html": "0.7",
+        "blog.html": "0.7",
+        "my-college-grad-still-doesnt-have-a-job.html": "0.7",
         "privacy.html": "0.3",
         "terms.html": "0.3",
     }
@@ -732,6 +769,12 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "what helps new graduates move from stalled search "
                         "to the right next step with practical career "
                         "guidance."),
+    },
+    "blog.html": {
+        "title": "Career Advice Blog for New Grads | HR Expert to go",
+        "description": ("Practical career coaching advice for college "
+                        "students, recent graduates, and the parents "
+                        "supporting them through the job search."),
     },
 }
 
