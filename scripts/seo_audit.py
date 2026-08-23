@@ -660,10 +660,10 @@ def refresh_sitemap(pages: dict[str, PageInfo]) -> list[str]:
 # Tuned drafts. Kept conservative — reviewer must merge PR.
 CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     "index.html": {
-        "title": "Career Coach for New Grads & Graduates | HR Expert to go",
-        "description": ("1:1 virtual career and graduate coaching for "
-                        "college students, recent graduates, and their "
-                        "parents — from a SHRM-certified HR expert."),
+        "title": "Career Coaching for New Grads & Parents | HR Expert to go",
+        "description": ("Your grad's job search can move forward. Get 1:1 "
+                        "virtual career coaching for resumes, interviews, "
+                        "and offers from a SHRM-certified HR expert."),
     },
     "about.html": {
         "title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",
@@ -691,9 +691,9 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     },
     "salary-negotiation.html": {
         "title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-        "description": ("1:1 salary negotiation coaching for new graduates "
-                        "and early-career professionals. Learn to negotiate "
-                        "from a coach who has sat on the hiring side."),
+        "description": ("Work with a salary negotiation coach to evaluate "
+                        "your offer and ask with confidence. 1:1 guidance "
+                        "for new graduates and early-career professionals."),
     },
     "job-search-strategy.html": {
         "title": "New Grad Job Search Coach | HR Expert to go",
@@ -703,7 +703,7 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "interviews."),
     },
     "profile-optimization.html": {
-        "title": "Professional Profile Optimization for New Grads | HR Expert to go",
+        "title": "Professional Profile for New Grads | HR Expert to go",
         "description": ("Professional profile optimization for early-career "
                         "professionals — position your online presence so "
                         "recruiters find you and want to reach out."),
@@ -715,16 +715,23 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "helping them launch a career."),
     },
     "contact.html": {
-        "title": "Contact HR Expert to go | Career Coach for New Grads",
-        "description": ("Get in touch with Ty Smith, SHRM-CP — virtual "
-                        "career coach for college students and recent "
-                        "graduates."),
+        "title": "Talk With a Career Coach for New Grads | HR Expert to go",
+        "description": ("Have a question about career coaching for your grad? "
+                        "Contact Ty Smith, SHRM-CP for practical help with "
+                        "resumes, interviews, and job searches."),
     },
     "why-your-college-grad-needs-career-coaching.html": {
         "title": "Why Your College Grad Needs a Career Coach | HR Expert to go",
         "description": ("A guide for parents of new college graduates: how "
                         "career coaching helps your grad land the right job "
                         "faster and with more confidence."),
+    },
+    "my-college-grad-still-doesnt-have-a-job.html": {
+        "title": "College Grad Needs a Job | Parent's Guide | HR Expert to go",
+        "description": ("Worried your college grad is still looking? Learn "
+                        "what helps new graduates move from stalled search "
+                        "to the right next step with practical career "
+                        "guidance."),
     },
 }
 
