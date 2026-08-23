@@ -1,115 +1,143 @@
 {
-  "generated_at": "2026-08-16T11:47:21.911764+00:00",
+  "generated_at": "2026-08-23T11:47:15.501939+00:00",
   "date_range": {
-    "start": "2026-08-09",
-    "end": "2026-08-16"
+    "start": "2026-08-16",
+    "end": "2026-08-23"
   },
   "totals": {
     "clicks": 0,
-    "impressions": 36,
+    "impressions": 49,
     "ctr": 0.0,
-    "position": 47.0
+    "position": 56.142857142857146
   },
   "top_queries": [
+    {
+      "query": "career coaching college students",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "college career coaching",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 76
+    },
     {
       "query": "go-to hiring experts",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 40
+      "position": 36
     },
     {
-      "query": "hr expert",
+      "query": "graduate coach",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 2
-    },
-    {
-      "query": "hr to go",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 3
+      "position": 68
     },
     {
       "query": "negotiation coach",
       "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 65
+    },
+    {
+      "query": "resume coaches",
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 64
+      "position": 60
+    },
+    {
+      "query": "resume writer and career coach",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
     },
     {
       "query": "salary negotiation coach",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 2,
       "ctr": 0,
-      "position": 57
-    },
-    {
-      "query": "salary negotiation coaching",
-      "clicks": 0,
-      "impressions": 6,
-      "ctr": 0,
-      "position": 58
+      "position": 52
     }
   ],
   "top_pages": [
     {
-      "page": "http://hrexperttogo.com/",
-      "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 2.5
-    },
-    {
       "page": "https://hrexperttogo.com/about.html",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 4,
       "ctr": 0,
-      "position": 13.666666666666666
+      "position": 11.75
     },
     {
       "page": "https://hrexperttogo.com/contact.html",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 11
+      "position": 7
+    },
+    {
+      "page": "https://hrexperttogo.com/helping-new-graduate-launch-career-parents-guide.html",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 73.5
+    },
+    {
+      "page": "https://hrexperttogo.com/interview-preparation.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
     },
     {
       "page": "https://hrexperttogo.com/job-search-strategy.html",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 20
+      "position": 36
+    },
+    {
+      "page": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
     },
     {
       "page": "https://hrexperttogo.com/pricing.html",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 56.5
+      "position": 76.33333333333333
     },
     {
       "page": "https://hrexperttogo.com/resume-coaching.html",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 8,
       "ctr": 0,
-      "position": 86
+      "position": 68.875
     },
     {
       "page": "https://hrexperttogo.com/salary-negotiation.html",
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 8,
       "ctr": 0,
-      "position": 60.666666666666664
+      "position": 58.625
     },
     {
       "page": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 20,
       "ctr": 0,
-      "position": 55.666666666666664
+      "position": 59.55
     }
   ]
 }
