@@ -48,6 +48,7 @@ AUDIENCE_KEYWORDS = [
     "virtual career coaching",
     "resume help for recent graduates",
     "interview coaching for college students",
+    "negotiation coach",
     "salary negotiation coaching",
     "salary negotiation coach",
     "resume writing and career coaching",
@@ -665,10 +666,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "parents — from a SHRM-certified HR expert."),
     },
     "about.html": {
-        "title": "Meet Ty Smith, SHRM-CP — Career Coach for New Grads",
-        "description": ("Ty Smith, SHRM-CP — 20+ years hiring and coaching "
-                        "early-career talent. Helping your grad land the "
-                        "right first job. Book a free intro call."),
+        "title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",
+        "description": ("Career coaching for new grads and the parents "
+                        "supporting them. Meet Ty Smith, SHRM-CP, with 20+ "
+                        "years in hiring. Book a free intro call."),
     },
     "pricing.html": {
         "title": "Career Coaching Pricing for New Grads | HR Expert to go",
@@ -695,10 +696,11 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "from a coach who has sat on the hiring side."),
     },
     "job-search-strategy.html": {
-        "title": "Job Search Coach for New Grads | HR Expert to go",
-        "description": ("Help your new grad find a job with a focused search "
-                        "plan from a SHRM-certified HR expert. Target the "
-                        "right roles and turn applications into interviews."),
+        "title": "New Grad Job Search Coach | HR Expert to go",
+        "description": ("Help your college grad find the right job with a "
+                        "focused plan from a SHRM-certified HR expert. "
+                        "Target better-fit roles and turn applications into "
+                        "interviews."),
     },
     "profile-optimization.html": {
         "title": "Professional Profile Optimization for New Grads | HR Expert to go",
