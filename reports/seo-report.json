@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-16",
-  "mode": "audit-only",
+  "date": "2026-08-23",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -39,6 +39,49 @@
         "index.html#services",
         "about.html",
         "pricing.html",
+        "faq.html",
+        "contact.html",
+        "privacy.html",
+        "terms.html"
+      ]
+    },
+    "blog.html": {
+      "filename": "blog.html",
+      "title": "Blog | Career Advice for New Grads and Their Parents | HR Expert to go",
+      "description": "Practical career coaching advice for college students, recent graduates, and the parents supporting them through the job search.",
+      "h1_count": 1,
+      "canonical": "https://hrexperttogo.com/blog.html",
+      "og_tags": {
+        "og:title": "Blog | Career Advice for New Grads and Their Parents | HR Expert to go",
+        "og:description": "Practical career coaching advice for college students, recent graduates, and the parents supporting them through the job search.",
+        "og:type": "website",
+        "og:url": "https://hrexperttogo.com/blog.html",
+        "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Blog | Career Advice for New Grads and Their Parents | HR Expert to go",
+        "twitter:description": "Practical career coaching advice for college students, recent graduates, and the parents supporting them through the job search.",
+        "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "has_jsonld": false,
+      "images_missing_alt": 0,
+      "internal_links": [
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "blog.html",
+        "faq.html",
+        "contact.html",
+        "my-college-grad-still-doesnt-have-a-job.html",
+        "helping-new-graduate-launch-career-parents-guide.html",
+        "why-your-college-grad-needs-career-coaching.html",
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "privacy.html",
@@ -157,6 +200,7 @@
         "index.html#services",
         "about.html",
         "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "index.html",
@@ -164,6 +208,7 @@
         "index.html#services",
         "about.html",
         "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "privacy.html",
@@ -195,12 +240,14 @@
         "index.html",
         "about.html",
         "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "index.html",
         "index.html#services",
         "about.html",
         "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "resume-coaching.html",
@@ -212,6 +259,7 @@
         "index.html#services",
         "about.html",
         "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "privacy.html",
@@ -329,6 +377,48 @@
         "terms.html"
       ]
     },
+    "my-college-grad-still-doesnt-have-a-job.html": {
+      "filename": "my-college-grad-still-doesnt-have-a-job.html",
+      "title": "My College Grad Still Doesn't Have a Job. Should I Be Worried? | HR Expert to go",
+      "description": "Six months out and still no offer. Here is how to tell normal job-search timelines from real warning signs, and what actually helps a stalled grad move forward.",
+      "h1_count": 1,
+      "canonical": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
+      "og_tags": {
+        "og:title": "My College Grad Still Doesn't Have a Job. Should I Be Worried? | HR Expert to go",
+        "og:description": "Six months out and still no offer. Here is how to tell normal job-search timelines from real warning signs, and what actually helps a stalled grad move forward.",
+        "og:type": "website",
+        "og:url": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
+        "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "My College Grad Still Doesn't Have a Job. Should I Be Worried? | HR Expert to go",
+        "twitter:description": "Six months out and still no offer. Here is how to tell normal job-search timelines from real warning signs, and what actually helps a stalled grad move forward.",
+        "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "has_jsonld": true,
+      "images_missing_alt": 0,
+      "internal_links": [
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "blog.html",
+        "faq.html",
+        "contact.html",
+        "pricing.html",
+        "index.html",
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "blog.html",
+        "faq.html",
+        "contact.html",
+        "privacy.html",
+        "terms.html"
+      ]
+    },
     "payment.html": {
       "filename": "payment.html",
       "title": "Secure Your Coaching Session | HR Expert to go",
@@ -370,7 +460,7 @@
       "canonical": "https://hrexperttogo.com/pricing.html",
       "og_tags": {
         "og:title": "Career Coaching Pricing for New Grads | HR Expert to go",
-        "og:description": "Transparent pricing for 1:1 virtual career coaching designed for college students, recent graduates, and the parents supporting them.",
+        "og:description": "See transparent pricing for 1:1 career coaching that helps your college grad launch a career. Virtual support for resumes, interviews, and job searches.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/pricing.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
@@ -378,7 +468,7 @@
       "twitter_tags": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Career Coaching Pricing for New Grads | HR Expert to go",
-        "twitter:description": "Transparent pricing for 1:1 virtual career coaching designed for college students, recent graduates, and the parents supporting them.",
+        "twitter:description": "See transparent pricing for 1:1 career coaching that helps your college grad launch a career. Virtual support for resumes, interviews, and job searches.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -496,16 +586,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/resume-coaching.html",
       "og_tags": {
-        "og:title": "Resume Coach for New Grads \u2014 Resume Help | HR Expert to go",
-        "og:description": "Resume coaching and resume help for new college graduates and early-career professionals from a SHRM-certified HR expert who has reviewed thousands of resumes.",
+        "og:title": "Resume Coach for New Grads | HR Expert to go",
+        "og:description": "Get resume writing and career coaching for your new college graduate. Build a stronger resume and job search with a SHRM-certified HR expert.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/resume-coaching.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Resume Coach for New Grads \u2014 Resume Help | HR Expert to go",
-        "twitter:description": "Resume coaching and resume help for new college graduates and early-career professionals from a SHRM-certified HR expert who has reviewed thousands of resumes.",
+        "twitter:title": "Resume Coach for New Grads | HR Expert to go",
+        "twitter:description": "Get resume writing and career coaching for your new college graduate. Build a stronger resume and job search with a SHRM-certified HR expert.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -672,6 +762,7 @@
         "index.html#services",
         "about.html",
         "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "pricing.html",
@@ -680,6 +771,7 @@
         "index.html#services",
         "about.html",
         "pricing.html",
+        "blog.html",
         "faq.html",
         "contact.html",
         "privacy.html",
@@ -687,7 +779,44 @@
       ]
     }
   },
-  "issues": [],
-  "fixes_applied": [],
+  "issues": [
+    {
+      "page": "blog.html",
+      "severity": "low",
+      "category": "title",
+      "message": "Title long (70 chars, prefer \u226460)",
+      "fixed": false,
+      "fix_note": ""
+    },
+    {
+      "page": "blog.html",
+      "severity": "medium",
+      "category": "structured-data",
+      "message": "No JSON-LD structured data",
+      "fixed": false,
+      "fix_note": ""
+    },
+    {
+      "page": "my-college-grad-still-doesnt-have-a-job.html",
+      "severity": "low",
+      "category": "title",
+      "message": "Title long (80 chars, prefer \u226460)",
+      "fixed": false,
+      "fix_note": ""
+    }
+  ],
+  "fixes_applied": [
+    "Refreshed sitemap.xml (lastmod=2026-08-23)",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:title",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:image",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:title",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:image",
+    "pricing.html: Added/updated og:description",
+    "pricing.html: Added/updated twitter:description",
+    "resume-coaching.html: Added/updated og:title",
+    "resume-coaching.html: Added/updated og:description",
+    "resume-coaching.html: Added/updated twitter:title",
+    "resume-coaching.html: Added/updated twitter:description"
+  ],
   "content_proposals": []
 }
