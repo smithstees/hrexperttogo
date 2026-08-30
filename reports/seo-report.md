@@ -1,10 +1,10 @@
 # SEO Audit Report — 2026-08-30
 
 **Site:** https://hrexperttogo.com  
-**Mode:** `safe-fix`  
+**Mode:** `audit-only`  
 **Pages scanned:** 19  
 **Issues found:** 0 (high: 0, medium: 0, low: 0)  
-**Automated fixes applied:** 1
+**Automated fixes applied:** 0
 
 ## Target audience keywords
 
@@ -22,11 +22,13 @@ Titles and descriptions are tuned toward:
 - resume writing and career coaching
 - job search coach for early career professionals
 - career coach for parents of college students
+- career coaching college students
+- college and career coach
+- graduate coach
+- graduate coaching
+- resume coaches
+- resume writer and career coach
 - SHRM-certified career coach
-
-## Fixes applied this run
-
-- Refreshed sitemap.xml (lastmod=2026-08-30)
 
 ## Search Console — last 7 days
 
@@ -73,8 +75,8 @@ Titles and descriptions are tuned toward:
 | index.html | 57 | 141 | 1 | yes | yes |
 | intake-form.html | 35 | 132 | 1 | yes | yes |
 | interview-preparation.html | 51 | 136 | 1 | yes | yes |
-| job-search-strategy.html | 43 | 157 | 1 | yes | yes |
-| my-college-grad-still-doesnt-have-a-job.html | 59 | 154 | 1 | yes | yes |
+| job-search-strategy.html | 47 | 160 | 1 | yes | yes |
+| my-college-grad-still-doesnt-have-a-job.html | 50 | 124 | 1 | yes | yes |
 | payment.html | 46 | 147 | 1 | yes | yes |
 | pricing.html | 55 | 152 | 1 | yes | yes |
 | privacy.html | 32 | 140 | 1 | yes | yes |

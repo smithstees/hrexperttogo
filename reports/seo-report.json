@@ -1,6 +1,6 @@
 {
   "date": "2026-08-30",
-  "mode": "safe-fix",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -335,8 +335,8 @@
     },
     "job-search-strategy.html": {
       "filename": "job-search-strategy.html",
-      "title": "New Grad Job Search Coach | HR Expert to go",
-      "description": "Help your college grad find the right job with a focused plan from a SHRM-certified HR expert. Target better-fit roles and turn applications into interviews.",
+      "title": "Job Search Help for New Grads | HR Expert to go",
+      "description": "Need a job search plan for your college grad? Get focused help from a SHRM-certified HR expert to target better-fit roles and turn applications into interviews.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
@@ -379,8 +379,8 @@
     },
     "my-college-grad-still-doesnt-have-a-job.html": {
       "filename": "my-college-grad-still-doesnt-have-a-job.html",
-      "title": "College Grad Needs a Job | Parent's Guide | HR Expert to go",
-      "description": "Worried your college grad is still looking? Learn what helps new graduates move from stalled search to the right next step with practical career guidance.",
+      "title": "My College Grad Still Needs a Job | Parent's Guide",
+      "description": "Is your college grad still looking for work? Learn practical next steps to support a focused job search without taking over.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
       "og_tags": {
@@ -780,8 +780,6 @@
     }
   },
   "issues": [],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-08-30)"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
