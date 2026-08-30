@@ -54,6 +54,12 @@ AUDIENCE_KEYWORDS = [
     "resume writing and career coaching",
     "job search coach for early career professionals",
     "career coach for parents of college students",
+    "career coaching college students",
+    "college and career coach",
+    "graduate coach",
+    "graduate coaching",
+    "resume coaches",
+    "resume writer and career coach",
     "SHRM-certified career coach",
 ]
 
@@ -733,10 +739,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "for new graduates and early-career professionals."),
     },
     "job-search-strategy.html": {
-        "title": "New Grad Job Search Coach | HR Expert to go",
-        "description": ("Help your college grad find the right job with a "
-                        "focused plan from a SHRM-certified HR expert. "
-                        "Target better-fit roles and turn applications into "
+        "title": "Job Search Help for New Grads | HR Expert to go",
+        "description": ("Need a job search plan for your college grad? Get "
+                        "focused help from a SHRM-certified HR expert to "
+                        "target better-fit roles and turn applications into "
                         "interviews."),
     },
     "profile-optimization.html": {
@@ -764,11 +770,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "faster and with more confidence."),
     },
     "my-college-grad-still-doesnt-have-a-job.html": {
-        "title": "College Grad Needs a Job | Parent's Guide | HR Expert to go",
-        "description": ("Worried your college grad is still looking? Learn "
-                        "what helps new graduates move from stalled search "
-                        "to the right next step with practical career "
-                        "guidance."),
+        "title": "My College Grad Still Needs a Job | Parent's Guide",
+        "description": ("Is your college grad still looking for work? Learn "
+                        "practical next steps to support a focused job search "
+                        "without taking over."),
     },
     "blog.html": {
         "title": "Career Advice Blog for New Grads | HR Expert to go",
