@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-23",
-  "mode": "audit-only",
+  "date": "2026-08-30",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -9,16 +9,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/about.html",
       "og_tags": {
-        "og:title": "Meet Ty Smith, SHRM-CP \u2014 Career Coach for New Grads",
-        "og:description": "Ty Smith, SHRM-CP \u2014 20+ years hiring and coaching early-career talent. Helping your grad land the right first job. Book a free intro call.",
+        "og:title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",
+        "og:description": "Career coaching for new grads and the parents supporting them. Meet Ty Smith, SHRM-CP, with 20+ years in hiring. Book a free intro call.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/about.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Meet Ty Smith, SHRM-CP \u2014 Career Coach for New Grads",
-        "twitter:description": "Ty Smith, SHRM-CP \u2014 20+ years hiring and coaching early-career talent. Helping your grad land the right first job. Book a free intro call.",
+        "twitter:title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",
+        "twitter:description": "Career coaching for new grads and the parents supporting them. Meet Ty Smith, SHRM-CP, with 20+ years in hiring. Book a free intro call.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -47,12 +47,12 @@
     },
     "blog.html": {
       "filename": "blog.html",
-      "title": "Blog | Career Advice for New Grads and Their Parents | HR Expert to go",
+      "title": "Career Advice Blog for New Grads | HR Expert to go",
       "description": "Practical career coaching advice for college students, recent graduates, and the parents supporting them through the job search.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/blog.html",
       "og_tags": {
-        "og:title": "Blog | Career Advice for New Grads and Their Parents | HR Expert to go",
+        "og:title": "Career Advice Blog for New Grads | HR Expert to go",
         "og:description": "Practical career coaching advice for college students, recent graduates, and the parents supporting them through the job search.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/blog.html",
@@ -60,11 +60,11 @@
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Blog | Career Advice for New Grads and Their Parents | HR Expert to go",
+        "twitter:title": "Career Advice Blog for New Grads | HR Expert to go",
         "twitter:description": "Practical career coaching advice for college students, recent graduates, and the parents supporting them through the job search.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
-      "has_jsonld": false,
+      "has_jsonld": true,
       "images_missing_alt": 0,
       "internal_links": [
         "index.html",
@@ -95,16 +95,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/contact.html",
       "og_tags": {
-        "og:title": "Contact HR Expert to go | Career Coach for New Grads",
-        "og:description": "Get in touch with Ty Smith, SHRM-CP \u2014 virtual career coach for college students and recent graduates.",
+        "og:title": "Talk With a Career Coach for New Grads | HR Expert to go",
+        "og:description": "Have a question about career coaching for your grad? Contact Ty Smith, SHRM-CP for practical help with resumes, interviews, and job searches.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/contact.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Contact HR Expert to go | Career Coach for New Grads",
-        "twitter:description": "Get in touch with Ty Smith, SHRM-CP \u2014 virtual career coach for college students and recent graduates.",
+        "twitter:title": "Talk With a Career Coach for New Grads | HR Expert to go",
+        "twitter:description": "Have a question about career coaching for your grad? Contact Ty Smith, SHRM-CP for practical help with resumes, interviews, and job searches.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -222,16 +222,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
-        "og:title": "Career Coach for New Grads & Graduates | HR Expert to go",
-        "og:description": "1:1 virtual career and graduate coaching for college students, recent graduates, and their parents \u2014 from a SHRM-certified HR expert.",
+        "og:title": "Career Coaching for New Grads & Parents | HR Expert to go",
+        "og:description": "Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Career Coach for New Grads & Graduates | HR Expert to go",
-        "twitter:description": "1:1 virtual career and graduate coaching for college students, recent graduates, and their parents \u2014 from a SHRM-certified HR expert.",
+        "twitter:title": "Career Coaching for New Grads & Parents | HR Expert to go",
+        "twitter:description": "Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -340,16 +340,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
-        "og:title": "Job Search Coach for New Grads | HR Expert to go",
-        "og:description": "Help your new grad find a job with a focused search plan from a SHRM-certified HR expert. Target the right roles and turn applications into interviews.",
+        "og:title": "New Grad Job Search Coach | HR Expert to go",
+        "og:description": "Help your college grad find the right job with a focused plan from a SHRM-certified HR expert. Target better-fit roles and turn applications into interviews.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/job-search-strategy.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Job Search Coach for New Grads | HR Expert to go",
-        "twitter:description": "Help your new grad find a job with a focused search plan from a SHRM-certified HR expert. Target the right roles and turn applications into interviews.",
+        "twitter:title": "New Grad Job Search Coach | HR Expert to go",
+        "twitter:description": "Help your college grad find the right job with a focused plan from a SHRM-certified HR expert. Target better-fit roles and turn applications into interviews.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -384,16 +384,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
       "og_tags": {
-        "og:title": "My College Grad Still Doesn't Have a Job. Should I Be Worried? | HR Expert to go",
-        "og:description": "Six months out and still no offer. Here is how to tell normal job-search timelines from real warning signs, and what actually helps a stalled grad move forward.",
+        "og:title": "College Grad Needs a Job | Parent's Guide | HR Expert to go",
+        "og:description": "Worried your college grad is still looking? Learn what helps new graduates move from stalled search to the right next step with practical career guidance.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "My College Grad Still Doesn't Have a Job. Should I Be Worried? | HR Expert to go",
-        "twitter:description": "Six months out and still no offer. Here is how to tell normal job-search timelines from real warning signs, and what actually helps a stalled grad move forward.",
+        "twitter:title": "College Grad Needs a Job | Parent's Guide | HR Expert to go",
+        "twitter:description": "Worried your college grad is still looking? Learn what helps new graduates move from stalled search to the right next step with practical career guidance.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -542,7 +542,7 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/profile-optimization.html",
       "og_tags": {
-        "og:title": "Professional Profile Optimization for New Grads | HR Expert to go",
+        "og:title": "Professional Profile for New Grads | HR Expert to go",
         "og:description": "Professional profile optimization for early-career professionals \u2014 position your online presence so recruiters find you and want to reach out.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/profile-optimization.html",
@@ -550,7 +550,7 @@
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Professional Profile Optimization for New Grads | HR Expert to go",
+        "twitter:title": "Professional Profile for New Grads | HR Expert to go",
         "twitter:description": "Professional profile optimization for early-career professionals \u2014 position your online presence so recruiters find you and want to reach out.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
@@ -631,7 +631,7 @@
       "canonical": "https://hrexperttogo.com/salary-negotiation.html",
       "og_tags": {
         "og:title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-        "og:description": "1:1 salary negotiation coaching for new graduates and early-career professionals. Learn to negotiate from a coach who has sat on the hiring side.",
+        "og:description": "Work with a salary negotiation coach to evaluate your offer and ask with confidence. 1:1 guidance for new graduates and early-career professionals.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/salary-negotiation.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
@@ -639,7 +639,7 @@
       "twitter_tags": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-        "twitter:description": "1:1 salary negotiation coaching for new graduates and early-career professionals. Learn to negotiate from a coach who has sat on the hiring side.",
+        "twitter:description": "Work with a salary negotiation coach to evaluate your offer and ask with confidence. 1:1 guidance for new graduates and early-career professionals.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -779,24 +779,9 @@
       ]
     }
   },
-  "issues": [
-    {
-      "page": "blog.html",
-      "severity": "low",
-      "category": "title",
-      "message": "Title long (70 chars, prefer \u226460)",
-      "fixed": false,
-      "fix_note": ""
-    },
-    {
-      "page": "blog.html",
-      "severity": "medium",
-      "category": "structured-data",
-      "message": "No JSON-LD structured data",
-      "fixed": false,
-      "fix_note": ""
-    }
+  "issues": [],
+  "fixes_applied": [
+    "Refreshed sitemap.xml (lastmod=2026-08-30)"
   ],
-  "fixes_applied": [],
   "content_proposals": []
 }
