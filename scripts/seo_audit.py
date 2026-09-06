@@ -703,10 +703,11 @@ def refresh_sitemap(pages: dict[str, PageInfo]) -> list[str]:
 # Tuned drafts. Kept conservative — reviewer must merge PR.
 CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     "index.html": {
-        "title": "Career Coaching for New Grads & Parents | HR Expert to go",
-        "description": ("Your grad's job search can move forward. Get 1:1 "
-                        "virtual career coaching for resumes, interviews, "
-                        "and offers from a SHRM-certified HR expert."),
+        "title": ("Career Coaching for College Students & New Grads "
+                  "| HR Expert to go"),
+        "description": ("Get a direct HR perspective on your resume, "
+                        "interviews, job search, professional profile, or "
+                        "offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP."),
     },
     "about.html": {
         "title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",

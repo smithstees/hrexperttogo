@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Career Coaching for New Grads &amp; Parents | HR Expert to go</title>
-<meta content="Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert." name="description"/>
+<title>Career Coaching for College Students &amp; New Grads | HR Expert to go</title>
+<meta content="Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP." name="description"/>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -478,6 +478,270 @@
   @media (max-width: 480px) {
     .outcomes-grid { grid-template-columns: 1fr; }
   }
+
+  /* HOMEPAGE EDITORIAL RESET */
+  .nav-links .nav-cta { display: none; }
+  .mobile-menu .mob-cta { display: none; }
+
+  .home-hero {
+    background: var(--ivory);
+    border-bottom: 1px solid var(--ivory-dark);
+    padding: clamp(3.5rem, 8vw, 7rem) 2rem;
+  }
+  .home-hero-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+    gap: clamp(3rem, 7vw, 6rem);
+    align-items: center;
+  }
+  .home-hero-copy { max-width: 650px; }
+  .home-hero h1 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    margin-bottom: 1.75rem;
+  }
+  .home-hero-lede {
+    max-width: 590px;
+    color: var(--slate);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+  .home-hero-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--navy);
+  }
+  .home-hero-link:hover { color: var(--gold); border-color: var(--gold); }
+  .home-portrait {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 2px;
+  }
+  .portrait-caption {
+    margin-top: 0.75rem;
+    color: var(--gray);
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .parent-door {
+    background: var(--navy);
+    color: #fff;
+    padding: 1.1rem 2rem;
+  }
+  .parent-door-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .parent-door p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+  }
+  .parent-door a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    white-space: nowrap;
+  }
+
+  .editorial-section {
+    padding: clamp(4rem, 8vw, 7rem) 2rem;
+  }
+  .editorial-inner {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .editorial-title {
+    font-size: clamp(1.65rem, 3vw, 2.35rem);
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+  .editorial-copy {
+    color: var(--slate);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .degree-gap {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: clamp(3rem, 8vw, 7rem);
+    align-items: start;
+  }
+  .degree-gap .editorial-copy p + p { margin-top: 1rem; }
+  .plain-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-top: 1rem;
+    color: var(--navy);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .service-index {
+    background: var(--ivory);
+    padding: clamp(4rem, 7vw, 6rem) 2rem;
+  }
+  .service-index-head {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+    margin-bottom: 2.5rem;
+  }
+  .service-index-intro {
+    color: var(--slate);
+    line-height: 1.75;
+  }
+  .service-list {
+    border-top: 1px solid var(--ivory-dark);
+  }
+  .service-list a {
+    display: grid;
+    grid-template-columns: 2rem minmax(180px, 0.65fr) minmax(0, 1.35fr) auto;
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--ivory-dark);
+  }
+  .service-list a:hover .service-list-title,
+  .service-list a:hover .service-list-arrow { color: var(--gold); }
+  .service-list-number {
+    color: var(--gray);
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+  }
+  .service-list-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .service-list-desc {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+  .service-list-arrow { color: var(--navy); }
+
+  .work-result {
+    display: grid;
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+    gap: clamp(3rem, 8vw, 7rem);
+  }
+  .result-list {
+    list-style: none;
+    border-top: 1px solid var(--light-gray);
+  }
+  .result-list li {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--light-gray);
+    color: var(--slate);
+    line-height: 1.65;
+  }
+  .result-list strong {
+    display: block;
+    color: var(--navy);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .authority-section { background: var(--navy); color: #fff; }
+  .authority-layout {
+    display: grid;
+    grid-template-columns: 290px minmax(0, 1fr);
+    gap: clamp(3rem, 8vw, 6rem);
+    align-items: center;
+  }
+  .authority-photo {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 2px;
+  }
+  .authority-copy h2 { color: #fff; margin-bottom: 1.5rem; }
+  .authority-copy p {
+    color: rgba(255,255,255,0.76);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  .authority-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.68);
+    font-size: 0.82rem;
+  }
+  .authority-facts strong {
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+  }
+
+  .home-call {
+    padding: clamp(4rem, 8vw, 6rem) 2rem;
+    background: #fff;
+  }
+  .home-call-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+  .home-call h2 { margin-bottom: 1rem; }
+  .home-call p { color: var(--slate); line-height: 1.75; }
+  .home-call .btn-primary { padding: 0.85rem 1.5rem; }
+
+  @media (max-width: 768px) {
+    .home-hero,
+    .editorial-section,
+    .service-index,
+    .home-call { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .home-hero-inner,
+    .degree-gap,
+    .service-index-head,
+    .work-result,
+    .authority-layout,
+    .home-call-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .home-portrait { max-width: 320px; }
+    .parent-door { padding-left: 1.25rem; padding-right: 1.25rem; }
+    .parent-door-inner { display: block; }
+    .parent-door a { margin-top: 0.4rem; white-space: normal; }
+    .service-list a {
+      grid-template-columns: 1.5rem 1fr auto;
+      gap: 0.75rem;
+    }
+    .service-list-desc { grid-column: 2 / -1; }
+    .authority-photo { max-width: 260px; }
+    .home-call .btn-primary { justify-self: start; }
+  }
 </style>
 <!-- Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
@@ -487,7 +751,7 @@
   gtag('js', new Date());
   gtag('config', 'G-LBCS8D922M');
 </script>
-<link href="https://hrexperttogo.com/" rel="canonical"/><meta content="Career Coaching for New Grads &amp; Parents | HR Expert to go" property="og:title"/><meta content="Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert." property="og:description"/><meta content="website" property="og:type"/><meta content="https://hrexperttogo.com/" property="og:url"/><meta content="https://hrexperttogo.com/HR_Expert_to_Go_Primary.png" property="og:image"/><meta content="HR Expert to go" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Career Coaching for New Grads &amp; Parents | HR Expert to go" name="twitter:title"/><meta content="Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert." name="twitter:description"/><meta content="https://hrexperttogo.com/HR_Expert_to_Go_Primary.png" name="twitter:image"/><meta content="index, follow" name="robots"/><script type="application/ld+json">{
+<link href="https://hrexperttogo.com/" rel="canonical"/><meta content="Career Coaching for College Students &amp; New Grads | HR Expert to go" property="og:title"/><meta content="Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP." property="og:description"/><meta content="website" property="og:type"/><meta content="https://hrexperttogo.com/" property="og:url"/><meta content="https://hrexperttogo.com/HR_Expert_to_Go_Primary.png" property="og:image"/><meta content="HR Expert to go" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Career Coaching for College Students &amp; New Grads | HR Expert to go" name="twitter:title"/><meta content="Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP." name="twitter:description"/><meta content="https://hrexperttogo.com/HR_Expert_to_Go_Primary.png" name="twitter:image"/><meta content="index, follow" name="robots"/><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "HR Expert to go",
@@ -522,7 +786,6 @@
 <li><a href="helping-new-graduate-launch-career-parents-guide.html">For parents</a></li>
 <li><a href="faq.html">FAQ</a></li>
 <li><a href="contact.html">Contact</a></li>
-<li><a class="nav-cta" href="https://calendly.com/hrexperttogo/30min" rel="noopener" target="_blank">Book a discovery call</a></li>
 </ul>
 <button aria-label="Open menu" class="hamburger" onclick="toggleMenu()">
 <span></span><span></span><span></span>
@@ -538,7 +801,6 @@
 <a href="helping-new-graduate-launch-career-parents-guide.html">For parents</a>
 <a href="faq.html">FAQ</a>
 <a href="contact.html">Contact</a>
-<a class="mob-cta" href="https://calendly.com/hrexperttogo/30min" rel="noopener" target="_blank">Book a discovery call</a>
 </div>
 <script>
   function toggleMenu() {
@@ -546,188 +808,121 @@
     menu.classList.toggle('open');
   }
 </script><!-- HERO -->
-<section class="hero">
-<div class="hero-inner">
-<div>
-<p class="hero-kicker">Virtual 1:1 career coaching for students, new grads, and their parents</p>
-<h1>You are more qualified<br/>than your resume<br/><em>makes you look.</em></h1>
-<p class="hero-sub">Hiring works differently at every company. Some screen with software, some hand your resume straight to the manager, and almost none of them tell you which. I spent more than 20 years on that side of it. In a session, we go through your resume, your interview answers, and your search the way the people deciding will actually read them, and I tell you plainly what I would change.</p>
-<a class="btn-primary" href="https://calendly.com/hrexperttogo/30min" rel="noopener" target="_blank">Book a free discovery call</a>
-<p class="hero-reassurance"><strong>20 minutes, free, no commitment.</strong> If I am not the right help for your situation, I will say so and point you somewhere better.</p>
-<p class="hero-reassurance" style="margin-top:0.85rem;">Looking into this for your son or daughter? <a href="helping-new-graduate-launch-career-parents-guide.html" style="color:var(--slate); font-weight:600; text-decoration:underline;">Start with the parent guide.</a></p>
-<div class="hero-trust-line">
-        Every session is with me, <strong>Ty Smith, SHRM-CP</strong>, not a team of contractors. More than 20 years of HR leadership and consulting across corporate, non-profit, and growing organizations.
-      </div>
+<main>
+<header class="home-hero">
+<div class="home-hero-inner">
+<div class="home-hero-copy">
+<h1>Let’s find out where you actually stand.</h1>
+<p class="home-hero-lede">A degree is one part of being ready for work. The rest takes practice: knowing which roles fit, explaining what you can do, interviewing well, and making thoughtful decisions when an offer arrives.</p>
+<p class="home-hero-lede">I give college students, recent graduates, and early-career professionals a direct HR perspective on what they already have, what is missing, and what to work on next.</p>
+<a class="home-hero-link" href="#services">See how coaching works</a>
 </div>
-<div class="hero-photo-col">
-<div class="hero-photo-accent"></div>
-<img alt="Ty Smith, founder of HR Expert to go" class="hero-photo" src="TyS.jpg"/>
+<figure>
+<img alt="Ty Smith, SHRM-CP, founder of HR Expert to go" class="home-portrait" src="TyS.jpg"/>
+<figcaption class="portrait-caption">Ty Smith, SHRM-CP<br/>20+ years in HR leadership and consulting</figcaption>
+</figure>
 </div>
+</header>
+
+<aside class="parent-door" aria-label="Information for parents">
+<div class="parent-door-inner">
+<p>Considering career support for your college student or recent graduate?</p>
+<a href="helping-new-graduate-launch-career-parents-guide.html">Read the parent guide</a>
 </div>
-</section>
-<!-- OUTCOMES -->
-<section class="section outcomes" id="outcomes">
-<div class="section-inner">
-<span class="section-label">What changes</span>
-<h2 class="section-heading">You will leave knowing exactly where you stand.</h2>
-<p class="section-intro">A stronger resume, sharper interview answers, and a search with a real strategy behind it. The confidence comes from being prepared, not from being talked up.</p>
-<div class="outcomes-grid">
-<div class="outcome-item">
-<div class="outcome-number">01</div>
-<p class="outcome-label">A resume you know how to own</p>
-<p class="outcome-desc">We work through it together so you understand what recruiters and hiring managers are actually looking for and how to speak directly to it.</p>
-</div>
-<div class="outcome-item">
-<div class="outcome-number">02</div>
-<p class="outcome-label">Interviews you are ready for</p>
-<p class="outcome-desc">We practice the questions you are most likely to get, and I tell you which answers landed and which ones lost me halfway through.</p>
-</div>
-<div class="outcome-item">
-<div class="outcome-number">03</div>
-<p class="outcome-label">A search with direction</p>
-<p class="outcome-desc">A focused approach to where you apply and who you reach out to, instead of sending the same application everywhere.</p>
-</div>
-<div class="outcome-item">
-<div class="outcome-number">04</div>
-<p class="outcome-label">Offers you understand</p>
-<p class="outcome-desc">Know what you are worth and how to ask for it before you sign anything.</p>
-</div>
-<div class="outcome-item">
-<div class="outcome-number">05</div>
-<p class="outcome-label">A profile you have tightened up</p>
-<p class="outcome-desc">I go through how your professional profile reads to someone in HR and give you specific suggestions. You decide what to change, and you make the updates yourself.</p>
-</div>
-<div class="outcome-item">
-<div class="outcome-number">06</div>
-<p class="outcome-label">Clarity going forward</p>
-<p class="outcome-desc">Not just a better application. A better understanding of how to keep growing.</p>
-</div>
+</aside>
+
+<section class="editorial-section">
+<div class="editorial-inner degree-gap">
+<h2 class="editorial-title">Graduation does not teach you how hiring works.</h2>
+<div class="editorial-copy">
+<p>Some students graduate with internships, a clear target, and people who can open doors. Others have a degree but little practice turning classwork, part-time jobs, campus activities, or volunteer experience into a professional story. Most are somewhere in between.</p>
+<p>That does not call for hype. It calls for an honest look at what is there, what is not there yet, and what can still be built before or after graduation.</p>
+<a class="plain-link" href="about.html">Why I do this work</a>
 </div>
 </div>
 </section>
-<!-- SERVICES -->
-<section class="section services" id="services">
-<div class="section-inner">
-<span class="section-label">How we work together</span>
-<h2 class="section-heading">Every session is built around your situation, not a script.</h2>
-<p class="section-intro">We start with a free discovery call to understand exactly where you are. From there, I recommend what will actually move the needle.</p>
-<div class="services-layout">
-<a class="service-row" href="resume-coaching.html" style="text-decoration:none;">
-<div>
-<p class="service-name">Resume coaching</p>
-<p class="service-desc">We read your resume the way a recruiter will, find where it loses them, and map out the specific changes you will make to it.</p>
+
+<section class="service-index" id="services">
+<div class="editorial-inner">
+<div class="service-index-head">
+<h2 class="editorial-title">Start with the part that is getting in your way.</h2>
+<p class="service-index-intro">You do not need to arrive with the problem figured out. We can look at what you have and decide where your time will make the biggest difference. You make your own changes and decisions; I give you the feedback and context to do that well.</p>
 </div>
-<span class="service-arrow">→</span>
+<div class="service-list">
+<a href="resume-coaching.html">
+<span class="service-list-number">01</span>
+<span class="service-list-title">Resume coaching</span>
+<span class="service-list-desc">We read it together, identify what is unclear or missing, and map the changes you will make.</span>
+<span class="service-list-arrow">→</span>
 </a>
-<a class="service-row" href="interview-preparation.html" style="text-decoration:none;">
-<div>
-<p class="service-name">Interview preparation</p>
-<p class="service-desc">We practice real questions, work through your answers, and I give you the kind of honest feedback most people never get before the actual interview.</p>
-</div>
-<span class="service-arrow">→</span>
+<a href="interview-preparation.html">
+<span class="service-list-number">02</span>
+<span class="service-list-title">Interview preparation</span>
+<span class="service-list-desc">Practice real questions and hear where your answers are strong, vague, or not yet convincing.</span>
+<span class="service-list-arrow">→</span>
 </a>
-<a class="service-row" href="salary-negotiation.html" style="text-decoration:none;">
-<div>
-<p class="service-name">Salary negotiation</p>
-<p class="service-desc">We evaluate the offer together, talk through what is reasonable to ask for, and prepare you to have that conversation with confidence.</p>
-</div>
-<span class="service-arrow">→</span>
+<a href="job-search-strategy.html">
+<span class="service-list-number">03</span>
+<span class="service-list-title">Job search strategy</span>
+<span class="service-list-desc">Choose realistic targets and build a search plan you can follow instead of applying everywhere.</span>
+<span class="service-list-arrow">→</span>
 </a>
-<a class="service-row" href="job-search-strategy.html" style="text-decoration:none;">
-<div>
-<p class="service-name">Job search strategy</p>
-<p class="service-desc">We build an organized, focused approach designed to get your materials in front of the right people at the right companies.</p>
-</div>
-<span class="service-arrow">→</span>
+<a href="profile-optimization.html">
+<span class="service-list-number">04</span>
+<span class="service-list-title">Professional profile review</span>
+<span class="service-list-desc">See how your profile reads to someone in HR and get specific optimization suggestions.</span>
+<span class="service-list-arrow">→</span>
 </a>
-<a class="service-row" href="profile-optimization.html" style="text-decoration:none;">
-<div>
-<p class="service-name">Professional profile optimization</p>
-<p class="service-desc">We look at how your professional profile reads to someone in HR, where it is unclear, and what you could strengthen. The updates stay in your hands.</p>
-</div>
-<span class="service-arrow">→</span>
+<a href="salary-negotiation.html">
+<span class="service-list-number">05</span>
+<span class="service-list-title">Offer review and negotiation</span>
+<span class="service-list-desc">Understand the offer, research the market, and prepare to respond for yourself.</span>
+<span class="service-list-arrow">→</span>
 </a>
 </div>
 </div>
 </section>
-<!-- ABOUT -->
-<section class="section about" id="about">
-<div class="section-inner">
-<div class="about-layout">
-<img alt="Ty Smith, HR Expert to go" class="about-photo" src="TySmithAbout.jpg"/>
-<div class="about-body">
-<span class="section-label">Why this works</span>
-<h2>You are getting guidance from someone who has been <em>inside the process.</em></h2>
-<p>Most career advice comes from people who have looked for a job. Mine comes from more than 20 years on the other side of the table. I have been the person reading the stack of resumes, sitting on the interview panel, and in the room when the hiring decision actually gets made, as a certified HR professional and leadership consultant across corporate, non-profit, and growing organizations.</p>
-<p>What I kept seeing was the same thing: capable people losing out on roles they could have done well, because no one had ever explained how the process works from the inside. Nobody tells you how quickly a resume gets sorted in a first pass, or that the answer you thought sounded humble read as unprepared. That gap is what HR Expert to go exists to close.</p>
-<div class="about-quote">
-          "The kindest thing I can do is tell you the truth about where you stand. Confidence comes from being prepared, not from being reassured."
-        </div>
-<p>The part of this work I like most tends to show up late. Someone emails months or even years later to say they got the role, took the promotion, or finally found work they actually enjoy. That is usually preparation catching up with them.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- HOW A DISCOVERY CALL WORKS -->
-<section class="section expect" id="how">
-<div class="section-inner">
-<span class="section-label">How a discovery call works</span>
-<h2 class="section-heading">Twenty minutes. No agenda except figuring out <em>what you actually need.</em></h2>
-<p class="section-intro">A short conversation to understand where you are and whether I am the right person to help. Bring whatever you have, even if that is a rough resume and a lot of questions.</p>
-<div class="expect-layout" style="margin-top:3rem;">
+
+<section class="editorial-section">
+<div class="editorial-inner work-result">
 <div>
-<ul class="expect-list">
-<li><strong style="color:var(--navy);font-weight:600;">We start with you.</strong> What is your situation right now, what have you tried, and what feels stuck.</li>
-<li><strong style="color:var(--navy);font-weight:600;">We get specific.</strong> Whether the biggest blocker is your resume, your interviews, your search strategy, or something else entirely.</li>
-<li><strong style="color:var(--navy);font-weight:600;">I give you a clear recommendation.</strong> The right next step for your situation, not a packaged program that may or may not fit.</li>
-<li><strong style="color:var(--navy);font-weight:600;">If there is a fit, we talk about how to work together.</strong> If there is not, I will tell you that too and point you in a better direction.</li>
+<h2 class="editorial-title">The work stays in your hands.</h2>
+<p class="editorial-copy" style="margin-top:1.25rem;">I do not rewrite your resume, apply for jobs, or speak to employers for you. You leave with clear feedback and specific next steps, then you do the work.</p>
+</div>
+<ul class="result-list">
+<li><strong>Know what is working</strong>Keep the parts of your materials and approach that already support your goal.</li>
+<li><strong>See the gaps clearly</strong>Understand where more experience, stronger examples, or better preparation would help.</li>
+<li><strong>Decide what to do next</strong>Leave with a practical order of operations instead of a pile of general advice.</li>
 </ul>
 </div>
-<div class="expect-text">
-<h2 style="font-size:1.15rem; margin-bottom:1rem;">One thing to know</h2>
-<p>The call is for figuring out fit and direction, so there is not time to review a resume line by line on it. That work happens in a paid session, and you will know by the end of the call whether it is worth booking one.</p>
-</div>
-</div>
-</div>
 </section>
-<!--
-  PROOF SECTION PLACEHOLDER (Ty: fill in and uncomment when you have permission)
-  Add 3 to 5 real, permissioned quotes. Two from parents, two from grads.
-  For each: first name or initial, stage (e.g. "2026 grad, biology"), package used,
-  and what specifically changed. No invented results, no promised outcomes.
-  If names cannot be used: "Shared with permission, identifying details withheld."
 
-  <section class="section" id="proof">
-    <div class="section-inner">
-      <span class="section-label">In their words</span>
-      <h2 class="section-heading">What clients say after a few sessions.</h2>
-      ... quote cards here ...
-    </div>
-  </section>
--->
-<!-- CTA -->
-<section class="cta-section" id="discovery">
-<div class="cta-inner">
-<h2>Ready to find out<br/><em>exactly where you stand?</em></h2>
-<p>Twenty minutes to talk through where you are, what is getting in the way, and what I would do next if I were you. Parents are welcome to book the call and bring their grad along.</p>
-<div class="cta-details">
-<div class="cta-detail">
-<strong>Virtual</strong>
-        Video call, no travel
-      </div>
-<div class="cta-detail">
-<strong>Free</strong>
-        No commitment required
-      </div>
-<div class="cta-detail">
-<strong>Direct</strong>
-        You will get my real read
-      </div>
+<section class="editorial-section authority-section">
+<div class="editorial-inner authority-layout">
+<img alt="Ty Smith, HR Expert to go" class="authority-photo" src="TySmithAbout.jpg"/>
+<div class="authority-copy">
+<h2 class="editorial-title">I have been on the other side of the table.</h2>
+<p>For more than 20 years, I have worked in HR leadership and consulting across corporate, nonprofit, and growing organizations. I have read resumes, sat on interview panels, researched compensation, and helped make hiring decisions.</p>
+<p>My job here is not to reassure you or guarantee an outcome. It is to tell you how your materials, answers, and choices read from an HR perspective, then help you prepare for the part that comes next.</p>
+<div class="authority-facts">
+<span><strong>SHRM-CP</strong> certified</span>
+<span><strong>20+ years</strong> in HR</span>
+<span><strong>1:1</strong> virtual sessions</span>
 </div>
-<a class="btn-gold" href="https://calendly.com/hrexperttogo/30min" rel="noopener" target="_blank">Book your free discovery call</a>
-<p class="cta-fine">Usually available within a few days</p>
+</div>
 </div>
 </section>
+
+<section class="home-call" id="discovery">
+<div class="home-call-inner">
+<div>
+<h2 class="editorial-title">Not sure where to start?</h2>
+<p>The free 20-minute discovery call is for figuring out what kind of help makes sense. I will ask what you have tried, tell you whether I am the right fit, and recommend a next step. It is not a resume review or a coaching session.</p>
+</div>
+<a class="btn-primary" href="https://calendly.com/hrexperttogo/30min" rel="noopener" target="_blank">Book a discovery call</a>
+</div>
+</section>
+</main>
 <!-- FOOTER -->
 <footer>
 <div class="footer-inner">
