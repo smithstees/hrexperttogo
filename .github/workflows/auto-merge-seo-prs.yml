@@ -8,8 +8,6 @@ name: Auto-merge SEO PRs after 48h
 # To delay a PR: comment "hold" on it — the workflow respects that label.
 
 on:
-  schedule:
-    - cron: "0 13 * * *"
   workflow_dispatch:
 
 permissions:
