@@ -5,7 +5,7 @@ name: Auto-merge SEO PRs after 48h
 # own pace but ensures they don't sit forever.
 #
 # To reject a PR: just close it (without merging). Closed PRs are ignored.
-# To delay a PR: comment "hold" on it — the workflow respects that label.
+# To delay a PR: add the "hold" label.
 
 on:
   schedule:
@@ -27,9 +27,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -e
-          # Get all open PRs from head branches starting with "seo/"
-          # that were created more than 48 hours ago and don't have "hold" label
+          set -uo pipefail
+
           NOW=$(date -u +%s)
           THRESHOLD=$((48 * 3600))
 
@@ -38,24 +37,29 @@ jobs:
             --json number,headRefName,createdAt,labels,title \
             --limit 50 > /tmp/prs.json
 
+          # Emit one tab-separated line per seo/* PR. PR titles contain
+          # spaces, ampersands and quotes, so the raw JSON is never passed
+          # through shell word splitting. The title is the last field and
+          # any tabs or newlines inside it are flattened first.
+          jq -r '
+            .[]
+            | select(.headRefName | startswith("seo/"))
+            | [ (.number | tostring),
+                .createdAt,
+                (((.labels // []) | map(.name) | index("hold")) as $h
+                  | if $h == null then "open" else "hold" end),
+                (.title | gsub("[\t\n\r]"; " ")) ]
+            | @tsv
+          ' /tmp/prs.json > /tmp/eligible.tsv
+
           MERGED=0
           SKIPPED=0
+          FAILED=0
 
-          # Iterate PRs
-          for row in $(jq -c '.[]' /tmp/prs.json); do
-            NUM=$(echo "$row" | jq -r '.number')
-            BRANCH=$(echo "$row" | jq -r '.headRefName')
-            CREATED=$(echo "$row" | jq -r '.createdAt')
-            TITLE=$(echo "$row" | jq -r '.title')
-            HAS_HOLD=$(echo "$row" | jq -r '.labels[]?.name' | grep -x "hold" || true)
+          while IFS=$'\t' read -r NUM CREATED HOLD TITLE; do
+            [ -n "${NUM:-}" ] || continue
 
-            # Only auto-merge branches created by the SEO bot
-            case "$BRANCH" in
-              seo/*) ;;
-              *) continue ;;
-            esac
-
-            if [ -n "$HAS_HOLD" ]; then
+            if [ "$HOLD" = "hold" ]; then
               echo "PR #$NUM: skipped (hold label)"
               SKIPPED=$((SKIPPED + 1))
               continue
@@ -66,20 +70,33 @@ jobs:
 
             if [ "$AGE" -lt "$THRESHOLD" ]; then
               HOURS=$((AGE / 3600))
-              echo "PR #$NUM: skipped (age ${HOURS}h, needs 48h) — '$TITLE'"
+              echo "PR #$NUM: skipped (age ${HOURS}h, needs 48h), '$TITLE'"
               SKIPPED=$((SKIPPED + 1))
               continue
             fi
 
-            echo "PR #$NUM: merging (age >= 48h) — '$TITLE'"
-            gh pr merge "$NUM" --squash --delete-branch \
-              --subject "seo(auto): $TITLE (#$NUM)" \
-              --body "Auto-merged after 48h with no objection. See PR discussion for original review window."
-            MERGED=$((MERGED + 1))
-          done
+            echo "PR #$NUM: merging (age >= 48h), '$TITLE'"
+
+            # A single unmergeable PR must not abort the whole run, which is
+            # what happened previously under `set -e`.
+            if gh pr merge "$NUM" --squash --delete-branch \
+                 --subject "seo(auto): $TITLE (#$NUM)" \
+                 --body "Auto-merged after 48h with no objection. See PR discussion for original review window."; then
+              MERGED=$((MERGED + 1))
+            else
+              echo "PR #$NUM: merge failed (conflict, failing check, or protected branch). Left open."
+              FAILED=$((FAILED + 1))
+            fi
+          done < /tmp/eligible.tsv
 
           echo ""
-          echo "Summary: merged=$MERGED skipped=$SKIPPED"
+          echo "Summary: merged=$MERGED skipped=$SKIPPED failed=$FAILED"
+
+          # Surface merge failures without failing the run, so tomorrow's
+          # run still executes.
+          if [ "$FAILED" -gt 0 ]; then
+            echo "::warning::$FAILED SEO PR(s) could not be merged automatically and were left open."
+          fi
 
       - name: Post daily audit trail issue comment (if merges happened)
         if: always()
