@@ -54,6 +54,9 @@ AUDIENCE_KEYWORDS = [
     "resume writing and career coaching",
     "job search coach for early career professionals",
     "career coach for parents of college students",
+    "career coaching college graduate",
+    "career direction coaching",
+    "job search expert",
     "career coaching college students",
     "college and career coach",
     "graduate coach",
@@ -764,10 +767,11 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "resumes, interviews, and job searches."),
     },
     "why-your-college-grad-needs-career-coaching.html": {
-        "title": "Why Your College Grad Needs a Career Coach | HR Expert to go",
-        "description": ("A guide for parents of new college graduates: how "
-                        "career coaching helps your grad land the right job "
-                        "faster and with more confidence."),
+        "title": ("Is Career Coaching Worth It for a College Grad? "
+                  "| HR Expert to go"),
+        "description": ("Wondering whether paying for career direction "
+                        "coaching is worth it for your college student? "
+                        "Here is what it involves and how to decide."),
     },
     "my-college-grad-still-doesnt-have-a-job.html": {
         "title": "My College Grad Still Needs a Job | Parent's Guide",
