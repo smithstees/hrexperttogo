@@ -1,43 +1,57 @@
 {
-  "generated_at": "2026-08-30T11:46:39.205462+00:00",
+  "generated_at": "2026-09-06T11:47:02.761697+00:00",
   "date_range": {
-    "start": "2026-08-23",
-    "end": "2026-08-30"
+    "start": "2026-08-30",
+    "end": "2026-09-06"
   },
   "totals": {
-    "clicks": 1,
-    "impressions": 63,
-    "ctr": 0.015873015873015872,
-    "position": 60.46031746031746
+    "clicks": 0,
+    "impressions": 31,
+    "ctr": 0.0,
+    "position": 52.903225806451616
   },
   "top_queries": [
     {
-      "query": "college and career coach",
+      "query": "career coaching college graduate",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 66
+      "position": 80.66666666666667
     },
     {
       "query": "go-to hiring experts",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 19
-    },
-    {
-      "query": "graduate coaching",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 66
+      "position": 17
     },
     {
       "query": "i am a junior and i dread every single class in my major. i do not want to throw away the credits i already have, but i cannot keep going like this either. is there a coach who helps students work through that?",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 85.66666666666667
+      "position": 80
+    },
+    {
+      "query": "i want help tying what i am studying to a real career instead of guessing my way to graduation. should i hire someone for that, and what would that person even be called?",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 46.5
+    },
+    {
+      "query": "is paying for career direction coaching for a college student worth it",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "query": "job search expert",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 28
     },
     {
       "query": "negotiation coach",
@@ -47,35 +61,28 @@
       "position": 62
     },
     {
+      "query": "profile expert",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 33
+    },
+    {
       "query": "ready reset go",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 17
-    },
-    {
-      "query": "salary negotiation coach",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 54
+      "position": 16
     },
     {
       "query": "salary negotiation coaching",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 58
+      "position": 56
     }
   ],
   "top_pages": [
-    {
-      "page": "https://hrexperttogo.com/about.html",
-      "clicks": 1,
-      "impressions": 4,
-      "ctr": 0.25,
-      "position": 24.5
-    },
     {
       "page": "https://hrexperttogo.com/",
       "clicks": 0,
@@ -84,46 +91,53 @@
       "position": 7
     },
     {
-      "page": "https://hrexperttogo.com/job-search-strategy.html",
+      "page": "https://hrexperttogo.com/about.html",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 2,
       "ctr": 0,
-      "position": 17.666666666666668
+      "position": 26
     },
     {
-      "page": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
+      "page": "https://hrexperttogo.com/contact.html",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 58
+      "position": 70
+    },
+    {
+      "page": "https://hrexperttogo.com/job-search-strategy.html",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 19.25
     },
     {
       "page": "https://hrexperttogo.com/pricing.html",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 76.33333333333333
+      "position": 9
     },
     {
-      "page": "https://hrexperttogo.com/resume-coaching.html",
+      "page": "https://hrexperttogo.com/profile-optimization.html",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 1,
       "ctr": 0,
-      "position": 57.2
+      "position": 33
     },
     {
       "page": "https://hrexperttogo.com/salary-negotiation.html",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 9,
       "ctr": 0,
-      "position": 68.1
+      "position": 58.333333333333336
     },
     {
       "page": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
       "clicks": 0,
-      "impressions": 36,
+      "impressions": 12,
       "ctr": 0,
-      "position": 66.58333333333333
+      "position": 72.25
     }
   ]
 }
