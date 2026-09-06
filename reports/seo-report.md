@@ -1,10 +1,10 @@
 # SEO Audit Report — 2026-09-06
 
 **Site:** https://hrexperttogo.com  
-**Mode:** `safe-fix`  
+**Mode:** `audit-only`  
 **Pages scanned:** 19  
 **Issues found:** 0 (high: 0, medium: 0, low: 0)  
-**Automated fixes applied:** 9
+**Automated fixes applied:** 0
 
 ## Target audience keywords
 
@@ -30,17 +30,27 @@ Titles and descriptions are tuned toward:
 - resume writer and career coach
 - SHRM-certified career coach
 
-## Fixes applied this run
+## Content changes proposed (in pull request)
 
-- Refreshed sitemap.xml (lastmod=2026-09-06)
-- job-search-strategy.html: Added/updated og:title
-- job-search-strategy.html: Added/updated og:description
-- job-search-strategy.html: Added/updated twitter:title
-- job-search-strategy.html: Added/updated twitter:description
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated og:title
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated og:description
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:title
-- my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:description
+### `faq.html`
+
+**Title**
+- Current: `Career Coaching FAQ for New Grads and Parents | HR Expert to go`
+- Proposed: `FAQ | HR Expert to go — Career Coaching for New Grads`
+
+**Meta description**
+- Current: Common questions about virtual career coaching for college students, recent graduates, and the parents helping them launch a career.
+- Proposed: Common questions about virtual career coaching for college students, recent graduates, and the parents helping them launch a career.
+
+### `profile-optimization.html`
+
+**Title**
+- Current: `Professional Profile for New Grads | HR Expert to go`
+- Proposed: `Professional Profile for New Grads | HR Expert to go`
+
+**Meta description**
+- Current: Professional profile optimization for early-career professionals, position your online presence so recruiters find you and want to reach out.
+- Proposed: Professional profile optimization for early-career professionals — position your online presence so recruiters find you and want to reach out.
 
 ## Search Console — last 7 days
 
@@ -84,7 +94,7 @@ Titles and descriptions are tuned toward:
 | about.html | 51 | 136 | 1 | yes | yes |
 | blog.html | 50 | 128 | 1 | yes | yes |
 | contact.html | 56 | 141 | 1 | yes | yes |
-| faq.html | 53 | 132 | 1 | yes | yes |
+| faq.html | 63 | 132 | 1 | yes | yes |
 | helping-new-graduate-launch-career-parents-guide.html | 59 | 153 | 1 | yes | yes |
 | index.html | 57 | 141 | 1 | yes | yes |
 | intake-form.html | 35 | 132 | 1 | yes | yes |
@@ -93,12 +103,12 @@ Titles and descriptions are tuned toward:
 | my-college-grad-still-doesnt-have-a-job.html | 50 | 124 | 1 | yes | yes |
 | payment.html | 46 | 147 | 1 | yes | yes |
 | pricing.html | 55 | 152 | 1 | yes | yes |
-| privacy.html | 32 | 140 | 1 | yes | yes |
-| profile-optimization.html | 52 | 142 | 1 | yes | yes |
+| privacy.html | 32 | 139 | 1 | yes | yes |
+| profile-optimization.html | 52 | 141 | 1 | yes | yes |
 | resume-coaching.html | 44 | 141 | 1 | yes | yes |
 | salary-negotiation.html | 56 | 147 | 1 | yes | yes |
-| terms.html | 34 | 134 | 1 | yes | yes |
-| thank-you.html | 47 | 127 | 1 | yes | yes |
+| terms.html | 34 | 133 | 1 | yes | yes |
+| thank-you.html | 46 | 127 | 1 | yes | yes |
 | why-your-college-grad-needs-career-coaching.html | 60 | 133 | 1 | yes | yes |
 
 ---
