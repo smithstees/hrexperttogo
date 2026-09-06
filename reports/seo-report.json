@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-30",
-  "mode": "audit-only",
+  "date": "2026-09-06",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -340,16 +340,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
-        "og:title": "New Grad Job Search Coach | HR Expert to go",
-        "og:description": "Help your college grad find the right job with a focused plan from a SHRM-certified HR expert. Target better-fit roles and turn applications into interviews.",
+        "og:title": "Job Search Help for New Grads | HR Expert to go",
+        "og:description": "Need a job search plan for your college grad? Get focused help from a SHRM-certified HR expert to target better-fit roles and turn applications into interviews.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/job-search-strategy.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "New Grad Job Search Coach | HR Expert to go",
-        "twitter:description": "Help your college grad find the right job with a focused plan from a SHRM-certified HR expert. Target better-fit roles and turn applications into interviews.",
+        "twitter:title": "Job Search Help for New Grads | HR Expert to go",
+        "twitter:description": "Need a job search plan for your college grad? Get focused help from a SHRM-certified HR expert to target better-fit roles and turn applications into interviews.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -384,16 +384,16 @@
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
       "og_tags": {
-        "og:title": "College Grad Needs a Job | Parent's Guide | HR Expert to go",
-        "og:description": "Worried your college grad is still looking? Learn what helps new graduates move from stalled search to the right next step with practical career guidance.",
+        "og:title": "My College Grad Still Needs a Job | Parent's Guide",
+        "og:description": "Is your college grad still looking for work? Learn practical next steps to support a focused job search without taking over.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "College Grad Needs a Job | Parent's Guide | HR Expert to go",
-        "twitter:description": "Worried your college grad is still looking? Learn what helps new graduates move from stalled search to the right next step with practical career guidance.",
+        "twitter:title": "My College Grad Still Needs a Job | Parent's Guide",
+        "twitter:description": "Is your college grad still looking for work? Learn practical next steps to support a focused job search without taking over.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -780,6 +780,16 @@
     }
   },
   "issues": [],
-  "fixes_applied": [],
+  "fixes_applied": [
+    "Refreshed sitemap.xml (lastmod=2026-09-06)",
+    "job-search-strategy.html: Added/updated og:title",
+    "job-search-strategy.html: Added/updated og:description",
+    "job-search-strategy.html: Added/updated twitter:title",
+    "job-search-strategy.html: Added/updated twitter:description",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:title",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:description",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:title",
+    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:description"
+  ],
   "content_proposals": []
 }
