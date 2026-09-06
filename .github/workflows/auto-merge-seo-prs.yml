@@ -5,7 +5,7 @@ name: Auto-merge SEO PRs after 48h
 # own pace but ensures they don't sit forever.
 #
 # To reject a PR: just close it (without merging). Closed PRs are ignored.
-# To delay a PR: comment "hold" on it — the workflow respects that label.
+# To delay a PR: add the "hold" label — the workflow respects that label.
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -e
+          set -euo pipefail
           # Get all open PRs from head branches starting with "seo/"
           # that were created more than 48 hours ago and don't have "hold" label
           NOW=$(date -u +%s)
@@ -41,13 +41,16 @@ jobs:
           MERGED=0
           SKIPPED=0
 
-          # Iterate PRs
-          for row in $(jq -c '.[]' /tmp/prs.json); do
-            NUM=$(echo "$row" | jq -r '.number')
-            BRANCH=$(echo "$row" | jq -r '.headRefName')
-            CREATED=$(echo "$row" | jq -r '.createdAt')
-            TITLE=$(echo "$row" | jq -r '.title')
-            HAS_HOLD=$(echo "$row" | jq -r '.labels[]?.name' | grep -x "hold" || true)
+          # Iterate PRs using NUL-delimited stream so titles with spaces,
+          # ampersands, quotes, or newlines are handled safely.
+          # (Previous version used `for row in $(jq -c '.[]' ...)`, which
+          # word-split on whitespace and broke on any real PR title.)
+          while IFS= read -r -d '' row; do
+            NUM=$(printf '%s' "$row" | jq -r '.number')
+            BRANCH=$(printf '%s' "$row" | jq -r '.headRefName')
+            CREATED=$(printf '%s' "$row" | jq -r '.createdAt')
+            TITLE=$(printf '%s' "$row" | jq -r '.title')
+            HAS_HOLD=$(printf '%s' "$row" | jq -r '[.labels[]?.name] | index("hold") // empty')
 
             # Only auto-merge branches created by the SEO bot
             case "$BRANCH" in
@@ -56,7 +59,7 @@ jobs:
             esac
 
             if [ -n "$HAS_HOLD" ]; then
-              echo "PR #$NUM: skipped (hold label)"
+              echo "PR #$NUM: skipped (hold label) — $TITLE"
               SKIPPED=$((SKIPPED + 1))
               continue
             fi
@@ -66,17 +69,21 @@ jobs:
 
             if [ "$AGE" -lt "$THRESHOLD" ]; then
               HOURS=$((AGE / 3600))
-              echo "PR #$NUM: skipped (age ${HOURS}h, needs 48h) — '$TITLE'"
+              echo "PR #$NUM: skipped (age ${HOURS}h, needs 48h) — $TITLE"
               SKIPPED=$((SKIPPED + 1))
               continue
             fi
 
-            echo "PR #$NUM: merging (age >= 48h) — '$TITLE'"
-            gh pr merge "$NUM" --squash --delete-branch \
-              --subject "seo(auto): $TITLE (#$NUM)" \
-              --body "Auto-merged after 48h with no objection. See PR discussion for original review window."
-            MERGED=$((MERGED + 1))
-          done
+            echo "PR #$NUM: merging (age >= 48h) — $TITLE"
+            if gh pr merge "$NUM" --squash --delete-branch \
+                --subject "seo(auto): $TITLE (#$NUM)" \
+                --body "Auto-merged after 48h with no objection. See PR discussion for original review window."; then
+              MERGED=$((MERGED + 1))
+            else
+              echo "PR #$NUM: merge failed (likely conflict or branch-protection); leaving open."
+              SKIPPED=$((SKIPPED + 1))
+            fi
+          done < <(jq -jc '.[] | (., "\u0000")' /tmp/prs.json)
 
           echo ""
           echo "Summary: merged=$MERGED skipped=$SKIPPED"
