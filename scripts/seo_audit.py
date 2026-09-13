@@ -756,7 +756,7 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "recruiters find you and want to reach out."),
     },
     "faq.html": {
-        "title": "FAQ | HR Expert to go — Career Coaching for New Grads",
+        "title": "Career Coaching FAQ for New Grads | HR Expert to go",
         "description": ("Common questions about virtual career coaching for "
                         "college students, recent graduates, and the parents "
                         "helping them launch a career."),
