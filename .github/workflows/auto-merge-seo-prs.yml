@@ -8,6 +8,8 @@ name: Auto-merge SEO PRs after 48h
 # To delay a PR: comment "hold" on it — the workflow respects that label.
 
 on:
+  schedule:
+    - cron: "0 13 * * *"
   workflow_dispatch:
 
 permissions:
@@ -39,8 +41,10 @@ jobs:
           MERGED=0
           SKIPPED=0
 
-          # Iterate PRs
-          for row in $(jq -c '.[]' /tmp/prs.json); do
+          # Iterate PRs (read line-by-line — word-splitting on $(...) here
+          # breaks any JSON object whose title contains a space, which is
+          # all of them, and silently no-ops the whole loop)
+          while IFS= read -r row; do
             NUM=$(echo "$row" | jq -r '.number')
             BRANCH=$(echo "$row" | jq -r '.headRefName')
             CREATED=$(echo "$row" | jq -r '.createdAt')
@@ -74,7 +78,7 @@ jobs:
               --subject "seo(auto): $TITLE (#$NUM)" \
               --body "Auto-merged after 48h with no objection. See PR discussion for original review window."
             MERGED=$((MERGED + 1))
-          done
+          done < <(jq -c '.[]' /tmp/prs.json)
 
           echo ""
           echo "Summary: merged=$MERGED skipped=$SKIPPED"
