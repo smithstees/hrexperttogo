@@ -54,6 +54,7 @@ AUDIENCE_KEYWORDS = [
     "resume writing and career coaching",
     "job search coach for early career professionals",
     "career coach for parents of college students",
+    "job search expert",
     "career coaching college students",
     "college and career coach",
     "graduate coach",
@@ -703,11 +704,10 @@ def refresh_sitemap(pages: dict[str, PageInfo]) -> list[str]:
 # Tuned drafts. Kept conservative — reviewer must merge PR.
 CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     "index.html": {
-        "title": ("Career Coaching for College Students & New Grads "
-                  "| HR Expert to go"),
-        "description": ("Get a direct HR perspective on your resume, "
-                        "interviews, job search, professional profile, or "
-                        "offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP."),
+        "title": "Career Coaching for New Grads | HR Expert to go",
+        "description": ("Parents of new grads: get 1:1 virtual career coaching "
+                        "for resumes, interviews, and offers from a "
+                        "SHRM-certified HR expert."),
     },
     "about.html": {
         "title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",
@@ -735,15 +735,15 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     },
     "salary-negotiation.html": {
         "title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-        "description": ("Work with a salary negotiation coach to evaluate "
-                        "your offer and ask with confidence. 1:1 guidance "
-                        "for new graduates and early-career professionals."),
+        "description": ("Get salary negotiation coaching for new grads: "
+                        "evaluate your offer and ask with confidence. 1:1 "
+                        "guidance for early-career professionals."),
     },
     "job-search-strategy.html": {
-        "title": "Job Search Help for New Grads | HR Expert to go",
-        "description": ("Need a job search plan for your college grad? Get "
-                        "focused help from a SHRM-certified HR expert to "
-                        "target better-fit roles and turn applications into "
+        "title": "Job Search Expert for New Grads | HR Expert to go",
+        "description": ("Need a job search expert for your college grad? Get "
+                        "help from a SHRM-certified HR expert to target "
+                        "better-fit roles and turn applications into "
                         "interviews."),
     },
     "profile-optimization.html": {
@@ -753,7 +753,7 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "recruiters find you and want to reach out."),
     },
     "faq.html": {
-        "title": "FAQ | HR Expert to go — Career Coaching for New Grads",
+        "title": "Career Coaching FAQ for New Grads | HR Expert to go",
         "description": ("Common questions about virtual career coaching for "
                         "college students, recent graduates, and the parents "
                         "helping them launch a career."),
