@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-06",
-  "mode": "audit-only",
+  "date": "2026-09-13",
+  "mode": "safe-fix",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -234,21 +234,21 @@
     },
     "index.html": {
       "filename": "index.html",
-      "title": "Career Coaching for New Grads & Parents | HR Expert to go",
-      "description": "Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert.",
+      "title": "Career Coaching for College Students & New Grads | HR Expert to go",
+      "description": "Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
-        "og:title": "Career Coaching for New Grads & Parents | HR Expert to go",
-        "og:description": "Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert.",
+        "og:title": "Career Coaching for College Students & New Grads | HR Expert to go",
+        "og:description": "Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Career Coaching for New Grads & Parents | HR Expert to go",
-        "twitter:description": "Your grad's job search can move forward. Get 1:1 virtual career coaching for resumes, interviews, and offers from a SHRM-certified HR expert.",
+        "twitter:title": "Career Coaching for College Students & New Grads | HR Expert to go",
+        "twitter:description": "Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -270,11 +270,12 @@
         "faq.html",
         "contact.html",
         "helping-new-graduate-launch-career-parents-guide.html",
+        "about.html",
         "resume-coaching.html",
         "interview-preparation.html",
-        "salary-negotiation.html",
         "job-search-strategy.html",
         "profile-optimization.html",
+        "salary-negotiation.html",
         "index.html",
         "index.html#services",
         "about.html",
@@ -395,6 +396,7 @@
         "helping-new-graduate-launch-career-parents-guide.html",
         "faq.html",
         "contact.html",
+        "pricing.html",
         "pricing.html",
         "index.html",
         "index.html#services",
@@ -836,8 +838,19 @@
       ]
     }
   },
-  "issues": [],
-  "fixes_applied": [],
+  "issues": [
+    {
+      "page": "index.html",
+      "severity": "low",
+      "category": "title",
+      "message": "Title long (66 chars, prefer \u226460)",
+      "fixed": false,
+      "fix_note": ""
+    }
+  ],
+  "fixes_applied": [
+    "Refreshed sitemap.xml (lastmod=2026-09-13)"
+  ],
   "content_proposals": [
     {
       "page": "faq.html",
