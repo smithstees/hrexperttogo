@@ -27,7 +27,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -e
+          set -eo pipefail
           # Get all open PRs from head branches starting with "seo/"
           # that were created more than 48 hours ago and don't have "hold" label
           NOW=$(date -u +%s)
@@ -74,10 +74,14 @@ jobs:
             fi
 
             echo "PR #$NUM: merging (age >= 48h) — '$TITLE'"
-            gh pr merge "$NUM" --squash --delete-branch \
+            if gh pr merge "$NUM" --squash --delete-branch \
               --subject "seo(auto): $TITLE (#$NUM)" \
-              --body "Auto-merged after 48h with no objection. See PR discussion for original review window."
-            MERGED=$((MERGED + 1))
+              --body "Auto-merged after 48h with no objection. See PR discussion for original review window."; then
+              MERGED=$((MERGED + 1))
+            else
+              echo "PR #$NUM: merge failed (conflicts or other error) — left open for manual review"
+              SKIPPED=$((SKIPPED + 1))
+            fi
           done < <(jq -c '.[]' /tmp/prs.json)
 
           echo ""
