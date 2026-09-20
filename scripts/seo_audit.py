@@ -706,11 +706,10 @@ def refresh_sitemap(pages: dict[str, PageInfo]) -> list[str]:
 # Tuned drafts. Kept conservative — reviewer must merge PR.
 CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     "index.html": {
-        "title": ("Career Coaching for College Students & New Grads "
-                  "| HR Expert to go"),
-        "description": ("Get a direct HR perspective on your resume, "
-                        "interviews, job search, professional profile, or "
-                        "offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP."),
+        "title": "Career Coaching for New Grads | HR Expert to go",
+        "description": ("Virtual 1:1 career coaching helps new grads strengthen "
+                        "resumes, prepare for interviews, and navigate offers "
+                        "with a SHRM-certified HR expert."),
     },
     "about.html": {
         "title": "Career Coach for New Grads | Meet Ty Smith, SHRM-CP",
@@ -738,16 +737,15 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     },
     "salary-negotiation.html": {
         "title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-        "description": ("Work with a salary negotiation coach to evaluate "
-                        "your offer and ask with confidence. 1:1 guidance "
-                        "for new graduates and early-career professionals."),
+        "description": ("Get salary negotiation coaching for new grads: evaluate "
+                        "your offer and ask with confidence. 1:1 guidance for "
+                        "early-career professionals."),
     },
     "job-search-strategy.html": {
-        "title": "Job Search Help for New Grads | HR Expert to go",
-        "description": ("Need a job search plan for your college grad? Get "
-                        "focused help from a SHRM-certified HR expert to "
-                        "target better-fit roles and turn applications into "
-                        "interviews."),
+        "title": "Job Search Expert for New Grads | HR Expert to go",
+        "description": ("A job search expert can help new grads target better-fit "
+                        "roles and turn applications into interviews. Virtual "
+                        "guidance from a SHRM-certified HR professional."),
     },
     "profile-optimization.html": {
         "title": "Professional Profile for New Grads | HR Expert to go",
