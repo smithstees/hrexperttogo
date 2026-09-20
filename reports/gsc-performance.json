@@ -1,150 +1,101 @@
 {
-  "generated_at": "2026-09-13T11:46:59.554136Z",
+  "generated_at": "2026-09-20T11:46:54.677870+00:00",
   "date_range": {
-    "start": "2026-09-06",
-    "end": "2026-09-13"
+    "start": "2026-09-13",
+    "end": "2026-09-20"
   },
   "totals": {
     "clicks": 0,
-    "impressions": 17,
-    "ctr": 0,
-    "position": 25.823529411764707
+    "impressions": 27,
+    "ctr": 0.0,
+    "position": 43.111111111111114
   },
   "top_queries": [
     {
       "query": "go-to hiring experts",
       "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 17
-    },
-    {
-      "query": "job search expert",
-      "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 26
+      "position": 22
     },
     {
       "query": "negotiation coach",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 62
+      "position": 59
     },
     {
       "query": "ready reset go",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 15
+      "position": 15.666666666666666
     },
     {
       "query": "salary negotiation coach",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 50.666666666666664
+      "position": 54
     },
     {
       "query": "salary negotiation coaching",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 4,
       "ctr": 0,
-      "position": 57
-    },
-    {
-      "query": "tyeshia smith",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 34
+      "position": 58.75
     }
   ],
   "top_pages": [
     {
-      "page": "https://hrexperttogo.com/",
+      "page": "http://hrexperttogo.com/",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 1,
       "ctr": 0,
-      "position": 4.75
+      "position": 41
     },
     {
       "page": "https://hrexperttogo.com/about.html",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 1,
       "ctr": 0,
-      "position": 14
+      "position": 12
     },
     {
       "page": "https://hrexperttogo.com/contact.html",
       "clicks": 0,
-      "impressions": 2,
-      "ctr": 0,
-      "position": 3.5
-    },
-    {
-      "page": "https://hrexperttogo.com/faq.html",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 4.666666666666666
-    },
-    {
-      "page": "https://hrexperttogo.com/helping-new-graduate-launch-career-parents-guide.html",
-      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 11
+      "position": 139
     },
     {
       "page": "https://hrexperttogo.com/job-search-strategy.html",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 5,
       "ctr": 0,
-      "position": 16.166666666666664
-    },
-    {
-      "page": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 8
-    },
-    {
-      "page": "https://hrexperttogo.com/payment.html",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 5.666666666666667
+      "position": 18.2
     },
     {
       "page": "https://hrexperttogo.com/pricing.html",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 8
-    },
-    {
-      "page": "https://hrexperttogo.com/privacy.html",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 4
+      "position": 6.666666666666667
     },
     {
       "page": "https://hrexperttogo.com/salary-negotiation.html",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 15,
       "ctr": 0,
-      "position": 54.2
+      "position": 56.666666666666664
     },
     {
-      "page": "https://hrexperttogo.com/terms.html",
+      "page": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
       "clicks": 0,
-      "impressions": 3,
+      "impressions": 1,
       "ctr": 0,
-      "position": 3
+      "position": 11
     }
   ]
 }
