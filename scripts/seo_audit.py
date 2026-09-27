@@ -58,6 +58,8 @@ AUDIENCE_KEYWORDS = [
     "career direction coaching",
     "job search expert",
     "career coaching college students",
+    "ready reset go",
+    "go-to hiring experts",
     "college and career coach",
     "graduate coach",
     "graduate coaching",
@@ -742,10 +744,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "early-career professionals."),
     },
     "job-search-strategy.html": {
-        "title": "Job Search Expert for New Grads | HR Expert to go",
-        "description": ("A job search expert can help new grads target better-fit "
-                        "roles and turn applications into interviews. Virtual "
-                        "guidance from a SHRM-certified HR professional."),
+        "title": "Job Search Strategy for New Grads | HR Expert to go",
+        "description": ("Ready, reset, go: help new grads target better-fit roles, "
+                        "improve applications, and turn job searches into "
+                        "interviews with a SHRM-certified HR expert."),
     },
     "profile-optimization.html": {
         "title": "Professional Profile for New Grads | HR Expert to go",
@@ -772,10 +774,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "faster and with more confidence."),
     },
     "my-college-grad-still-doesnt-have-a-job.html": {
-        "title": "My College Grad Still Needs a Job | Parent's Guide",
-        "description": ("Is your college grad still looking for work? Learn "
-                        "practical next steps to support a focused job search "
-                        "without taking over."),
+        "title": "College Grad Needs a Job? Parent Guide | HR Expert to go",
+        "description": ("Support your college grad's job search with practical "
+                        "next steps, conversation tips, and a plan that builds "
+                        "their confidence without taking over."),
     },
     "blog.html": {
         "title": "Career Advice Blog for New Grads | HR Expert to go",
