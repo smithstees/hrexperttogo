@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-20",
+  "date": "2026-09-27",
   "mode": "safe-fix",
   "pages": {
     "about.html": {
@@ -234,21 +234,21 @@
     },
     "index.html": {
       "filename": "index.html",
-      "title": "Career Coaching for College Students & New Grads | HR Expert to go",
-      "description": "Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP.",
+      "title": "Career Coaching for New Grads | HR Expert to go",
+      "description": "Virtual 1:1 career coaching helps new grads strengthen resumes, prepare for interviews, and navigate offers with a SHRM-certified HR expert.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/",
       "og_tags": {
-        "og:title": "Career Coaching for College Students & New Grads | HR Expert to go",
-        "og:description": "Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP.",
+        "og:title": "Career Coaching for New Grads | HR Expert to go",
+        "og:description": "Virtual 1:1 career coaching helps new grads strengthen resumes, prepare for interviews, and navigate offers with a SHRM-certified HR expert.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Career Coaching for College Students & New Grads | HR Expert to go",
-        "twitter:description": "Get a direct HR perspective on your resume, interviews, job search, professional profile, or offer. Virtual 1:1 coaching with Ty Smith, SHRM-CP.",
+        "twitter:title": "Career Coaching for New Grads | HR Expert to go",
+        "twitter:description": "Virtual 1:1 career coaching helps new grads strengthen resumes, prepare for interviews, and navigate offers with a SHRM-certified HR expert.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -361,21 +361,21 @@
     },
     "job-search-strategy.html": {
       "filename": "job-search-strategy.html",
-      "title": "Job Search Help for New Grads | HR Expert to go",
-      "description": "Need a job search plan for your college grad? Get focused help from a SHRM-certified HR expert to target better-fit roles and turn applications into interviews.",
+      "title": "Job Search Expert for New Grads | HR Expert to go",
+      "description": "A job search expert can help new grads target better-fit roles and turn applications into interviews. Virtual guidance from a SHRM-certified HR professional.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
-        "og:title": "Job Search Help for New Grads | HR Expert to go",
-        "og:description": "Need a job search plan for your college grad? Get focused help from a SHRM-certified HR expert to target better-fit roles and turn applications into interviews.",
+        "og:title": "Job Search Expert for New Grads | HR Expert to go",
+        "og:description": "A job search expert can help new grads target better-fit roles and turn applications into interviews. Virtual guidance from a SHRM-certified HR professional.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/job-search-strategy.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Job Search Help for New Grads | HR Expert to go",
-        "twitter:description": "Need a job search plan for your college grad? Get focused help from a SHRM-certified HR expert to target better-fit roles and turn applications into interviews.",
+        "twitter:title": "Job Search Expert for New Grads | HR Expert to go",
+        "twitter:description": "A job search expert can help new grads target better-fit roles and turn applications into interviews. Virtual guidance from a SHRM-certified HR professional.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -676,12 +676,12 @@
     "salary-negotiation.html": {
       "filename": "salary-negotiation.html",
       "title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-      "description": "Work with a salary negotiation coach to evaluate your offer and ask with confidence. 1:1 guidance for new graduates and early-career professionals.",
+      "description": "Get salary negotiation coaching for new grads: evaluate your offer and ask with confidence. 1:1 guidance for early-career professionals.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/salary-negotiation.html",
       "og_tags": {
         "og:title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-        "og:description": "Work with a salary negotiation coach to evaluate your offer and ask with confidence. 1:1 guidance for new graduates and early-career professionals.",
+        "og:description": "Get salary negotiation coaching for new grads: evaluate your offer and ask with confidence. 1:1 guidance for early-career professionals.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/salary-negotiation.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
@@ -689,7 +689,7 @@
       "twitter_tags": {
         "twitter:card": "summary_large_image",
         "twitter:title": "Salary Negotiation Coach for New Grads | HR Expert to go",
-        "twitter:description": "Work with a salary negotiation coach to evaluate your offer and ask with confidence. 1:1 guidance for new graduates and early-career professionals.",
+        "twitter:description": "Get salary negotiation coaching for new grads: evaluate your offer and ask with confidence. 1:1 guidance for early-career professionals.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -838,22 +838,19 @@
       ]
     }
   },
-  "issues": [
-    {
-      "page": "index.html",
-      "severity": "low",
-      "category": "title",
-      "message": "Title long (66 chars, prefer \u226460)",
-      "fixed": false,
-      "fix_note": ""
-    }
-  ],
+  "issues": [],
   "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-09-20)",
-    "faq.html: Added/updated og:title",
-    "faq.html: Added/updated twitter:title",
-    "profile-optimization.html: Added/updated og:description",
-    "profile-optimization.html: Added/updated twitter:description"
+    "Refreshed sitemap.xml (lastmod=2026-09-27)",
+    "index.html: Added/updated og:title",
+    "index.html: Added/updated og:description",
+    "index.html: Added/updated twitter:title",
+    "index.html: Added/updated twitter:description",
+    "job-search-strategy.html: Added/updated og:title",
+    "job-search-strategy.html: Added/updated og:description",
+    "job-search-strategy.html: Added/updated twitter:title",
+    "job-search-strategy.html: Added/updated twitter:description",
+    "salary-negotiation.html: Added/updated og:description",
+    "salary-negotiation.html: Added/updated twitter:description"
   ],
   "content_proposals": []
 }
