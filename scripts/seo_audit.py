@@ -107,6 +107,14 @@ UTILITY_TITLES: dict[str, str] = {
     "payment.html": "Secure Your Coaching Session | HR Expert to go",
 }
 
+# Article pages use their editorial image for social sharing. Keeping this map
+# here prevents the weekly safe-fix run from replacing article images with the
+# site logo or changing their Open Graph type back to "website".
+ARTICLE_OG_IMAGES: dict[str, str] = {
+    "no-internship-before-graduation.html":
+        "college-student-no-internship.webp",
+}
+
 
 @dataclass
 class Issue:
@@ -415,9 +423,13 @@ def apply_safe_fixes(path: Path, info: PageInfo) -> list[str]:
     # Open Graph
     og_title = info.title or humanize_filename(path.name)
     og_desc = info.description or f"{SITE_NAME} — practical 1:1 career coaching."
-    og_type = "website"
+    og_type = "article" if path.name in ARTICLE_OG_IMAGES else "website"
     og_url = canonical_url
-    og_image = default_og_image()
+    og_image = (
+        f"{SITE_URL}/{ARTICLE_OG_IMAGES[path.name]}"
+        if path.name in ARTICLE_OG_IMAGES
+        else default_og_image()
+    )
     for prop, val in [
         ("og:title", og_title),
         ("og:description", og_desc),
