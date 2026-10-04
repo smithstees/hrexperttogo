@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "mode": "safe-fix",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -438,6 +438,7 @@
         "blog.html",
         "faq.html",
         "contact.html",
+        "resume-coaching.html",
         "pricing.html",
         "index.html",
         "index.html",
@@ -839,16 +840,6 @@
     }
   },
   "issues": [],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-10-04)",
-    "job-search-strategy.html: Added/updated og:title",
-    "job-search-strategy.html: Added/updated og:description",
-    "job-search-strategy.html: Added/updated twitter:title",
-    "job-search-strategy.html: Added/updated twitter:description",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:title",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated og:description",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:title",
-    "my-college-grad-still-doesnt-have-a-job.html: Added/updated twitter:description"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
