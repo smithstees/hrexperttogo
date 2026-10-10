@@ -520,6 +520,11 @@
     border-bottom: 1px solid var(--navy);
   }
   .home-hero-link:hover { color: var(--gold); border-color: var(--gold); }
+  .home-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.75rem; }
+  .home-hero-actions .home-hero-link { margin-top: 0; }
+  .home-call-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .home-call .home-call-direct { font-size: 0.9rem; max-width: 22rem; }
+  .home-call-direct a { color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
   .home-portrait {
     width: 100%;
     aspect-ratio: 4 / 5;
@@ -815,7 +820,10 @@
 <h1>Not hearing back on applications, or not hearing yes after interviews? Know exactly what's stopping you.</h1>
 <p class="home-hero-lede">1:1 coaching from a SHRM-certified HR leader who shows you what your resume, professional profile, and interview answers are actually communicating, and where they may be working against you.</p>
 <p class="home-hero-lede">For college students, recent graduates, and early-career professionals: a direct HR perspective on what you already have, what is missing, and what to work on next.</p>
-<a class="home-hero-link" href="#services">See how coaching works</a>
+<div class="home-hero-actions">
+<a class="btn-primary" href="pricing.html">View coaching options</a>
+<a class="home-hero-link" href="https://calendly.com/hrexperttogo/discovery-call" rel="noopener" target="_blank">Not sure? Book a free discovery call</a>
+</div>
 </div>
 <figure>
 <img alt="Ty Smith, SHRM-CP, founder of HR Expert to go" class="home-portrait" src="TyS.jpg"/>
@@ -883,7 +891,7 @@
 <div class="editorial-inner work-result">
 <div>
 <h2 class="editorial-title">The work stays in your hands.</h2>
-<p class="editorial-copy" style="margin-top:1.25rem;">I do not rewrite your resume, apply for jobs, or speak to employers for you. You leave with clear feedback and specific next steps, then you do the work.</p>
+<p class="editorial-copy" style="margin-top:1.25rem;">You leave every session with clear feedback and a specific plan. You make the changes, so the story is yours and you can tell it with confidence in the interview. This is collaborative coaching, not a done-for-you service.</p>
 </div>
 <ul class="result-list">
 <li><strong>Know what is working</strong>Keep the parts of your materials and approach that already support your goal.</li>
@@ -911,9 +919,12 @@
 <div class="home-call-inner">
 <div>
 <h2 class="editorial-title">Not sure where to start?</h2>
-<p>The free 20-minute discovery call is for figuring out what kind of help makes sense. I will ask what you have tried, tell you whether I am the right fit, and recommend a next step. It is not a resume review or a coaching session.</p>
+<p>In this free 20-minute conversation, we will talk through what you have tried, find your biggest priority, and choose the right next step. Hands-on resume feedback, interview practice, and offer guidance happen in coaching sessions.</p>
 </div>
+<div class="home-call-actions">
 <a class="btn-primary" href="https://calendly.com/hrexperttogo/discovery-call" rel="noopener" target="_blank">Book a discovery call</a>
+<p class="home-call-direct">Already know what you need? <a href="payment.html">Choose a session</a> and book your first time right after checkout.</p>
+</div>
 </div>
 </section>
 </main>
