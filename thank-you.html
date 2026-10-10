@@ -43,6 +43,8 @@
 
   footer { background: var(--ivory); border-top: 1px solid var(--ivory-dark); padding: 1.5rem 2rem; text-align: center; }
   footer p { font-size: 0.8rem; color: var(--gray); }
+.ty-book { margin: 1.5rem 0 2rem; padding: 1.5rem; border: 1px solid var(--gold, #D4AF37); border-radius: 10px; }
+.ty-book p { margin-bottom: 1rem; }
 </style>
 <link href="https://hrexperttogo.com/thank-you.html" rel="canonical"/><meta content="Thanks for reaching out to HR Expert to go. Here is what happens next after you book a discovery call or submit an intake form." name="description"/><meta content="Thank You: What Happens Next | HR Expert to go" property="og:title"/><meta content="Thanks for reaching out to HR Expert to go. Here is what happens next after you book a discovery call or submit an intake form." property="og:description"/><meta content="website" property="og:type"/><meta content="https://hrexperttogo.com/thank-you.html" property="og:url"/><meta content="https://hrexperttogo.com/HR_Expert_to_Go_Primary.png" property="og:image"/><meta content="HR Expert to go" property="og:site_name"/><meta content="summary_large_image" name="twitter:card"/><meta content="Thank You: What Happens Next | HR Expert to go" name="twitter:title"/><meta content="Thanks for reaching out to HR Expert to go. Here is what happens next after you book a discovery call or submit an intake form." name="twitter:description"/><meta content="https://hrexperttogo.com/HR_Expert_to_Go_Primary.png" name="twitter:image"/><script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -68,7 +70,11 @@
 </svg>
 </div>
 <h1>Payment received.<br/><em>You are all set.</em></h1>
-<p>Thank you for your payment. You will receive a confirmation from PayPal shortly. Ty will be in touch within one business day to schedule your first session.</p>
+<p id="ty-intro">Thank you for your payment. You will receive a confirmation from PayPal shortly. Ty will be in touch within one business day to schedule your first session.</p>
+<div class="ty-book" id="ty-book" hidden>
+<p id="ty-book-text">Book your first session now using the button below.</p>
+<a class="btn-primary" id="ty-book-link" href="#" rel="noopener" target="_blank">Book your session</a>
+</div>
 <p>In the meantime, if you have any questions or need to reach out before then, you can email Ty directly at <a href="mailto:ty@hrexperttogo.com" style="color:var(--navy); border-bottom:1px solid var(--gold); padding-bottom:1px;">ty@hrexperttogo.com</a>.</p>
 <div class="ty-steps">
 <h2>What happens next</h2>
@@ -78,7 +84,7 @@
 </div>
 <div class="ty-step">
 <div class="ty-step-num">2</div>
-<p>Ty will reach out within one business day to schedule your first session.</p>
+<p id="ty-step2">Ty will reach out within one business day to schedule your first session.</p>
 </div>
 <div class="ty-step">
 <div class="ty-step-num">3</div>
@@ -95,5 +101,24 @@
 <footer>
 <p>© 2026 HR Expert to go. All rights reserved.</p>
 </footer>
+<script>
+(function(){
+  var base='https://calendly.com/hrexperttogo/';
+  var map={
+    'career-clarity':{slug:'career-clarity-session',name:'Career Clarity Session',text:'Pick a time for your Career Clarity Session below.'},
+    'offer-review':{slug:'offer-review',name:'Offer Review',text:'Pick a time for your Offer Review below. If you have a deadline to respond to the offer, choose the earliest time that works.'},
+    'interview-ready':{slug:'interview-ready-session',name:'Interview Ready Session',text:'Your package includes two Interview Ready sessions. Book the first one now, and use the same link to book the second when you are ready.'},
+    'jumpstart':{slug:'coaching-session',name:'Coaching Session',text:'Your Job Search Jumpstart includes three sessions plus a follow-up. Book your first session now, and use the same link for the rest. Save this link.'},
+    'launch':{slug:'coaching-session',name:'Coaching Session',text:'Your Early Career Launch includes five sessions. Book your first session now, and use the same link for the rest. Save this link.'}
+  };
+  var k=new URLSearchParams(window.location.search).get('pkg');
+  var c=map[k]; if(!c) return;
+  document.getElementById('ty-intro').textContent='Thank you for your payment. You will receive a confirmation from PayPal shortly.';
+  document.getElementById('ty-book-text').textContent=c.text;
+  var a=document.getElementById('ty-book-link'); a.href=base+c.slug; a.textContent='Book your '+c.name;
+  document.getElementById('ty-book').hidden=false;
+  document.getElementById('ty-step2').textContent='Book your session using the button above. You will get a confirmation email right away.';
+})();
+</script>
 </body>
 </html>
