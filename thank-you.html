@@ -70,7 +70,7 @@
 </svg>
 </div>
 <h1>Payment received.<br/><em>You are all set.</em></h1>
-<p id="ty-intro">Thank you for your payment. You will receive a confirmation from PayPal shortly. Ty will be in touch within one business day to schedule your first session.</p>
+<p id="ty-intro">Thank you for your payment. You will receive an email receipt from PayPal shortly, and you can view your payment details anytime by logging in to PayPal. Ty will be in touch within one business day to schedule your first session.</p>
 <div class="ty-book" id="ty-book" hidden>
 <p id="ty-book-text">Book your first session now using the button below.</p>
 <a class="btn-primary" id="ty-book-link" href="#" rel="noopener" target="_blank">Book your session</a>
@@ -113,7 +113,7 @@
   };
   var k=new URLSearchParams(window.location.search).get('pkg');
   var c=map[k]; if(!c) return;
-  document.getElementById('ty-intro').textContent='Thank you for your payment. You will receive a confirmation from PayPal shortly.';
+  document.getElementById('ty-intro').textContent='Thank you for your payment. You will receive an email receipt from PayPal shortly, and you can view your payment details anytime by logging in to PayPal.';
   document.getElementById('ty-book-text').textContent=c.text;
   var a=document.getElementById('ty-book-link'); a.href=base+c.slug; a.textContent='Book your '+c.name;
   document.getElementById('ty-book').hidden=false;
