@@ -156,11 +156,11 @@
   .btn-gold:hover { background: var(--gold-light); }
 
   .gift-hero-art { display: flex; justify-content: center; }
-  .mini-cert { position: relative; width: 100%; max-width: 340px; background: var(--ivory); color: var(--navy); border-radius: 10px; padding: 3.25rem 2rem 2rem; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.35); transform: rotate(-3deg); border: 1px solid var(--gold); }
+  .mini-cert { position: relative; width: 100%; max-width: 340px; background: var(--ivory); color: var(--navy); border-radius: 10px; padding: 2.75rem 1.75rem 2rem 4.25rem; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.35); transform: rotate(-3deg); border: 1px solid var(--gold); }
   .mini-cert::before { content: ""; position: absolute; inset: 10px; border: 1px dashed rgba(212,175,55,0.7); border-radius: 6px; pointer-events: none; }
-  .mini-cert-ribbon { position: absolute; top: 0; bottom: 0; left: 50%; width: 22px; margin-left: -11px; background: var(--cranberry); opacity: 0.92; }
-  .mini-cert-bow { position: absolute; top: -26px; left: 50%; width: 120px; margin-left: -60px; z-index: 2; }
-  .mini-cert p { position: relative; z-index: 1; background: var(--ivory); display: inline-block; padding: 0 0.5rem; color: var(--navy); }
+  .mini-cert-ribbon { position: absolute; top: 0; bottom: 0; left: 26px; width: 18px; background: var(--cranberry); opacity: 0.92; }
+  .mini-cert-bow { position: absolute; top: -22px; left: -15px; width: 100px; z-index: 2; }
+  .mini-cert p { position: relative; z-index: 1; color: var(--navy); }
   .mini-cert-kicker { font-size: 0.7rem !important; text-transform: uppercase; letter-spacing: 0.14em; color: var(--slate) !important; }
   .mini-cert-name { font-family: 'Sora', sans-serif; font-size: 1.5rem !important; font-weight: 700; margin: 0.35rem 0 0.75rem; }
   .mini-cert-item { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 0.95rem !important; color: var(--cranberry) !important; margin-bottom: 1rem; }
@@ -170,7 +170,7 @@
   .bf-banner.live { background: var(--cranberry); border-bottom: none; }
   .bf-inner { max-width: 1060px; margin: 0 auto; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
   .bf-tag { font-family: 'Sora', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; background: var(--navy); color: var(--gold); padding: 0.35rem 0.8rem; border-radius: 100px; white-space: nowrap; }
-  .bf-banner p { font-size: 0.95rem; color: var(--navy); }
+  .bf-banner p { flex: 1; min-width: 240px; font-size: 0.95rem; color: var(--navy); }
   .bf-banner.live .bf-tag { background: var(--gold); color: var(--navy); }
   .bf-banner.live p { color: #fff; font-weight: 500; }
 
@@ -282,12 +282,9 @@
   }
 </script>
 <header class="gift-hero">
-<svg aria-hidden="true" class="gift-confetti" preserveAspectRatio="none" viewBox="0 0 1200 420">
+<svg aria-hidden="true" class="gift-confetti" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1200 420">
 <g fill="#D4AF37" opacity="0.55">
 <circle cx="80" cy="60" r="4"/><circle cx="210" cy="300" r="3"/><circle cx="380" cy="40" r="2.5"/><circle cx="520" cy="360" r="3.5"/><circle cx="690" cy="70" r="2"/><circle cx="860" cy="330" r="3"/><circle cx="1010" cy="50" r="4"/><circle cx="1130" cy="250" r="2.5"/><circle cx="1160" cy="120" r="2"/><circle cx="40" cy="220" r="2.5"/>
-</g>
-<g fill="none" stroke="#D4AF37" stroke-linecap="round" stroke-width="2" opacity="0.4">
-<path d="M150 150 l10 -10 M155 140 v20"/><path d="M640 300 l8 8 M644 296 v16"/><path d="M960 180 l10 -10 M965 170 v20"/><path d="M330 220 l8 8 M334 216 v16"/>
 </g>
 </svg>
 <div class="gift-hero-inner">
