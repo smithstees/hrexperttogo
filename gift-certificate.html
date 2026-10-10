@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Gift Certificate | HR Expert to go</title>
+<meta content="noindex, follow" name="robots"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500&amp;family=Playfair+Display:ital,wght@1,500&amp;display=swap" rel="stylesheet"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LBCS8D922M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LBCS8D922M');
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --navy: #0D1B3D; --slate: #2F4A6D; --gold: #D4AF37; --gold-light: #e8c84a; --ivory: #FBF7F0; --ivory-dark: #EDE8DF; --charcoal: #23272E; --gray: #6B7280; --light-gray: #E5E7EB; --cranberry: #9B2335; }
+  body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: var(--charcoal); background: var(--ivory); }
+  h1, h2, h3 { font-family: 'Sora', sans-serif; font-weight: 600; line-height: 1.25; color: var(--navy); }
+  a { color: inherit; }
+  .gc-header { background: #fff; border-bottom: 1px solid var(--light-gray); padding: 1rem 2rem; text-align: center; }
+  .gc-header img { height: 44px; width: auto; display: inline-block; }
+  .gc-wrap { max-width: 1060px; margin: 0 auto; padding: 3rem 2rem 4rem; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 3rem; align-items: start; }
+  .gc-intro h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+  .gc-intro h1 em { font-style: normal; color: var(--cranberry); }
+  .gc-intro > p { color: var(--slate); font-size: 0.95rem; margin-bottom: 1.75rem; }
+  .gc-field { margin-bottom: 1.1rem; }
+  .gc-field label { display: block; font-size: 0.85rem; font-weight: 500; color: var(--navy); margin-bottom: 0.35rem; }
+  .gc-field input, .gc-field textarea { width: 100%; font: inherit; font-size: 0.95rem; padding: 0.7rem 0.85rem; border: 1px solid var(--light-gray); border-radius: 6px; background: #fff; color: var(--charcoal); }
+  .gc-field textarea { min-height: 90px; resize: vertical; }
+  .gc-field input:focus, .gc-field textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+  .gc-count { font-size: 0.75rem; color: var(--gray); text-align: right; }
+  .gc-print { width: 100%; min-height: 50px; margin-top: 0.5rem; background: var(--navy); color: #fff; border: none; border-radius: 6px; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 1rem; cursor: pointer; }
+  .gc-print:hover { background: var(--slate); }
+  .gc-tip { font-size: 0.82rem; color: var(--gray); margin-top: 0.75rem; }
+  .gc-receipt { font-size: 0.82rem; color: var(--gray); margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--ivory-dark); }
+  .gc-receipt a { color: var(--navy); border-bottom: 1px solid var(--gold); text-decoration: none; }
+
+  /* CERTIFICATE */
+  .cert { position: relative; aspect-ratio: 11 / 8.5; width: 100%; background: #fff; border-radius: 6px; box-shadow: 0 18px 50px rgba(13,27,61,0.15); overflow: hidden; color: var(--navy); }
+  .cert-frame { position: absolute; inset: 14px; border: 2px solid var(--gold); border-radius: 4px; }
+  .cert-frame::after { content: ""; position: absolute; inset: 6px; border: 1px solid rgba(212,175,55,0.5); border-radius: 2px; }
+  .cert-ribbon-v { position: absolute; top: 0; bottom: 0; left: 9%; width: 4.5%; background: var(--cranberry); }
+  .cert-bow { position: absolute; top: 5%; left: 2.5%; width: 17.5%; }
+  .cert-body { position: absolute; inset: 9% 7% 8% 23%; display: flex; flex-direction: column; }
+  .cert-logo { height: 9%; min-height: 22px; width: auto; align-self: flex-start; }
+  .cert-kicker { margin-top: 4%; font-size: clamp(0.55rem, 1.2vw, 0.78rem); text-transform: uppercase; letter-spacing: 0.18em; color: var(--slate); }
+  .cert-name { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 500; font-size: clamp(1.3rem, 4vw, 2.6rem); line-height: 1.15; margin-top: 1%; overflow-wrap: anywhere; }
+  .cert-item { margin-top: 3%; font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(0.8rem, 2vw, 1.35rem); color: var(--cranberry); }
+  .cert-desc { font-size: clamp(0.55rem, 1.15vw, 0.8rem); color: var(--slate); line-height: 1.5; margin-top: 0.5%; max-width: 92%; }
+  .cert-note { margin-top: 3%; font-size: clamp(0.6rem, 1.3vw, 0.9rem); line-height: 1.5; color: var(--charcoal); max-width: 92%; overflow-wrap: anywhere; }
+  .cert-from { margin-top: 1.5%; font-size: clamp(0.6rem, 1.25vw, 0.85rem); font-weight: 600; color: var(--navy); }
+  .cert-foot { margin-top: auto; display: flex; align-items: flex-end; justify-content: space-between; gap: 4%; }
+  .cert-redeem { font-size: clamp(0.5rem, 1.05vw, 0.72rem); color: var(--slate); line-height: 1.5; }
+  .cert-redeem strong { display: block; color: var(--navy); font-family: 'Sora', sans-serif; font-size: 1.1em; margin-bottom: 0.15rem; }
+  .cert-url { color: var(--navy); font-weight: 600; word-break: break-all; }
+  .cert-qr { width: 19%; flex: none; background: #fff; padding: 1.5%; border: 1px solid var(--light-gray); border-radius: 4px; }
+  .cert-qr img { display: block; width: 100%; height: auto; }
+
+  @media (max-width: 860px) {
+    .gc-wrap { grid-template-columns: 1fr; padding: 2rem 1.25rem 3rem; }
+    .gc-preview { order: -1; }
+  }
+  @page { size: letter landscape; margin: 0.4in; }
+  @media print {
+    body { background: #fff; }
+    .gc-header, .gc-intro { display: none !important; }
+    .gc-wrap { display: block; padding: 0; max-width: none; }
+    .cert { box-shadow: none; border-radius: 0; width: 10.2in; height: 7.7in; aspect-ratio: auto; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .cert-kicker { font-size: 9pt; } .cert-name { font-size: 34pt; } .cert-item { font-size: 18pt; } .cert-desc { font-size: 10pt; } .cert-note { font-size: 12pt; } .cert-from { font-size: 11pt; } .cert-redeem { font-size: 9pt; }
+  }
+</style>
+</head>
+<body>
+<header class="gc-header"><a href="index.html"><img alt="HR Expert to go" src="HR_Expert_to_Go_Primary.png"/></a></header>
+<main class="gc-wrap">
+<section class="gc-intro">
+<h1>Payment received.<br/><em>Now make it theirs.</em></h1>
+<p>Add a name and a short note, then print the certificate or save it as a PDF to email. The booking link and QR code are already on it.</p>
+<div class="gc-field">
+<label for="toName">Who is it for?</label>
+<input id="toName" maxlength="40" placeholder="Jordan" type="text"/>
+</div>
+<div class="gc-field">
+<label for="fromName">Who is it from?</label>
+<input id="fromName" maxlength="50" placeholder="Mom and Dad" type="text"/>
+</div>
+<div class="gc-field">
+<label for="note">A short note (optional)</label>
+<textarea id="note" maxlength="180" placeholder="We are proud of you. This is for the next step."></textarea>
+<p class="gc-count"><span id="noteCount">0</span>/180</p>
+</div>
+<button class="gc-print" id="printBtn" type="button">Print or save as PDF</button>
+<p class="gc-tip">To email it, choose "Save as PDF" in the print window, then attach the file.</p>
+<p class="gc-receipt">You will receive an email receipt from PayPal shortly, and you can view your payment details anytime by logging in to PayPal. Questions? Email <a href="mailto:ty@hrexperttogo.com">ty@hrexperttogo.com</a>.</p>
+</section>
+<section aria-label="Certificate preview" class="gc-preview">
+<div class="cert" id="cert">
+<span class="cert-ribbon-v"></span>
+<svg aria-hidden="true" class="cert-bow" viewBox="0 0 120 80">
+<path d="M60 35 C40 5, 8 8, 14 30 C18 46, 44 44, 60 35 Z" fill="#9B2335"/>
+<path d="M60 35 C80 5, 112 8, 106 30 C102 46, 76 44, 60 35 Z" fill="#9B2335"/>
+<path d="M56 36 L44 74 L54 67 L60 76 L60 38 Z" fill="#7d1b2b"/>
+<path d="M64 36 L76 74 L66 67 L60 76 L60 38 Z" fill="#7d1b2b"/>
+<circle cx="60" cy="35" r="8" fill="#b52c41"/>
+</svg>
+<div class="cert-frame"></div>
+<div class="cert-body">
+<img alt="HR Expert to go" class="cert-logo" src="HR_Expert_to_Go_Primary.png"/>
+<p class="cert-kicker">A gift certificate for</p>
+<p class="cert-name" id="certName">Your graduate</p>
+<p class="cert-item" id="certItem">Career Clarity Session</p>
+<p class="cert-desc" id="certDesc"></p>
+<p class="cert-note" id="certNote"></p>
+<p class="cert-from" id="certFrom"></p>
+<div class="cert-foot">
+<p class="cert-redeem"><strong>To redeem</strong>Scan the code or visit<br/><span class="cert-url" id="certUrl"></span><br/>No expiration date. Questions: ty@hrexperttogo.com</p>
+<div class="cert-qr"><img alt="QR code to book the session" id="certQr" src=""/></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<script>
+(function(){
+  var gifts = {
+    clarity: { item: 'Career Clarity Session', desc: 'One 60-minute 1:1 session with Ty Smith, SHRM-CP, on your resume, professional profile, or job search.', slug: 'career-clarity-session' },
+    interview: { item: 'Interview Ready', desc: 'Two 60-minute 1:1 sessions with Ty Smith, SHRM-CP: mock interviews, honest feedback, and a plan to close strong. Use the same link to book both.', slug: 'interview-ready-session' },
+    jumpstart: { item: 'Job Search Jumpstart', desc: 'Three 1:1 sessions plus a follow-up with Ty Smith, SHRM-CP: resume strategy, professional profile, and a real job search plan. Use the same link to book each one.', slug: 'coaching-session' }
+  };
+  var key = new URLSearchParams(window.location.search).get('g');
+  var g = gifts[key] || gifts.clarity;
+  var url = 'https://calendly.com/hrexperttogo/' + g.slug;
+  document.getElementById('certItem').textContent = g.item;
+  document.getElementById('certDesc').textContent = g.desc;
+  document.getElementById('certUrl').textContent = url.replace('https://', '');
+  document.getElementById('certQr').src = 'https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=0&data=' + encodeURIComponent(url);
+  var toEl = document.getElementById('toName'), fromEl = document.getElementById('fromName'), noteEl = document.getElementById('note');
+  function render(){
+    document.getElementById('certName').textContent = toEl.value.trim() || 'Your graduate';
+    var n = noteEl.value.trim();
+    document.getElementById('certNote').textContent = n ? '\u201C' + n + '\u201D' : '';
+    var f = fromEl.value.trim();
+    document.getElementById('certFrom').textContent = f ? 'With love, ' + f : '';
+    document.getElementById('noteCount').textContent = noteEl.value.length;
+  }
+  [toEl, fromEl, noteEl].forEach(function(el){ el.addEventListener('input', render); });
+  document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+  render();
+})();
+</script>
+</body>
+</html>
