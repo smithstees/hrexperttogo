@@ -1,94 +1,143 @@
 {
-  "generated_at": "2026-10-04T11:47:20.228843+00:00",
+  "generated_at": "2026-10-11T11:47:28.730034+00:00",
   "date_range": {
-    "start": "2026-09-27",
-    "end": "2026-10-04"
+    "start": "2026-10-04",
+    "end": "2026-10-11"
   },
   "totals": {
-    "clicks": 1,
-    "impressions": 19,
-    "ctr": 0.05263157894736842,
-    "position": 44.421052631578945
+    "clicks": 0,
+    "impressions": 18,
+    "ctr": 0.0,
+    "position": 32.05555555555556
   },
   "top_queries": [
     {
-      "query": "negotiation coach",
+      "query": "career coaching college graduate",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 62.5
+      "position": 85
     },
     {
-      "query": "professional interview prep commercial grade",
+      "query": "go-to hiring experts",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
+    },
+    {
+      "query": "hire go expert",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 93
+      "position": 13.5
     },
     {
       "query": "salary negotiation coach",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 56
+      "position": 61.333333333333336
     },
     {
       "query": "salary negotiation coaching",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 57
+      "position": 60
     }
   ],
   "top_pages": [
     {
-      "page": "https://hrexperttogo.com/pricing.html",
-      "clicks": 1,
-      "impressions": 1,
-      "ctr": 1,
-      "position": 4
-    },
-    {
-      "page": "http://hrexperttogo.com/",
+      "page": "https://hrexperttogo.com/",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 3,
       "ctr": 0,
-      "position": 41
+      "position": 9.333333333333334
     },
     {
       "page": "https://hrexperttogo.com/about.html",
       "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "page": "https://hrexperttogo.com/blog.html",
+      "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 2.5
+      "position": 4
     },
     {
       "page": "https://hrexperttogo.com/contact.html",
       "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "page": "https://hrexperttogo.com/faq.html",
+      "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 256
+      "position": 4
     },
     {
       "page": "https://hrexperttogo.com/interview-preparation.html",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 1,
       "ctr": 0,
-      "position": 93
+      "position": 9
+    },
+    {
+      "page": "https://hrexperttogo.com/job-search-strategy.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 15
     },
     {
       "page": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
       "clicks": 0,
       "impressions": 3,
       "ctr": 0,
-      "position": 9.666666666666666
+      "position": 8
+    },
+    {
+      "page": "https://hrexperttogo.com/pricing.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "page": "https://hrexperttogo.com/privacy.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 6
     },
     {
       "page": "https://hrexperttogo.com/salary-negotiation.html",
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 6,
       "ctr": 0,
-      "position": 35.888888888888886
+      "position": 42.833333333333336
+    },
+    {
+      "page": "https://hrexperttogo.com/terms.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://hrexperttogo.com/why-your-college-grad-needs-career-coaching.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 85
     }
   ]
 }
