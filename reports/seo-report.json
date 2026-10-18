@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-18",
   "mode": "safe-fix",
   "pages": {
     "about.html": {
@@ -1031,19 +1031,7 @@
     }
   ],
   "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-10-11)",
-    "gift-certificate.html: Added/updated canonical link",
-    "gift-certificate.html: Added/updated og:title",
-    "gift-certificate.html: Added/updated og:description",
-    "gift-certificate.html: Added/updated og:type",
-    "gift-certificate.html: Added/updated og:url",
-    "gift-certificate.html: Added/updated og:image",
-    "gift-certificate.html: Added/updated og:site_name",
-    "gift-certificate.html: Added/updated twitter:card",
-    "gift-certificate.html: Added/updated twitter:title",
-    "gift-certificate.html: Added/updated twitter:description",
-    "gift-certificate.html: Added/updated twitter:image",
-    "gift-certificate.html: Set robots=index,follow"
+    "Refreshed sitemap.xml (lastmod=2026-10-18)"
   ],
   "content_proposals": []
 }
