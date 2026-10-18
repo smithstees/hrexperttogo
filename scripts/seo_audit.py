@@ -757,9 +757,9 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
     },
     "job-search-strategy.html": {
         "title": "Job Search Strategy for New Grads | HR Expert to go",
-        "description": ("Ready, reset, go: help new grads target better-fit roles, "
-                        "improve applications, and turn job searches into "
-                        "interviews with a SHRM-certified HR expert."),
+        "description": ("Searching for go-to hiring experts to help your new grad? "
+                        "Ty Smith offers 1:1 job-search coaching to the student, "
+                        "drawing on 20+ years in hiring."),
     },
     "profile-optimization.html": {
         "title": "Professional Profile for New Grads | HR Expert to go",
