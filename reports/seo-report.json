@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-18",
-  "mode": "safe-fix",
+  "date": "2026-10-19",
+  "mode": "audit-only",
   "pages": {
     "about.html": {
       "filename": "about.html",
@@ -456,7 +456,7 @@
     "job-search-strategy.html": {
       "filename": "job-search-strategy.html",
       "title": "Job Search Strategy for New Grads | HR Expert to go",
-      "description": "Ready, reset, go: help new grads target better-fit roles, improve applications, and turn job searches into interviews with a SHRM-certified HR expert.",
+      "description": "Searching for go-to hiring experts to help your new grad? Ty Smith offers 1:1 job-search coaching to the student, drawing on 20+ years in hiring.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/job-search-strategy.html",
       "og_tags": {
@@ -1030,8 +1030,6 @@
       "fix_note": ""
     }
   ],
-  "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-10-18)"
-  ],
+  "fixes_applied": [],
   "content_proposals": []
 }
