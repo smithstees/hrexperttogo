@@ -1,25 +1,39 @@
 {
-  "generated_at": "2026-10-25T11:54:59.072020+00:00",
+  "generated_at": "2026-11-01T11:55:24.271047+00:00",
   "date_range": {
-    "start": "2026-10-18",
-    "end": "2026-10-25"
+    "start": "2026-10-25",
+    "end": "2026-11-01"
   },
   "totals": {
     "clicks": 0,
-    "impressions": 23,
+    "impressions": 36,
     "ctr": 0.0,
-    "position": 39.869565217391305
+    "position": 30.194444444444443
   },
   "top_queries": [
     {
       "query": "career coach pricing",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 4,
       "ctr": 0,
-      "position": 65
+      "position": 80
     },
     {
-      "query": "interview prep price for seniors",
+      "query": "go-to hiring experts",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 25
+    },
+    {
+      "query": "i graduate in the spring and i honestly do not know how to run a job search. i can pay for help but i cannot tell if i want a career coach, a resume writer, or something else entirely. what should i be hiring?",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 67
+    },
+    {
+      "query": "negotiation coach",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
@@ -28,74 +42,81 @@
     {
       "query": "salary negotiation coach",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 3,
       "ctr": 0,
-      "position": 65.2
+      "position": 67.66666666666667
     },
     {
       "query": "salary negotiation coaching",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 2,
       "ctr": 0,
-      "position": 62
+      "position": 63
     }
   ],
   "top_pages": [
     {
       "page": "http://hrexperttogo.com/",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
-      "position": 12
+      "position": 2.5
     },
     {
       "page": "https://hrexperttogo.com/about.html",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 7,
       "ctr": 0,
-      "position": 4.5
-    },
-    {
-      "page": "https://hrexperttogo.com/helping-new-graduate-launch-career-parents-guide.html",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 76
+      "position": 7.285714285714286
     },
     {
       "page": "https://hrexperttogo.com/interview-preparation.html",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 65
+      "position": 51
     },
     {
-      "page": "https://hrexperttogo.com/my-college-grad-still-doesnt-have-a-job.html",
+      "page": "https://hrexperttogo.com/job-search-strategy.html",
       "clicks": 0,
       "impressions": 1,
       "ctr": 0,
-      "position": 11
+      "position": 25
     },
     {
       "page": "https://hrexperttogo.com/no-internship-before-graduation.html",
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 11,
       "ctr": 0,
-      "position": 7.166666666666667
+      "position": 8.09090909090909
     },
     {
       "page": "https://hrexperttogo.com/pricing.html",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 5,
       "ctr": 0,
-      "position": 65
+      "position": 66
+    },
+    {
+      "page": "https://hrexperttogo.com/resume-coaching.html",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 67
     },
     {
       "page": "https://hrexperttogo.com/salary-negotiation.html",
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 7,
       "ctr": 0,
-      "position": 63.6
+      "position": 57.42857142857143
+    },
+    {
+      "page": "https://hrexperttogo.com/terms.html",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     }
   ]
 }
