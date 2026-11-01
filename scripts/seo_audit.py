@@ -44,6 +44,7 @@ AUDIENCE_KEYWORDS = [
     "career coaching for college graduates",
     "college career coaching",
     "career coach for new grads",
+    "career coach pricing",
     "help my college graduate find a job",
     "virtual career coaching",
     "resume help for recent graduates",
@@ -732,10 +733,10 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
                         "years in hiring. Book a free intro call."),
     },
     "pricing.html": {
-        "title": "Career Coaching Pricing for New Grads | HR Expert to go",
-        "description": ("See transparent pricing for 1:1 career coaching that "
-                        "helps your college grad launch a career. Virtual "
-                        "support for resumes, interviews, and job searches."),
+        "title": "Career Coach Pricing for New Grads | HR Expert to go",
+        "description": ("Compare career coach pricing for new grads. See 1:1 "
+                        "virtual support for resumes, interviews, and job "
+                        "searches. Parents can help students choose."),
     },
     "resume-coaching.html": {
         "title": "Resume Coach for New Grads | HR Expert to go",
