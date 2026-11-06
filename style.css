@@ -209,6 +209,25 @@ nav {
   line-height: 1.8;
 }
 
+.blog-post > ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.blog-post > ul li {
+  color: #333333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+}
+
+.blog-post > h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  color: #1a3a5c;
+}
+
 .blog-meta {
   display: flex;
   align-items: center;
