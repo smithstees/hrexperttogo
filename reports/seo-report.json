@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-08",
   "mode": "safe-fix",
   "pages": {
     "about.html": {
@@ -85,10 +85,58 @@
         "blog.html",
         "faq.html",
         "contact.html",
+        "home-for-the-holidays-no-job-yet.html",
+        "career-coach-or-resume-writer.html",
         "no-internship-before-graduation.html",
         "my-college-grad-still-doesnt-have-a-job.html",
         "helping-new-graduate-launch-career-parents-guide.html",
         "why-your-college-grad-needs-career-coaching.html",
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "blog.html",
+        "faq.html",
+        "contact.html",
+        "privacy.html",
+        "terms.html"
+      ]
+    },
+    "career-coach-or-resume-writer.html": {
+      "filename": "career-coach-or-resume-writer.html",
+      "title": "Career Coach or Resume Writer? What a Graduating Senior Needs",
+      "description": "Graduating soon and ready to pay for job search help? Learn what career coaches, resume writers, and campus counselors do, and which one fits your problem.",
+      "h1_count": 1,
+      "canonical": "https://hrexperttogo.com/career-coach-or-resume-writer.html",
+      "og_tags": {
+        "og:title": "Career Coach or Resume Writer? What a Graduating Senior Needs",
+        "og:description": "Graduating soon and ready to pay for job search help? Learn what career coaches, resume writers, and campus counselors do, and which one fits your problem.",
+        "og:type": "website",
+        "og:url": "https://hrexperttogo.com/career-coach-or-resume-writer.html",
+        "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Career Coach or Resume Writer? What a Graduating Senior Needs",
+        "twitter:description": "Graduating soon and ready to pay for job search help? Learn what career coaches, resume writers, and campus counselors do, and which one fits your problem.",
+        "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "has_jsonld": true,
+      "images_missing_alt": 0,
+      "internal_links": [
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "gift.html",
+        "pricing.html",
+        "helping-new-graduate-launch-career-parents-guide.html",
+        "blog.html",
+        "faq.html",
+        "contact.html",
+        "resume-coaching.html",
+        "job-search-strategy.html",
+        "interview-preparation.html",
+        "pricing.html",
         "index.html",
         "index.html#services",
         "about.html",
@@ -308,6 +356,50 @@
         "faq.html",
         "contact.html",
         "index.html",
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "pricing.html",
+        "blog.html",
+        "faq.html",
+        "contact.html",
+        "privacy.html",
+        "terms.html"
+      ]
+    },
+    "home-for-the-holidays-no-job-yet.html": {
+      "filename": "home-for-the-holidays-no-job-yet.html",
+      "title": "Home for the Holidays With No Job Yet? How to Handle the Questions",
+      "description": "Home for the holidays without a job? What to say when family asks, how to turn questions into introductions, and how to steer toward what is going well.",
+      "h1_count": 1,
+      "canonical": "https://hrexperttogo.com/home-for-the-holidays-no-job-yet.html",
+      "og_tags": {
+        "og:title": "Home for the Holidays With No Job Yet? How to Handle the Questions",
+        "og:description": "Home for the holidays without a job? What to say when family asks, how to turn questions into introductions, and how to steer toward what is going well.",
+        "og:type": "website",
+        "og:url": "https://hrexperttogo.com/home-for-the-holidays-no-job-yet.html",
+        "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Home for the Holidays With No Job Yet? How to Handle the Questions",
+        "twitter:description": "Home for the holidays without a job? What to say when family asks, how to turn questions into introductions, and how to steer toward what is going well.",
+        "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
+      },
+      "has_jsonld": true,
+      "images_missing_alt": 0,
+      "internal_links": [
+        "index.html",
+        "index.html#services",
+        "about.html",
+        "gift.html",
+        "pricing.html",
+        "helping-new-graduate-launch-career-parents-guide.html",
+        "blog.html",
+        "faq.html",
+        "contact.html",
+        "gift.html",
+        "gift.html",
         "index.html",
         "index.html#services",
         "about.html",
@@ -629,21 +721,21 @@
     },
     "pricing.html": {
       "filename": "pricing.html",
-      "title": "Career Coaching Pricing for New Grads | HR Expert to go",
-      "description": "See transparent pricing for 1:1 career coaching that helps your college grad launch a career. Virtual support for resumes, interviews, and job searches.",
+      "title": "Career Coach Pricing for New Grads | HR Expert to go",
+      "description": "Compare career coach pricing for new grads. See 1:1 virtual support for resumes, interviews, and job searches. Parents can help students choose.",
       "h1_count": 1,
       "canonical": "https://hrexperttogo.com/pricing.html",
       "og_tags": {
-        "og:title": "Career Coaching Pricing for New Grads | HR Expert to go",
-        "og:description": "See transparent pricing for 1:1 career coaching that helps your college grad launch a career. Virtual support for resumes, interviews, and job searches.",
+        "og:title": "Career Coach Pricing for New Grads | HR Expert to go",
+        "og:description": "Compare career coach pricing for new grads. See 1:1 virtual support for resumes, interviews, and job searches. Parents can help students choose.",
         "og:type": "website",
         "og:url": "https://hrexperttogo.com/pricing.html",
         "og:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "twitter_tags": {
         "twitter:card": "summary_large_image",
-        "twitter:title": "Career Coaching Pricing for New Grads | HR Expert to go",
-        "twitter:description": "See transparent pricing for 1:1 career coaching that helps your college grad launch a career. Virtual support for resumes, interviews, and job searches.",
+        "twitter:title": "Career Coach Pricing for New Grads | HR Expert to go",
+        "twitter:description": "Compare career coach pricing for new grads. See 1:1 virtual support for resumes, interviews, and job searches. Parents can help students choose.",
         "twitter:image": "https://hrexperttogo.com/HR_Expert_to_Go_Primary.png"
       },
       "has_jsonld": true,
@@ -1028,10 +1120,28 @@
       "message": "Description long (166 chars)",
       "fixed": false,
       "fix_note": ""
+    },
+    {
+      "page": "home-for-the-holidays-no-job-yet.html",
+      "severity": "low",
+      "category": "title",
+      "message": "Title long (66 chars, prefer \u226460)",
+      "fixed": false,
+      "fix_note": ""
     }
   ],
   "fixes_applied": [
-    "Refreshed sitemap.xml (lastmod=2026-11-01)"
+    "Refreshed sitemap.xml (lastmod=2026-11-08)",
+    "career-coach-or-resume-writer.html: Added/updated og:type",
+    "career-coach-or-resume-writer.html: Added/updated og:image",
+    "career-coach-or-resume-writer.html: Added/updated twitter:image",
+    "home-for-the-holidays-no-job-yet.html: Added/updated og:type",
+    "home-for-the-holidays-no-job-yet.html: Added/updated og:image",
+    "home-for-the-holidays-no-job-yet.html: Added/updated twitter:image",
+    "pricing.html: Added/updated og:title",
+    "pricing.html: Added/updated og:description",
+    "pricing.html: Added/updated twitter:title",
+    "pricing.html: Added/updated twitter:description"
   ],
   "content_proposals": []
 }
