@@ -44,6 +44,7 @@ AUDIENCE_KEYWORDS = [
     "career coaching for college graduates",
     "college career coaching",
     "career coach for new grads",
+    "career coach or resume writer",
     "career coach pricing",
     "help my college graduate find a job",
     "virtual career coaching",
@@ -731,6 +732,12 @@ CONTENT_SUGGESTIONS: dict[str, dict[str, str]] = {
         "description": ("Career coaching for new grads and the parents "
                         "supporting them. Meet Ty Smith, SHRM-CP, with 20+ "
                         "years in hiring. Book a free intro call."),
+    },
+    "no-internship-before-graduation.html": {
+        "title": "No Internship Before Graduation? A Parent Guide",
+        "description": ("A guide for parents supporting a college student "
+                        "without an internship. Learn what experience counts "
+                        "and what students can do before graduation."),
     },
     "pricing.html": {
         "title": "Career Coach Pricing for New Grads | HR Expert to go",
